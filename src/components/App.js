@@ -1,35 +1,30 @@
 import React, { useState, useEffect } from 'react';
+import { fetchData } from '../api/data.js';
 import Map from './Map';
 import './App.css';
 
 import axios from 'axios';
-
-const url = 'https://covid19.mathdro.id/api'
 
 const App = () => {
   const [data, setData] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [isError, setIsError] = useState(false)
 
-  const fetchData = async () => {
-    setIsLoading(true);
-
-    try {
-      const result = await axios.get(url);
-      // console.log(result.data.confirmed.value);
-      setData(result.data);
-      setIsLoading(false)
-    } catch (e) {
-      console.log(e);
-      setIsError(true);
-    }
-  };
-
   console.log("DATA: ", data);
 
   useEffect(() => {
-    fetchData();
-  }, [url]);
+    const data = async () => {
+      setIsLoading(true);
+      try {
+        setIsLoading(false);
+        const result = await fetchData();
+        setData(result.data);
+      } catch {
+        setIsError(true);
+      }
+    }
+    data();
+  }, []);
 
   return (
     <div className="App">
