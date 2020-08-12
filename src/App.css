@@ -6,3 +6,7 @@ h2 {
   position: absolute;
   z-index: 10;
 }
+
+button {
+  background-color: white;
+}
