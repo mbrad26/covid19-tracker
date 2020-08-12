@@ -1,36 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import ReactMapGl, { Marker } from 'react-map-gl';
+import Map from './Map';
 import './App.css';
 
 import axios from 'axios';
 
 const url = 'https://covid19.mathdro.id/api'
-
-const Map = () => {
-  const [viewPort, setViewPort] = useState({
-    width: '100vw',
-    height: '60vh',
-    latitude: 48.856613,
-    longitude: 2.352222,
-    zoom: 1.85,
-  });
-
-  return (
-    <ReactMapGl
-      {...viewPort}
-      mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
-      mapStyle="mapbox://styles/mbrad26/ckdr7xcji0pq619oo5yj3ovuo"
-      onViewportChange={newViewport => setViewPort(newViewport)}
-    >
-      <Marker
-        latitude={48}
-        longitude={2}
-      >
-        <button>Marker</button>
-      </Marker>
-    </ReactMapGl>
-  );
-};
 
 const App = () => {
   const [data, setData] = useState([]);
