@@ -6,9 +6,9 @@ import './App.css';
 import axios from 'axios';
 
 const App = () => {
-  const [data, setData] = useState([]);
+  const [data, setData] = useState([]); 
   const [isLoading, setIsLoading] = useState(false);
-  const [isError, setIsError] = useState(false)
+  const [isError, setIsError] = useState(false);
 
   console.log("DATA: ", data);
 
