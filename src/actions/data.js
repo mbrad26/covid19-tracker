@@ -6,7 +6,7 @@ const doDataLoading = () => ({
 
 const doDataSuccess = data => ({
   type: DATA_SUCCESS,
-  data,
+  payload: data,
 })
 
 const doDataError = () => ({

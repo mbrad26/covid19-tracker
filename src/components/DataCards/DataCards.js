@@ -3,26 +3,30 @@ import { fetchData } from '../../api/data';
 import ConfirmedCard from './ConfirmedCard';
 import DeathsCard from './DeathsCard';
 import RecoveredCard from './RecoveredCard';
+import { doDataLoading } from '../../actions/data.js';
+import { connect } from 'react-redux';
 
-const DataCards = () => {
-  const [data, setData] = useState([]);
-  const [isLoading, setIsLoading] = useState(false);
-  const [isError, setIsError] = useState(false);
+const DataCards = ({ isLoading, data, isError, loadingData }) => {
+  // const [data, setData] = useState([]);
+  // const [isLoading, setIsLoading] = useState(false);
+  // const [isError, setIsError] = useState(false);
 
-  console.log("DATA: ", data);
+  // console.log("DATA: ", data);
+  // console.log(props);
 
   useEffect(() => {
-    const data = async () => {
-      setIsLoading(true);
-      try {
-        setIsLoading(false);
-        const result = await fetchData();
-        setData(result.data);
-      } catch {
-        setIsError(true);
-      }
-    }
-    data();
+    loadingData()
+    // const data = async () => {
+    //   setIsLoading(true);
+    //   try {
+    //     setIsLoading(false);
+    //     const result = await fetchData();
+    //     setData(result.data);
+    //   } catch {
+    //     setIsError(true);
+    //   }
+    // }
+    // data();
   }, []);
 
   return (
@@ -46,4 +50,14 @@ const DataCards = () => {
   );
 };
 
-export default DataCards;
+const mapStateToProps = ({ dataState }) => ({
+  isLoading: dataState.isLoading,
+  data: dataState.data,
+  isError: dataState.isError,
+})
+
+const mapDispatchToProps = dispatch => ({
+  loadingData: () => dispatch(doDataLoading()),
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(DataCards);
