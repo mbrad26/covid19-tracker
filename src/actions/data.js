@@ -12,3 +12,5 @@ const doDataSuccess = data => ({
 const doDataError = () => ({
   type: DATA_ERROR,
 })
+
+export { doDataLoading, doDataSuccess, doDataError };
