@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { fetchData } from '../api/data.js';
+import { fetchData } from '../../api/data';
+import ConfirmedCard from './ConfirmedCard';
+import DeathsCard from './DeathsCard';
+import RecoveredCard from './RecoveredCard';
 
 const DataCards = () => {
   const [data, setData] = useState([]);
@@ -28,9 +31,12 @@ const DataCards = () => {
         ? <h3>Loading ...</h3>
         : data.confirmed ? (
           <>
-          <p>Confirmed:<span> {data.confirmed.value.toLocaleString()}</span></p>
-          <p>Deaths:<span> {data.deaths.value.toLocaleString()}</span></p>
-          <p>Recovered:<span> {data.recovered.value.toLocaleString()}</span></p>
+            <ConfirmedCard />
+            <p>Confirmed:<span> {data.confirmed.value.toLocaleString()}</span></p>
+            <DeathsCard />
+            <p>Deaths:<span> {data.deaths.value.toLocaleString()}</span></p>
+            <RecoveredCard />
+            <p>Recovered:<span> {data.recovered.value.toLocaleString()}</span></p>
           </>
         )
         : null

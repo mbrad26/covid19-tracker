@@ -1,6 +1,6 @@
 import React from 'react';
-import Map from './Map';
-import DataCards from './DataCards';
+import Map from '../Map/Map';
+import DataCards from '../DataCards/DataCards.js';
 import './App.css';
 
 const App = () => {
