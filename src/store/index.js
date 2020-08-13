@@ -6,6 +6,7 @@ const logger = createLogger();
 
 const store = createStore(
   rootReducer,
+  undefined,
   applyMiddleware(logger)
 );
 
