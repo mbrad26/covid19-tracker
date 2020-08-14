@@ -6,7 +6,7 @@ const INITIAL_STATE = {
   isError: false,
 }
 
-const dataReducer = (state = INITIAL_STATE, action) => {
+const globalDataReducer = (state = INITIAL_STATE, action) => {
   switch(action.type) {
     case DATA_LOADING:
       return {
@@ -30,4 +30,4 @@ const dataReducer = (state = INITIAL_STATE, action) => {
   };
 };
 
-export default dataReducer;
+export default globalDataReducer;
