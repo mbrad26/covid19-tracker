@@ -6,7 +6,7 @@ const RecoveredCard = ({ data }) => (
     <Card.Body>
       <Card.Title>Recovered</Card.Title>
       <Card.Text>
-        {data.value.toLocaleString()}
+        {data.toLocaleString()}
       </Card.Text>
     </Card.Body>
   </Card>

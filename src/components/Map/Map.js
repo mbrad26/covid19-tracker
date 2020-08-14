@@ -5,9 +5,9 @@ const Map = () => {
   const initialState = {
     width: '100vw',
     height: '60vh',
-    latitude: 48.856613,
-    longitude: 2.352222,
-    zoom: 1.85,
+    latitude: 40.856613,
+    longitude: 5.352222,
+    zoom: 0.75,
   }
   const [viewPort, setViewPort] = useState(initialState);
 

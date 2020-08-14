@@ -6,7 +6,7 @@ const ConfirmedCard = ({ data }) => (
     <Card.Body>
       <Card.Title>Confirmed</Card.Title>
       <Card.Text>
-        {data.value.toLocaleString()}
+        {data.toLocaleString()}
       </Card.Text>
     </Card.Body>
   </Card>

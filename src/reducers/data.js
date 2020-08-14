@@ -1,4 +1,4 @@
-import { DATA_LOADING,  DATA_SUCCESS, DATA_ERROR } from '../constants/actionTypes.js';
+import { DATA_LOADING, DATA_SUCCESS, DATA_ERROR } from '../constants/actionTypes.js';
 
 const INITIAL_STATE = {
   data: [],
