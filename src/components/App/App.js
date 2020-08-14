@@ -2,7 +2,7 @@ import React from 'react';
 
 import Map from '../Map/Map';
 import DataCards from '../../containers/dataCards.js';
-import './App.css';
+import './App.module.css';
 
 const App = () => {
   console.log('App');

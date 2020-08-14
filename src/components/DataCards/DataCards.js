@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
+import { CardDeck } from 'react-bootstrap';
 
 import ConfirmedCard from './ConfirmedCard';
 import DeathsCard from './DeathsCard';
@@ -18,14 +19,11 @@ const DataCards = ({ isLoading, data, isError, loadingData }) => {
       {isLoading
         ? <h3>Loading ...</h3>
         : data.confirmed ? (
-          <>
-            <ConfirmedCard />
-            <p>Confirmed:<span> {data.confirmed.value.toLocaleString()}</span></p>
-            <DeathsCard />
-            <p>Deaths:<span> {data.deaths.value.toLocaleString()}</span></p>
-            <RecoveredCard />
-            <p>Recovered:<span> {data.recovered.value.toLocaleString()}</span></p>
-          </>
+          <CardDeck className='col-8'>
+            <ConfirmedCard data={data.confirmed} />
+            <DeathsCard data={data.deaths}/>
+            <RecoveredCard data={data.recovered}/>
+          </CardDeck>
         )
         : null
       }
