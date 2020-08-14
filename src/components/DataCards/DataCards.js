@@ -1,33 +1,17 @@
-import React, { useState, useEffect } from 'react';
-import { fetchData } from '../../api/data';
+import React, { useEffect } from 'react';
+import { connect } from 'react-redux';
+
 import ConfirmedCard from './ConfirmedCard';
 import DeathsCard from './DeathsCard';
 import RecoveredCard from './RecoveredCard';
 import { doDataLoading } from '../../actions/data.js';
-import { connect } from 'react-redux';
 
 const DataCards = ({ isLoading, data, isError, loadingData }) => {
-  // const [data, setData] = useState([]);
-  // const [isLoading, setIsLoading] = useState(false);
-  // const [isError, setIsError] = useState(false);
-
-  // console.log("DATA: ", data);
-  // console.log(props);
+  console.log('DataCards');
 
   useEffect(() => {
     loadingData()
-    // const data = async () => {
-    //   setIsLoading(true);
-    //   try {
-    //     setIsLoading(false);
-    //     const result = await fetchData();
-    //     setData(result.data);
-    //   } catch {
-    //     setIsError(true);
-    //   }
-    // }
-    // data();
-  }, []);
+  }, [loadingData]);
 
   return (
     <>
@@ -50,14 +34,4 @@ const DataCards = ({ isLoading, data, isError, loadingData }) => {
   );
 };
 
-const mapStateToProps = ({ dataState }) => ({
-  isLoading: dataState.isLoading,
-  data: dataState.data,
-  isError: dataState.isError,
-})
-
-const mapDispatchToProps = dispatch => ({
-  loadingData: () => dispatch(doDataLoading()),
-})
-
-export default connect(mapStateToProps, mapDispatchToProps)(DataCards);
+export default DataCards;
