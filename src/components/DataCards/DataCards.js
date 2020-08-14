@@ -20,7 +20,7 @@ const DataCards = ({ isLoading, data, isError, loadingData }) => {
       {isLoading
         ? <h3>Loading ...</h3>
         : data.confirmed ? (
-          <CardDeck className='mt-3'>
+          <CardDeck className='mt-3 text-white'>
             <ConfirmedCard data={data.confirmed} />
             <DeathsCard data={data.deaths} />
             <RecoveredCard data={data.recovered} />
