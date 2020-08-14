@@ -6,9 +6,9 @@ import ConfirmedCard from './ConfirmedCard';
 import DeathsCard from './DeathsCard';
 import RecoveredCard from './RecoveredCard';
 import { doDataLoading } from '../../actions/data.js';
-import './DataCards.module.css';
+import './GlobalDataCards.module.css';
 
-const DataCards = ({ isLoading, data, isError, loadingData }) => {
+const GlobalDataCards = ({ isLoading, data, isError, loadingData }) => {
   console.log('DataCards');
 
   useEffect(() => {
@@ -33,4 +33,4 @@ const DataCards = ({ isLoading, data, isError, loadingData }) => {
   );
 };
 
-export default DataCards;
+export default GlobalDataCards;

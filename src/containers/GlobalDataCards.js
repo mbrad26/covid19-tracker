@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import { getIsLoadingStatus, getData, getIsErrorStatus } from '../selectors/data.js';
 
-import DataCards from '../components/DataCards/DataCards';
+import GlobalDataCards from '../components/GlobalDataCards/GlobalDataCards';
 import { doDataLoading } from '../actions/data';
 
 const mapStateToProps = state => ({
@@ -14,4 +14,4 @@ const mapDispatchToProps = dispatch => ({
   loadingData: () => dispatch(doDataLoading()),
 })
 
-export default connect(mapStateToProps, mapDispatchToProps)(DataCards);
+export default connect(mapStateToProps, mapDispatchToProps)(GlobalDataCards);
