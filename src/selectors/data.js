@@ -1,10 +1,10 @@
-const getIsLoadingStatus = ({ globalDataState }) =>
-  globalDataState.isLoading;
+const getIsLoadingStatus = state =>
+  state.isLoading;
 
-const getData = ({ globalDataState }) =>
-  globalDataState.data
+const getData = state =>
+  state.data
 
-const getIsErrorStatus = ({ globalDataState }) =>
-  globalDataState.isError;
+const getIsErrorStatus = state =>
+  state.isError;
 
 export { getIsLoadingStatus, getData, getIsErrorStatus };

@@ -4,10 +4,10 @@ import { getIsLoadingStatus, getData, getIsErrorStatus } from '../selectors/data
 import GlobalDataCards from '../components/GlobalDataCards/GlobalDataCards';
 import { doDataLoading } from '../actions/data';
 
-const mapStateToProps = state => ({
-  isLoading: getIsLoadingStatus(state),
-  data: getData(state),
-  isError: getIsErrorStatus(state),
+const mapStateToProps = ({ globalDataState }) => ({
+  isLoading: getIsLoadingStatus(globalDataState),
+  data: getData(globalDataState),
+  isError: getIsErrorStatus(globalDataState),
 })
 
 const mapDispatchToProps = dispatch => ({
