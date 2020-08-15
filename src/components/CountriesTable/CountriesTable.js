@@ -14,7 +14,7 @@ const CountriesTable = ({ isLoading, data, isError, loadingData }) => {
 
   return (
     <div className='mt-3 shadow' id='table'>
-      <Table className='table' bordered hover >
+      <Table hover >
         <thead>
           <tr>
             <th>Flag</th>

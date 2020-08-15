@@ -1,13 +1,26 @@
 #table {
   overflow: scroll;
   max-height: 50vh;
-  background-color: #efefef;
+  border-radius: 7px 7px 0 0;
+  border-bottom: 3px solid #009879;
+  font-size: 0.9em;
+  margin-bottom: 10px;
 }
 
-.table-bordered td, .table-bordered th {
+.table thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  height: 55px;
+}
+
+.table tbody td, .table thead th {
   padding: 5px;
   text-align: center;
   vertical-align: middle;
+}
+
+.table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
 }
 
 .shadow {
@@ -16,4 +29,5 @@
 
 img {
   width: 50px;
+  height: 35px;
 }
