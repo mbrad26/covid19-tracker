@@ -1,24 +1,24 @@
 import { call, put } from 'redux-saga/effects';
-import { doDataSuccess, doDataError } from '../actions/data';
+import { doGlobalDataSuccess, doGlobalDataError } from '../actions/data';
 import { fetchData } from '../api';
 import { GLOBAL_URL, COUNTRIES_URL } from '../api/api';
 
-function* fetchResource(url) {
+function* fetchResource(url, actionSuccess, actionError) {
   try {
     const result = yield call(fetchData, url);
-    yield put(doDataSuccess(result.data));
+    yield put(actionSuccess(result.data));
   } catch {
-    yield put(doDataError);
+    yield put(actionError);
   }
 }
 
 function* fetchGlobalData() {
-  yield call(fetchResource, GLOBAL_URL)
+  yield call(fetchResource, GLOBAL_URL, doGlobalDataSuccess, doGlobalDataError)
 }
 
-function* fetchCountriesData() {
-  yield call(fetchResource, COUNTRIES_URL);
-}
+// function* fetchCountriesData() {
+//   yield call(fetchResource, COUNTRIES_URL);
+// }
 
 
-export { fetchGlobalData, fetchCountriesData };
+export { fetchGlobalData };

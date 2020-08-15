@@ -1,16 +1,16 @@
 import { GLOBAL_DATA_LOADING, GLOBAL_DATA_SUCCESS, GLOBAL_DATA_ERROR } from '../constants/actionTypes.js'
 
-const doDataLoading = () => ({
+const doGlobalDataLoading = () => ({
   type: GLOBAL_DATA_LOADING,
 });
 
-const doDataSuccess = data => ({
+const doGlobalDataSuccess = data => ({
   type: GLOBAL_DATA_SUCCESS,
   payload: data,
 })
 
-const doDataError = () => ({
+const doGlobalDataError = () => ({
   type: GLOBAL_DATA_ERROR,
 })
 
-export { doDataLoading, doDataSuccess, doDataError };
+export { doGlobalDataLoading, doGlobalDataSuccess, doGlobalDataError };
