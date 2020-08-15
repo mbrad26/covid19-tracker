@@ -1,4 +1,8 @@
-import { GLOBAL_DATA_LOADING, GLOBAL_DATA_SUCCESS, GLOBAL_DATA_ERROR } from '../constants/actionTypes.js'
+import {
+  GLOBAL_DATA_LOADING,
+  GLOBAL_DATA_SUCCESS,
+  GLOBAL_DATA_ERROR
+} from '../constants/actionTypes'
 
 const doGlobalDataLoading = () => ({
   type: GLOBAL_DATA_LOADING,

@@ -1,5 +1,5 @@
 import { call, put } from 'redux-saga/effects';
-import { doGlobalDataSuccess, doGlobalDataError } from '../actions/data';
+import { doGlobalDataSuccess, doGlobalDataError } from '../actions/globalData';
 import { fetchData } from '../api';
 import { GLOBAL_URL, COUNTRIES_URL } from '../api/api';
 
