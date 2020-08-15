@@ -13,8 +13,8 @@ const CountriesTable = ({ isLoading, data, isError, loadingData }) => {
   }, [loadingData]);
 
   return (
-    <div className='mt-3'>
-      <Table striped bordered hover size='sm'>
+    <div className='mt-3 shadow' id='table'>
+      <Table className='table' bordered hover >
         <thead>
           <tr>
             <th>Flag</th>

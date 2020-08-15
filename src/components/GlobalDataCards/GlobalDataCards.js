@@ -4,7 +4,7 @@ import { CardDeck } from 'react-bootstrap';
 import ConfirmedCard from './ConfirmedCard';
 import DeathsCard from './DeathsCard';
 import RecoveredCard from './RecoveredCard';
-import './GlobalDataCards.module.css';
+import './GlobalDataCards.css';
 
 const GlobalDataCards = ({ isLoading, data, isError, loadingData }) => {
   // console.log('GlobalDataCards');

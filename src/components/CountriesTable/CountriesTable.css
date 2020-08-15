@@ -1,3 +1,19 @@
-table td img {
+#table {
+  overflow: scroll;
+  max-height: 50vh;
+  background-color: #efefef;
+}
+
+.table-bordered td, .table-bordered th {
+  padding: 5px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.shadow {
+  box-shadow: 0 0.9rem 1rem rgba(0,0,0,.15)!important;
+}
+
+img {
   width: 50px;
 }
