@@ -1,16 +1,16 @@
-import { DATA_LOADING, DATA_SUCCESS, DATA_ERROR } from '../constants/actionTypes.js'
+import { GLOBAL_DATA_LOADING, GLOBAL_DATA_SUCCESS, GLOBAL_DATA_ERROR } from '../constants/actionTypes.js'
 
 const doDataLoading = () => ({
-  type: DATA_LOADING,
+  type: GLOBAL_DATA_LOADING,
 });
 
 const doDataSuccess = data => ({
-  type: DATA_SUCCESS,
+  type: GLOBAL_DATA_SUCCESS,
   payload: data,
 })
 
 const doDataError = () => ({
-  type: DATA_ERROR,
+  type: GLOBAL_DATA_ERROR,
 })
 
 export { doDataLoading, doDataSuccess, doDataError };
