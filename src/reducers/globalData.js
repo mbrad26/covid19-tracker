@@ -1,33 +1,10 @@
-import { DATA_LOADING, DATA_SUCCESS, DATA_ERROR } from '../constants/actionTypes.js';
+import { DATA_LOADING, DATA_SUCCESS, DATA_ERROR } from '../constants/actionTypes';
+import createReducer from './createReducer';
 
-const INITIAL_STATE = {
-  data: [],
-  isLoading: false,
-  isError: false,
-}
-
-const globalDataReducer = (state = INITIAL_STATE, action) => {
-  switch(action.type) {
-    case DATA_LOADING:
-      return {
-        ...state,
-        isLoading: true,
-        isError: false,
-      };
-    case DATA_SUCCESS:
-      return {
-        ...state,
-        data: action.payload,
-        isLoading: false,
-      };
-    case DATA_ERROR:
-      return {
-        ...state,
-        isLoading: false,
-        isError: true,
-      };
-    default: return state;
-  };
-};
+const globalDataReducer = createReducer({
+  loading: DATA_LOADING,
+  success: DATA_SUCCESS,
+  error: DATA_ERROR,
+});
 
 export default globalDataReducer;
