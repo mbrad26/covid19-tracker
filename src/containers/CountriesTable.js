@@ -2,7 +2,7 @@ import { connect } from 'react-redux';
 import { getIsLoadingStatus, getData, getIsErrorStatus } from '../selectors/data';
 
 import CountriesTable from '../components/CountriesTable/CountriesTable';
-import { doGlobalDataLoading } from '../actions/globalData';
+import { doCountriesDataLoading } from '../actions/countriesData';
 
 const mapStateToProps = ({ countriesDataState }) => ({
   isLoading: getIsLoadingStatus(countriesDataState),
@@ -11,7 +11,7 @@ const mapStateToProps = ({ countriesDataState }) => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  loadingData: () => dispatch(doGlobalDataLoading()),
+  loadingData: () => dispatch(doCountriesDataLoading()),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(CountriesTable);

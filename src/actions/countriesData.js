@@ -8,13 +8,13 @@ const doCountriesDataLoading = () => ({
   type: COUNTRIES_DATA_LOADING,
 });
 
-const doCountriesDataSucces = data => ({
+const doCountriesDataSuccess = data => ({
   type: COUNTRIES_DATA_SUCCESS,
   payload: data,
 });
 
-const doCountriesDataError = => ({
+const doCountriesDataError = () => ({
   type: COUNTRIES_DATA_ERROR,
 });
 
-export { doCountriesDataLoading, doCountriesDataSucces, doCountriesDataError};
+export { doCountriesDataLoading, doCountriesDataSuccess, doCountriesDataError };

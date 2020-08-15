@@ -2,8 +2,8 @@ import React, { useEffect } from 'react';
 import { Table } from 'react-bootstrap';
 
 const CountriesTable = ({ isLoading, data, isError, loadingData }) => {
-  console.log('CountriesTable');
-  console.log('TABLE DATA: ', data[0]);
+  // console.log('CountriesTable');
+  // console.log('TABLE DATA: ', data[0]);
 
   useEffect(() => {
     loadingData()

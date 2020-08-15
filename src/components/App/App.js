@@ -7,7 +7,7 @@ import CountriesTable from '../../containers/CountriesTable';
 import './App.module.css';
 
 const App = () => {
-  console.log('App');
+  // console.log('App');
 
   return (
     <div className="App">

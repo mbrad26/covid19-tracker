@@ -12,6 +12,8 @@ const store = createStore(
   applyMiddleware(saga, logger)
 );
 
+// console.log('STORE: ', store.getState());
+
 saga.run(rootSaga);
 
 export default store;

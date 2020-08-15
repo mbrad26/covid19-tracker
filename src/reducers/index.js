@@ -7,4 +7,6 @@ const rootReducer = combineReducers({
   countriesDataState: countriesDataReducer,
 });
 
+// console.log('ROOTREDUCER: ', rootReducer);
+
 export default rootReducer;
