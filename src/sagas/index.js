@@ -5,7 +5,7 @@ import { fetchGlobalData, fetchCountriesData } from './data';
 function* watchAll() {
   yield all([
     takeEvery(DATA_LOADING, fetchGlobalData),
-    // takeEvery(DATA_LOADING, fetchCountriesData),
+    takeEvery(DATA_LOADING, fetchCountriesData),
   ])
 };
 

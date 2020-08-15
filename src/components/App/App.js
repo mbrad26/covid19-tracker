@@ -3,7 +3,7 @@ import { Container, Row, Col } from'react-bootstrap';
 
 import Map from '../Map/Map';
 import GlobalDataCards from '../../containers/GlobalDataCards';
-import CountriesTable from '../CountriesTable/CountriesTable';
+import CountriesTable from '../../containers/CountriesTable';
 import './App.module.css';
 
 const App = () => {

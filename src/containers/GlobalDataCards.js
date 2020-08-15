@@ -8,10 +8,10 @@ const mapStateToProps = ({ globalDataState }) => ({
   isLoading: getIsLoadingStatus(globalDataState),
   data: getData(globalDataState),
   isError: getIsErrorStatus(globalDataState),
-})
+});
 
 const mapDispatchToProps = dispatch => ({
   loadingData: () => dispatch(doDataLoading()),
-})
+});
 
 export default connect(mapStateToProps, mapDispatchToProps)(GlobalDataCards);
