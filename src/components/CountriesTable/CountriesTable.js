@@ -1,9 +1,12 @@
 import React, { useEffect } from 'react';
 import { Table } from 'react-bootstrap';
 
+import Country from './Country.js';
+import './CountriesTable.css';
+
 const CountriesTable = ({ isLoading, data, isError, loadingData }) => {
   // console.log('CountriesTable');
-  // console.log('TABLE DATA: ', data[0]);
+  console.log('TABLE DATA: ', data[5]);
 
   useEffect(() => {
     loadingData()
@@ -22,13 +25,9 @@ const CountriesTable = ({ isLoading, data, isError, loadingData }) => {
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
+        {data.map(
+          country => <Country key={country.country} country={country} />
+        )}
         </tbody>
       </Table>
     </div>
