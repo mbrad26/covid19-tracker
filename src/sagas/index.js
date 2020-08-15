@@ -1,10 +1,11 @@
 import { takeEvery, all } from 'redux-saga/effects';
 import { DATA_LOADING } from '../constants/actionTypes.js';
-import { fetchGlobalData } from './data';
+import { fetchGlobalData, fetchCountriesData } from './data';
 
 function* watchAll() {
   yield all([
     takeEvery(DATA_LOADING, fetchGlobalData),
+    // takeEvery(DATA_LOADING, fetchCountriesData),
   ])
 };
 

@@ -16,5 +16,9 @@ function* fetchGlobalData() {
   yield call(fetchResource, GLOBAL_URL)
 }
 
+function* fetchCountriesData() {
+  yield call(fetchResource, COUNTRIES_URL);
+}
 
-export { fetchGlobalData };
+
+export { fetchGlobalData, fetchCountriesData };
