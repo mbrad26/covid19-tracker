@@ -18,7 +18,7 @@ const GlobalDataCards = ({ isLoading, data, isError, loadingData }) => {
       {isLoading
         ? <h3>Loading ...</h3>
         : data.cases ? (
-          <CardDeck className='mt-3 text-white'>
+          <CardDeck className='mt-3'>
             <ConfirmedCard data={data.cases} />
             <DeathsCard data={data.deaths} />
             <RecoveredCard data={data.recovered} />

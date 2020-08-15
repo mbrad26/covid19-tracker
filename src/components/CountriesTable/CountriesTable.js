@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
 import { Table } from 'react-bootstrap';
 
-import Country from './Country.js';
+import Country from './Country';
+import Search from './Search'
 import './CountriesTable.css';
 
 const CountriesTable = ({ isLoading, data, isError, loadingData }) => {
@@ -18,7 +19,9 @@ const CountriesTable = ({ isLoading, data, isError, loadingData }) => {
         <thead>
           <tr>
             <th>Flag</th>
-            <th>Country</th>
+            <th>
+              <Search />
+            </th>
             <th>Cases</th>
             <th>Deaths</th>
             <th>Recovered</th>

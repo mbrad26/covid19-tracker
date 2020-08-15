@@ -10,3 +10,7 @@
 #countries {
   padding-left: 20px;
 }
+
+.card-deck .shadow {
+  border-top: 5px solid #009879;
+}

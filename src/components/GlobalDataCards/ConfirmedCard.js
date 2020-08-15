@@ -2,7 +2,7 @@ import React from 'react';
 import { Card } from 'react-bootstrap';
 
 const ConfirmedCard = ({ data }) => (
-  <Card className='bg-warning shadow'>
+  <Card className='shadow'>
     <Card.Body>
       <Card.Title>Confirmed</Card.Title>
       <Card.Text>
