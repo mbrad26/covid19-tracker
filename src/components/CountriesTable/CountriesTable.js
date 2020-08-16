@@ -1,26 +1,30 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Table } from 'react-bootstrap';
 
 import Country from './Country';
-import Search from './Search'
+import Search from './Search';
 import './CountriesTable.css';
 
 const CountriesTable = ({ isLoading, data, isError, loadingData }) => {
-  // console.log('CountriesTable');
-  console.log('TABLE DATA: ', data[5]);
+  const [query, setQuery] = useState('');
+  console.log('CountriesTable');
+  // console.log('TABLE DATA: ', data);
 
   useEffect(() => {
     loadingData()
   }, [loadingData]);
 
+  const filterData = data =>
+    data.filter(country => country.country.toLowerCase().includes(query.toLowerCase()))
+
   return (
     <div className='mt-3 shadow' id='table'>
-      <Table hover >
+      <Table hover className='shadow'>
         <thead>
           <tr>
             <th>Flag</th>
             <th>
-              <Search />
+              <Search query={query} setQuery={setQuery} />
             </th>
             <th>Cases</th>
             <th>Deaths</th>
@@ -28,7 +32,7 @@ const CountriesTable = ({ isLoading, data, isError, loadingData }) => {
           </tr>
         </thead>
         <tbody>
-        {data.map(
+        {filterData(data).map(
           country => <Country key={country.country} country={country} />
         )}
         </tbody>

@@ -1,7 +1,8 @@
 import {
   COUNTRIES_DATA_LOADING,
   COUNTRIES_DATA_SUCCESS,
-  COUNTRIES_DATA_ERROR
+  COUNTRIES_DATA_ERROR,
+  // SEARCH_COUNTRIES_DATA,
 } from '../constants/actionTypes.js';
 
 const doCountriesDataLoading = () => ({
@@ -17,4 +18,14 @@ const doCountriesDataError = () => ({
   type: COUNTRIES_DATA_ERROR,
 });
 
-export { doCountriesDataLoading, doCountriesDataSuccess, doCountriesDataError };
+// const doSearchCountriesData = query => ({
+//   type: SEARCH_COUNTRIES_DATA,
+//   payload: query,
+// })
+
+export {
+  doCountriesDataLoading,
+  doCountriesDataSuccess,
+  doCountriesDataError,
+  // doSearchCountriesData,
+};

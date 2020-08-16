@@ -25,10 +25,17 @@
 }
 
 .shadow {
-  box-shadow: 0 0.9rem 1rem rgba(0,0,0,.15)!important;
+  /* box-shadow: 0 0.9rem 1rem rgba(0,0,0,.15)!important; */
 }
 
 img {
   width: 50px;
   height: 35px;
+}
+
+.table thead #form {
+  width: 174px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 8px;
 }

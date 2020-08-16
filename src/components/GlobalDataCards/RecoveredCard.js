@@ -2,7 +2,7 @@ import React from 'react';
 import { Card } from 'react-bootstrap';
 
 const RecoveredCard = ({ data }) => (
-  <Card className='shadow' id='success'>
+  <Card className='shadow' id='recovered'>
     <Card.Body>
       <Card.Title>Recovered</Card.Title>
       <Card.Text>

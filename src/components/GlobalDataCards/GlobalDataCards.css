@@ -11,6 +11,22 @@
   padding-left: 20px;
 }
 
+.card-deck {
+  height: 10em;
+}
+
 .card-deck .shadow {
+  border: 1px solid #009879;
+}
+
+#cases:hover {
+  border-top: 5px solid #009879;
+}
+
+#deaths:hover {
+  border-top: 5px solid #009879;
+}
+
+#recovered:hover {
   border-top: 5px solid #009879;
 }
