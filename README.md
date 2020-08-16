@@ -2,7 +2,19 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Covid-19 Tracker
 
-Work in progress - updated daily 
+Work in progress - updated daily
+
+### Getting started
+
+Clone this repository to your local machine.
+
+```js
+// install dependencies
+> npm install
+
+// start server
+> npm start
+```
 
 ### Approach
 
