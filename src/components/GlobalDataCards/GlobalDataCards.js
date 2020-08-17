@@ -8,6 +8,7 @@ import './GlobalDataCards.css';
 
 const GlobalDataCards = ({ isLoading, data, isError, loadingData }) => {
   console.log('GlobalDataCards');
+  console.log('GLOBALDATA: ', data);
 
   useEffect(() => {
     loadingData()
@@ -19,9 +20,9 @@ const GlobalDataCards = ({ isLoading, data, isError, loadingData }) => {
         ? <h3>Loading ...</h3>
         : data.cases ? (
           <CardDeck className='mt-3'>
-            <ConfirmedCard data={data.cases} />
-            <DeathsCard data={data.deaths} />
-            <RecoveredCard data={data.recovered} />
+            <ConfirmedCard cases={data.cases} casesIncrease={data.todayCases}/>
+            <DeathsCard deaths={data.deaths} deathsIncrease={data.todayDeaths}/>
+            <RecoveredCard recovered={data.recovered} recoveredIncrease={data.todayRecovered}/>
           </CardDeck>
         )
         : null

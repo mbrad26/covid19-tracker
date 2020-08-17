@@ -5,13 +5,6 @@ import {
   COUNTRIES_DATA_SORT,
 } from '../constants/actionTypes';
 import { INITIAL_STATE } from './initialState';
-// import createReducer from './createReducer';
-//
-// const countriesDataReducer = createReducer({
-//   loading: COUNTRIES_DATA_LOADING,
-//   success: COUNTRIES_DATA_SUCCESS,
-//   error: COUNTRIES_DATA_ERROR,
-// });
 
 const countriesDataReducer = (state = INITIAL_STATE, action) => {
   switch(action.type) {

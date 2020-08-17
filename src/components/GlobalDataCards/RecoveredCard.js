@@ -1,12 +1,15 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
 
-const RecoveredCard = ({ data }) => (
+const RecoveredCard = ({ recovered, recoveredIncrease }) => (
   <Card className='shadow' id='recovered'>
     <Card.Body>
       <Card.Title>Recovered</Card.Title>
+      <Card.Text className='text-success font-weight-bold'>
+        +{recoveredIncrease.toLocaleString()}
+      </Card.Text>
       <Card.Text>
-        {data.toLocaleString()}
+        {recovered.toLocaleString()}
       </Card.Text>
     </Card.Body>
   </Card>

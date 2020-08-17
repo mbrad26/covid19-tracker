@@ -1,12 +1,15 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
 
-const DeathsCard = ({ data }) => (
+const DeathsCard = ({ deaths, deathsIncrease }) => (
   <Card className='shadow' id='deaths'>
     <Card.Body>
       <Card.Title>Deaths</Card.Title>
+      <Card.Text className='text-danger font-weight-bold'>
+        +{deathsIncrease.toLocaleString()}
+      </Card.Text>
       <Card.Text>
-        {data.toLocaleString()}
+        {deaths.toLocaleString()}
       </Card.Text>
     </Card.Body>
   </Card>
