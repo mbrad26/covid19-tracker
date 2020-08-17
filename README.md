@@ -31,3 +31,4 @@ Clone this repository to your local machine.
 * Redux
 * Axios
 * MapBox
+* Chart.js
