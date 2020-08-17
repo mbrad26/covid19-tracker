@@ -40,6 +40,8 @@ img {
   border-radius: 8px;
 }
 
-#cases:hover {
+#cases:hover,
+#deaths:hover,
+#recovered:hover {
   cursor: pointer;
 }

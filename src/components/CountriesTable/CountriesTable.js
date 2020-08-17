@@ -44,8 +44,16 @@ const CountriesTable = ({ data, loadingData, onSortData }) => {
                 Cases
               </div>
             </th>
-            <th>Deaths</th>
-            <th>Recovered</th>
+            <th>
+              <div onClick={handleClick} id='deaths'>
+                Deaths
+              </div>
+            </th>
+            <th>
+              <div onClick={handleClick} id='recovered'>
+                Recovered
+              </div>
+            </th>
           </tr>
         </thead>
         <tbody>
