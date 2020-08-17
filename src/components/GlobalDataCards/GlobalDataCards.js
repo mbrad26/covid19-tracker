@@ -7,7 +7,7 @@ import RecoveredCard from './RecoveredCard';
 import './GlobalDataCards.css';
 
 const GlobalDataCards = ({ isLoading, data, isError, loadingData }) => {
-  // console.log('GlobalDataCards');
+  console.log('GlobalDataCards');
 
   useEffect(() => {
     loadingData()

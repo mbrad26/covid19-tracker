@@ -1,17 +1,16 @@
 import { connect } from 'react-redux';
-import { getIsLoadingStatus, getData, getIsErrorStatus } from '../selectors/data';
+import { getData } from '../selectors/data';
 
 import CountriesTable from '../components/CountriesTable/CountriesTable';
-import { doCountriesDataLoading } from '../actions/countriesData';
+import { doCountriesDataLoading, doCountriesDataSort } from '../actions/countriesData';
 
 const mapStateToProps = ({ countriesDataState }) => ({
-  isLoading: getIsLoadingStatus(countriesDataState),
   data: getData(countriesDataState),
-  isError: getIsErrorStatus(countriesDataState),
 });
 
 const mapDispatchToProps = dispatch => ({
   loadingData: () => dispatch(doCountriesDataLoading()),
+  onSortData: (key, sort) => dispatch(doCountriesDataSort(key, sort)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(CountriesTable);

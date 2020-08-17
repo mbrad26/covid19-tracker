@@ -2,7 +2,7 @@ import {
   COUNTRIES_DATA_LOADING,
   COUNTRIES_DATA_SUCCESS,
   COUNTRIES_DATA_ERROR,
-  // SEARCH_COUNTRIES_DATA,
+  COUNTRIES_DATA_SORT,
 } from '../constants/actionTypes.js';
 
 const doCountriesDataLoading = () => ({
@@ -18,14 +18,15 @@ const doCountriesDataError = () => ({
   type: COUNTRIES_DATA_ERROR,
 });
 
-// const doSearchCountriesData = query => ({
-//   type: SEARCH_COUNTRIES_DATA,
-//   payload: query,
-// })
+const doCountriesDataSort = (key, sort) => ({
+  type: COUNTRIES_DATA_SORT,
+  key: key,
+  sort: sort,
+})
 
 export {
   doCountriesDataLoading,
   doCountriesDataSuccess,
   doCountriesDataError,
-  // doSearchCountriesData,
+  doCountriesDataSort,
 };

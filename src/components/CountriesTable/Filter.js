@@ -1,16 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
-const Search = ({ query, setQuery }) => {
-
-  console.log('QUERY: ', query);
+const Filter = ({ query, setQuery }) => {
+  console.log('Filter');
 
   const handleChange = event => {
     setQuery(event.target.value);
   };
-
-  // useEffect(() => {
-  //   onSearch(query)
-  // }, [query])
 
   const handleSubmit = event => {
     event.preventDefault();
@@ -21,6 +16,7 @@ const Search = ({ query, setQuery }) => {
     <div id='form'>
       <form onSubmit={handleSubmit}>
         <input
+          type='text'
           placeholder='Search for ...'
           value={query}
           onChange={handleChange}
@@ -31,4 +27,4 @@ const Search = ({ query, setQuery }) => {
   )
 }
 
-export default Search;
+export default Filter;

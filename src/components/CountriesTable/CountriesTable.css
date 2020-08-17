@@ -39,3 +39,7 @@ img {
   overflow: hidden;
   border-radius: 8px;
 }
+
+#cases:hover {
+  cursor: pointer;
+}
