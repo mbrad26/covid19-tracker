@@ -4,7 +4,7 @@ import { Container, Row, Col } from'react-bootstrap';
 import Map from '../Map/Map';
 import GlobalDataCards from '../../containers/GlobalDataCards';
 import CountriesTable from '../../containers/CountriesTable';
-import ChartComponent from '../Chart/ChartComponent.js';
+
 import './App.css';
 
 const App = () => {
@@ -16,15 +16,12 @@ const App = () => {
       <Map />
       <Container fluid>
         <Row>
-          <Col md={8} id='global'>
+          <Col xs={12} sm={12} md={10} id='global'>
             <GlobalDataCards />
-            <Row>
-              <Col md={12} className='mt-3'>
-                <ChartComponent />
-              </Col>
-            </Row>
           </Col>
-          <Col md={4} id='countries'>
+        </Row>
+        <Row>
+          <Col md={5} id='countries'>
             <CountriesTable />
           </Col>
         </Row>

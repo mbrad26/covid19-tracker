@@ -1,6 +1,6 @@
 #table {
   overflow: scroll;
-  height: 75vh;
+  max-height: 520px;
   border-radius: 7px 7px 0 0;
   border-bottom: 3px solid #009879;
   font-size: 0.9em;

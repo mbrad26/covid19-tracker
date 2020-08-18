@@ -1,13 +1,16 @@
 import React from 'react';
-import { Card } from 'react-bootstrap';
+import { Card, Row, Col } from 'react-bootstrap';
+
+import ChartComponent from '../../containers/ChartComponent';
 
 const ConfirmedCard = ({ cases, casesIncrease }) => (
   <Card className='shadow' id='cases'>
     <Card.Body>
-      <Card.Title>Confirmed</Card.Title>
-      <Card.Text className='text-warning font-weight-bold'>
-        +{casesIncrease.toLocaleString()}
-      </Card.Text>
+      <Card.Title>Confirmed: <span className='text-warning font-weight-bold'>
+          +{casesIncrease.toLocaleString()}
+        </span>
+      </Card.Title>
+      <ChartComponent />
       <Card.Text>
         {cases.toLocaleString()}
       </Card.Text>

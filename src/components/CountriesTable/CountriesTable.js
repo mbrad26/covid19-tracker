@@ -11,8 +11,8 @@ const CountriesTable = ({ data, loadingData, onSortData }) => {
 
   console.log('CountriesTable');
   // console.log('QUERY: ', query);
-  console.log('DATA I: ', data);
-  console.log('SORT: ', sort);
+  // console.log('DATA I: ', data);
+  // console.log('SORT: ', sort);
 
   useEffect(() => {
     loadingData()

@@ -12,15 +12,15 @@
 }
 
 .font-weight-bold {
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 
 .card-body {
-  padding-bottom: 0px;
+  padding-bottom: 15px;
 }
 
 .card-deck {
-  height: 10em;
+  height: auto;
 }
 
 .card-deck .shadow {
