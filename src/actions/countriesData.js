@@ -3,7 +3,7 @@ import {
   COUNTRIES_DATA_SUCCESS,
   COUNTRIES_DATA_ERROR,
   COUNTRIES_DATA_SORT,
-} from '../constants/actionTypes.js';
+} from '../constants/actionTypes';
 
 const doCountriesDataLoading = () => ({
   type: COUNTRIES_DATA_LOADING,
