@@ -1,7 +1,9 @@
 import React from 'react';
 import { Image } from 'react-bootstrap';
 
-const Country = ({ country }) => (
+// import './CountriesTable.css';
+
+const Country = ({ country, handleClick }) => (
   <tr>
     <td><Image
           src={country.countryInfo.flag}
@@ -9,7 +11,14 @@ const Country = ({ country }) => (
           id='flag'
         />
     </td>
-    <td>{country.country}</td>
+    <td>
+      <button
+        className='button'
+        onClick={handleClick}
+      >
+        {country.country}
+      </button>
+    </td>
     <td>{country.cases}</td>
     <td>{country.deaths}</td>
     <td>{country.recovered}</td>

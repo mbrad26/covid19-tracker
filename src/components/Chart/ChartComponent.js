@@ -4,17 +4,7 @@ import { Line } from 'react-chartjs-2';
 import './ChartComponent.css';
 import { chartData } from './utils';
 
-const ChartComponent = ({ labels, values, label, color }) => {
-  // const labels = data.cases && Object.keys(data.cases)
-  // const values = data.cases && Object.values(data.cases)
-
-  // console.log('CHART: ');
-
-  // useEffect(() => {
-  //   loadingData();
-  // }, [loadingData]);
-
-  return (
+const ChartComponent = ({ labels, values, label, color }) => (
       <Line
         data={chartData(labels, values, label, color)}
         options={{
@@ -22,7 +12,6 @@ const ChartComponent = ({ labels, values, label, color }) => {
           responsive: true,
         }}
       />
-  );
-};
+);
 
 export default ChartComponent;

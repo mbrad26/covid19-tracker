@@ -6,7 +6,7 @@ import DeathsCard from './DeathsCard';
 import RecoveredCard from './RecoveredCard';
 import './DataCards.css';
 
-export const endPoint = 'USA';
+export const endPoint = 'all';
 
 const DataCards = ({
   isLoading,

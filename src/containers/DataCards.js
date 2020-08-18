@@ -5,7 +5,7 @@ import { getIsLoadingStatus, getData, getIsErrorStatus } from '../selectors/data
 import { doGlobalDataLoading } from '../actions/globalData';
 import { doHistoricalDataLoading } from '../actions/historicalData.js';
 
-const mapStateToProps = ({ globalDataState, historicalDataState }) => ({
+const mapStateToProps = ({ globalDataState, historicalDataState,  }) => ({
   isLoading: getIsLoadingStatus(globalDataState),
   globalData: getData(globalDataState),
   historicalData: getData(historicalDataState),

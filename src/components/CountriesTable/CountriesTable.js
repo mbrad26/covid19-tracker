@@ -10,9 +10,6 @@ const CountriesTable = ({ data, loadingData, onSortData }) => {
   const [query, setQuery] = useState('');
 
   console.log('CountriesTable');
-  // console.log('QUERY: ', query);
-  // console.log('DATA I: ', data);
-  // console.log('SORT: ', sort);
 
   useEffect(() => {
     loadingData()
@@ -21,15 +18,15 @@ const CountriesTable = ({ data, loadingData, onSortData }) => {
   const handleClick = event => {
     sort === 'asc' ? setSort('desc') : setSort('asc');
     onSortData(event.target.getAttribute('id'), sort);
-  }
+  };
 
   const filterData = data =>
           data.filter(country =>
-            country.country.toLowerCase().includes(query.toLowerCase()))
+            country.country.toLowerCase().includes(query.toLowerCase()));
 
   return (
     <div className='mt-3 shadow' id='table'>
-      <Table hover className='shadow'>
+      <Table className='shadow'>
         <thead>
           <tr>
             <th>Flag</th>
@@ -40,19 +37,19 @@ const CountriesTable = ({ data, loadingData, onSortData }) => {
               />
             </th>
             <th>
-              <div onClick={handleClick} id='cases'>
+              <button onClick={handleClick} id='cases'>
                 Cases
-              </div>
+              </button>
             </th>
             <th>
-              <div onClick={handleClick} id='deaths'>
+              <button onClick={handleClick} id='deaths'>
                 Deaths
-              </div>
+              </button>
             </th>
             <th>
-              <div onClick={handleClick} id='recovered'>
+              <button onClick={handleClick} id='recovered'>
                 Recovered
-              </div>
+              </button>
             </th>
           </tr>
         </thead>

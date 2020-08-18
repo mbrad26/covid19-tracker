@@ -19,10 +19,6 @@
   vertical-align: middle;
 }
 
-.table tbody tr:nth-of-type(even) {
-  background-color: #f3f3f3;
-}
-
 #cases {
   margin-right: 0px;
 }
@@ -48,4 +44,21 @@ img {
 #deaths:hover,
 #recovered:hover {
   cursor: pointer;
+}
+
+.table thead button {
+  background-color: inherit;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+button,
+button:hover {
+  border-style: hidden;
+  border: none;
+}
+
+button:focus {
+  outline: none;
+  font-weight: bold;
 }
