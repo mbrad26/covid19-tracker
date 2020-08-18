@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Row, Col } from'react-bootstrap';
 
 import Map from '../Map/Map';
-import GlobalDataCards from '../../containers/GlobalDataCards';
+import DataCards from '../../containers/DataCards';
 import CountriesTable from '../../containers/CountriesTable';
 
 import './App.css';
@@ -17,7 +17,7 @@ const App = () => {
       <Container fluid>
         <Row>
           <Col xs={12} sm={12} md={10} id='global'>
-            <GlobalDataCards />
+            <DataCards />
           </Col>
         </Row>
         <Row>

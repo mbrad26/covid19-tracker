@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
 
-import ChartComponent from '../../containers/ChartComponent';
+import ChartComponent from '../Chart/ChartComponent.js';
 
 const ConfirmedCard = ({ cases, casesIncrease }) => (
   <Card className='shadow' id='cases'>

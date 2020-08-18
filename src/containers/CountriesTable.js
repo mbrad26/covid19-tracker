@@ -1,8 +1,8 @@
 import { connect } from 'react-redux';
-import { getData } from '../selectors/data';
 
 import CountriesTable from '../components/CountriesTable/CountriesTable';
 import { doCountriesDataLoading, doCountriesDataSort } from '../actions/countriesData';
+import { getData } from '../selectors/data';
 
 const mapStateToProps = ({ countriesDataState }) => ({
   data: getData(countriesDataState),
