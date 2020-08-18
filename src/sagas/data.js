@@ -2,8 +2,9 @@ import { call, put, delay } from 'redux-saga/effects';
 
 import { doGlobalDataSuccess, doGlobalDataError } from '../actions/globalData';
 import { doCountriesDataSuccess, doCountriesDataError } from '../actions/countriesData';
+import { doHistoricalDataSuccess, doHistoricalDataError } from '../actions/historicalData';
 import { fetchData } from '../api';
-import { GLOBAL_URL, COUNTRIES_URL } from '../api/api';
+import { GLOBAL_URL, COUNTRIES_URL, HISTORICAL_DATA } from '../api/api';
 
 function* fetchResource(url, actionSuccess, actionError) {
   try {
@@ -12,22 +13,24 @@ function* fetchResource(url, actionSuccess, actionError) {
   } catch {
     yield put(actionError);
   }
-}
+};
 
 function* fetchGlobalData() {
   while(true) {
-    yield call(fetchResource, GLOBAL_URL, doGlobalDataSuccess, doGlobalDataError)
-    yield delay(60000)
+    yield call(fetchResource, GLOBAL_URL, doGlobalDataSuccess, doGlobalDataError);
+    yield delay(60000);
   }
-}
+};
 
 function* fetchCountriesData() {
   while(true) {
     yield call(fetchResource, COUNTRIES_URL, doCountriesDataSuccess, doCountriesDataError);
-    yield delay(60000)
+    yield delay(60000);
   }
-}
+};
 
+function* fetchHistoricalData() {
+  yield call(fetchResource, HISTORICAL_DATA, doHistoricalDataSuccess, doHistoricalDataError);
+};
 
-
-export { fetchGlobalData, fetchCountriesData };
+export { fetchGlobalData, fetchCountriesData, fetchHistoricalData };

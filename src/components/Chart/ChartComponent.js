@@ -38,39 +38,6 @@ const ChartComponent = () => {
     "8/16/20": 21672186
   };
 
-  const data2 = {
-    "7/18/20": 2009,
-    "7/19/20": 2026,
-    "7/20/20": 2038,
-    "7/21/20": 2074,
-    "7/22/20": 2101,
-    "7/23/20": 2126,
-    "7/24/20": 2150,
-    "7/25/20": 2165,
-    "7/26/20": 2187,
-    "7/27/20": 2206,
-    "7/28/20": 2239,
-    "7/29/20": 2269,
-    "7/30/20": 2304,
-    "7/31/20": 2343,
-    "8/1/20": 2379,
-    "8/2/20": 2413,
-    "8/3/20": 2432,
-    "8/4/20": 2480,
-    "8/5/20": 2521,
-    "8/6/20": 2566,
-    "8/7/20": 2616,
-    "8/8/20": 2659,
-    "8/9/20": 2700,
-    "8/10/20": 2729,
-    "8/11/20": 2764,
-    "8/12/20": 2807,
-    "8/13/20": 2860,
-    "8/14/20": 2904,
-    "8/15/20": 2954,
-    "8/16/20": 2991,
-  }
-
   console.log('CHART DATA: ', data);
 
   const chart = () => {
@@ -98,28 +65,6 @@ const ChartComponent = () => {
           pointHitRadius: 10,
           order: 1,
         },
-        {
-          label: 'Deaths',
-          data: Object.values(data2),
-          fill: false,
-          lineTension: 0.1,
-          backgroundColor: 'red',
-          borderColor: 'red',
-          borderCapStyle: 'butt',
-          borderDash: [],
-          borderDashOffset: 0.0,
-          borderJoinStyle: 'miter',
-          pointBorderColor: 'red',
-          pointBackgroundColor: '#fff',
-          pointBorderWidth: 1,
-          pointHoverRadius: 5,
-          pointHoverBackgroundColor: 'red',
-          pointHoverBorderColor: 'red',
-          pointHoverBorderWidth: 2,
-          pointRadius: 1,
-          pointHitRadius: 10,
-          order: 1,
-        }
       ]
     })
   }
