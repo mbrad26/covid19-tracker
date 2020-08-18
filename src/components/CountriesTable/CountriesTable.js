@@ -19,7 +19,7 @@ const CountriesTable = ({ data, loadingData, onSortData }) => {
   }, [loadingData]);
 
   const handleClick = event => {
-    sort === 'asc' ? setSort('desc') : setSort('asc')
+    sort === 'asc' ? setSort('desc') : setSort('asc');
     onSortData(event.target.getAttribute('id'), sort);
   }
 

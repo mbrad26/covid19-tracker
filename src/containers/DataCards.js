@@ -14,7 +14,7 @@ const mapStateToProps = ({ globalDataState, historicalDataState }) => ({
 
 const mapDispatchToProps = dispatch => ({
   loadingGlobalData: () => dispatch(doGlobalDataLoading()),
-  loadingHistoricalData: () => dispatch(doHistoricalDataLoading()),
+  loadingHistoricalData: endPoint => dispatch(doHistoricalDataLoading(endPoint)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(DataCards);

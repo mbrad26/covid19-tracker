@@ -4,8 +4,9 @@ import {
   HISTORICAL_DATA_ERROR,
 } from '../constants/actionTypes';
 
-const doHistoricalDataLoading = () => ({
+const doHistoricalDataLoading = endPoint => ({
   type: HISTORICAL_DATA_LOADING,
+  payload: endPoint,
 });
 
 const doHistoricalDataSuccess = data => ({

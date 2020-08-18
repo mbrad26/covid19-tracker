@@ -3,8 +3,8 @@ import { call, put, delay } from 'redux-saga/effects';
 import { doGlobalDataSuccess, doGlobalDataError } from '../actions/globalData';
 import { doCountriesDataSuccess, doCountriesDataError } from '../actions/countriesData';
 import { doHistoricalDataSuccess, doHistoricalDataError } from '../actions/historicalData';
-import { fetchData } from '../api';
 import { GLOBAL_URL, COUNTRIES_URL, HISTORICAL_DATA } from '../api/api';
+import { fetchData } from '../api';
 
 function* fetchResource(url, actionSuccess, actionError) {
   try {

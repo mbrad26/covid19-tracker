@@ -6,6 +6,8 @@ import DeathsCard from './DeathsCard';
 import RecoveredCard from './RecoveredCard';
 import './DataCards.css';
 
+export const endPoint = 'USA';
+
 const DataCards = ({
   isLoading,
   globalData,
@@ -23,7 +25,7 @@ const DataCards = ({
   }, [loadingGlobalData]);
 
   useEffect(() => {
-    loadingHistoricalData()
+    loadingHistoricalData(endPoint);
   }, [loadingHistoricalData]);
 
   return (
@@ -35,14 +37,29 @@ const DataCards = ({
             <ConfirmedCard
               cases={globalData.cases}
               casesIncrease={globalData.todayCases}
+              historicalData={
+                historicalData.timeline
+                ? historicalData.timeline.cases
+                : historicalData.cases
+              }
             />
             <DeathsCard
               deaths={globalData.deaths}
               deathsIncrease={globalData.todayDeaths}
+              historicalData={
+                historicalData.timeline
+                ? historicalData.timeline.deaths
+                : historicalData.deaths
+              }
             />
             <RecoveredCard
               recovered={globalData.recovered}
               recoveredIncrease={globalData.todayRecovered}
+              historicalData={
+                historicalData.timeline
+                ? historicalData.timeline.recovered
+                : historicalData.recovered
+              }
             />
           </CardDeck>
         )
