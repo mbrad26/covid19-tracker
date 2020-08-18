@@ -8,7 +8,7 @@ import './GlobalDataCards.css';
 
 const GlobalDataCards = ({ isLoading, data, isError, loadingData }) => {
   console.log('GlobalDataCards');
-  console.log('GLOBALDATA: ', data);
+  // console.log('GLOBALDATA: ', data);
 
   useEffect(() => {
     loadingData()

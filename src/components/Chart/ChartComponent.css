@@ -1,4 +1,9 @@
 div #chart {
   border: 1px solid #009879;
-  height: 529px;
+  border-bottom: 3px solid #009879;
+  max-height: 529px;
+}
+
+.chartjs-render-monitor {
+
 }

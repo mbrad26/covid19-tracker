@@ -1,7 +1,6 @@
 #table {
   overflow: scroll;
-  max-height: 75vh;
-  min-height: 50vh;
+  height: 75vh;
   border-radius: 7px 7px 0 0;
   border-bottom: 3px solid #009879;
   font-size: 0.9em;
@@ -24,8 +23,13 @@
   background-color: #f3f3f3;
 }
 
-.shadow {
-  /* box-shadow: 0 0.9rem 1rem rgba(0,0,0,.15)!important; */
+#cases {
+  margin-right: 0px;
+}
+
+#recovered {
+  margin-left: 0px;
+  padding-right: 10px;
 }
 
 img {

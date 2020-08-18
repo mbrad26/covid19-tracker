@@ -1,7 +1,7 @@
 import { call, put, delay } from 'redux-saga/effects';
 
 import { doGlobalDataSuccess, doGlobalDataError } from '../actions/globalData';
-import { doCountriesDataSuccess, doCountriesDataError } from '../actions/countriesData.js';
+import { doCountriesDataSuccess, doCountriesDataError } from '../actions/countriesData';
 import { fetchData } from '../api';
 import { GLOBAL_URL, COUNTRIES_URL } from '../api/api';
 

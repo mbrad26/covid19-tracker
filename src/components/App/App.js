@@ -16,7 +16,7 @@ const App = () => {
       <Map />
       <Container fluid>
         <Row>
-          <Col md={7} id='global'>
+          <Col md={8} id='global'>
             <GlobalDataCards />
             <Row>
               <Col md={12} className='mt-3'>
@@ -24,7 +24,7 @@ const App = () => {
               </Col>
             </Row>
           </Col>
-          <Col md={5} id='countries'>
+          <Col md={4} id='countries'>
             <CountriesTable />
           </Col>
         </Row>
