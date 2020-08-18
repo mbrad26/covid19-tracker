@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Row, Col } from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
 
 import ChartComponent from '../../containers/ChartComponent';
 
@@ -10,7 +10,7 @@ const ConfirmedCard = ({ cases, casesIncrease }) => (
           +{casesIncrease.toLocaleString()}
         </span>
       </Card.Title>
-      <ChartComponent />
+      <ChartComponent label={'Cases'} color={'orange'} />
       <Card.Text>
         {cases.toLocaleString()}
       </Card.Text>

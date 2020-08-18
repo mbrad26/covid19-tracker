@@ -24,7 +24,8 @@
 }
 
 .card-deck .shadow {
-  border: 1px solid #009879;
+  border-top: 1px solid #009879;
+  border-bottom: 1px solid #009879;
 }
 
 #cases:hover {

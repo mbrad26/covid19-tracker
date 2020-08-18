@@ -21,7 +21,7 @@ const App = () => {
           </Col>
         </Row>
         <Row>
-          <Col md={5} id='countries'>
+          <Col md={6} id='countries'>
             <CountriesTable />
           </Col>
         </Row>
