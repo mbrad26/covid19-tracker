@@ -3,11 +3,13 @@ import {
   DATA_LOADING,
   COUNTRIES_DATA_LOADING,
   HISTORICAL_DATA_LOADING,
+  HISTORICAL_COUNTRY_DATA_LOADING,
 } from '../constants/actionTypes';
 import {
   fetchGlobalData,
   fetchCountriesData,
   fetchHistoricalData,
+  fetchHistoricalCountryData,
 } from './data';
 
 function* watchAll() {
@@ -15,6 +17,7 @@ function* watchAll() {
     takeEvery(DATA_LOADING, fetchGlobalData),
     takeEvery(COUNTRIES_DATA_LOADING, fetchCountriesData),
     takeEvery(HISTORICAL_DATA_LOADING, fetchHistoricalData),
+    takeEvery(HISTORICAL_COUNTRY_DATA_LOADING, fetchHistoricalCountryData),
   ])
 };
 

@@ -9,7 +9,7 @@ const CountriesTable = ({ data, loadingData, onSortData }) => {
   const [sort, setSort] = useState('asc');
   const [query, setQuery] = useState('');
 
-  console.log('CountriesTable');
+  // console.log('CountriesTable');
 
   useEffect(() => {
     loadingData()

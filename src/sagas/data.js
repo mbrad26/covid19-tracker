@@ -17,21 +17,46 @@ function* fetchResource(url, actionSuccess, actionError) {
 
 function* fetchGlobalData() {
   while(true) {
-    yield call(fetchResource, GLOBAL_URL, doDataSuccess, doDataError);
+    yield call(
+      fetchResource,
+      GLOBAL_URL,
+      doDataSuccess,
+      doDataError
+    );
     yield delay(600000);
-  }
+  };
 };
 
 function* fetchCountriesData() {
   while(true) {
     yield call(fetchResource, COUNTRIES_URL, doCountriesDataSuccess, doCountriesDataError);
     yield delay(600000);
-  }
+  };
 };
 
 function* fetchHistoricalData() {
-  const endPoint = yield select(state => state.historicalDataState.endPoint);
-  yield call(fetchResource, HISTORICAL_DATA_URL + endPoint, doHistoricalDataSuccess, doHistoricalDataError);
+  const endPoint = 'all'
+  yield call(
+    fetchResource,
+    HISTORICAL_DATA_URL + endPoint,
+    doHistoricalDataSuccess,
+    doHistoricalDataError
+  );
 };
 
-export { fetchGlobalData, fetchCountriesData, fetchHistoricalData };
+function* fetchHistoricalCountryData() {
+  const endPoint = yield select(state => state.historicalDataState.endPoint);
+  yield call(
+    fetchResource,
+    HISTORICAL_DATA_URL + endPoint,
+    doHistoricalDataSuccess,
+    doHistoricalDataError
+  );
+};
+
+export {
+  fetchGlobalData,
+  fetchCountriesData,
+  fetchHistoricalData,
+  fetchHistoricalCountryData,
+ };

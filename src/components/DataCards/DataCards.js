@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { CardDeck } from 'react-bootstrap';
 
 import ConfirmedCard from './ConfirmedCard';
@@ -14,16 +14,11 @@ const DataCards = ({
   loadingGlobalData,
   loadingHistoricalData,
 }) => {
-  console.log('GlobalDataCards');
-  // console.log('GLOBALDATA: ', data);
 
   useEffect(() => {
-    loadingGlobalData()
-  }, [loadingGlobalData]);
-
-  useEffect(() => {
+    loadingGlobalData();
     loadingHistoricalData();
-  }, [loadingHistoricalData]);
+  }, [loadingGlobalData, loadingHistoricalData]);
 
   return (
     <div>
