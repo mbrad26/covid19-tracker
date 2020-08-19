@@ -23,7 +23,8 @@ Clone this repository to your local machine.
 * Cards component
 * Countries Table component
 * Search by country
-* Sort by number of cases, deaths and
+* Sort by number of cases, deaths and recovered
+* Update charts with country specific data
 
 ## Tech Stack
 
