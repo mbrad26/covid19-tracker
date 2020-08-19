@@ -4,17 +4,17 @@ import {
   DATA_ERROR
 } from '../constants/actionTypes';
 
-const doGlobalDataLoading = () => ({
+const doDataLoading = () => ({
   type: DATA_LOADING,
 });
 
-const doGlobalDataSuccess = data => ({
+const doDataSuccess = data => ({
   type: DATA_SUCCESS,
   payload: data,
 })
 
-const doGlobalDataError = () => ({
+const doDataError = () => ({
   type: DATA_ERROR,
 })
 
-export { doGlobalDataLoading, doGlobalDataSuccess, doGlobalDataError };
+export { doDataLoading, doDataSuccess, doDataError };

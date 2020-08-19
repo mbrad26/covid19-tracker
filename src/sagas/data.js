@@ -1,6 +1,6 @@
 import { call, put, delay } from 'redux-saga/effects';
 
-import { doGlobalDataSuccess, doGlobalDataError } from '../actions/globalData';
+import { doDataSuccess, doDataError } from '../actions/globalData';
 import { doCountriesDataSuccess, doCountriesDataError } from '../actions/countriesData';
 import { doHistoricalDataSuccess, doHistoricalDataError } from '../actions/historicalData';
 import { GLOBAL_URL, COUNTRIES_URL, HISTORICAL_DATA } from '../api/api';
@@ -17,7 +17,7 @@ function* fetchResource(url, actionSuccess, actionError) {
 
 function* fetchGlobalData() {
   while(true) {
-    yield call(fetchResource, GLOBAL_URL, doGlobalDataSuccess, doGlobalDataError);
+    yield call(fetchResource, GLOBAL_URL, doDataSuccess, doDataError);
     yield delay(600000);
   }
 };

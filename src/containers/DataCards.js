@@ -2,7 +2,7 @@ import { connect } from 'react-redux';
 
 import DataCards from '../components/DataCards/DataCards';
 import { getIsLoadingStatus, getData, getIsErrorStatus } from '../selectors/data';
-import { doGlobalDataLoading } from '../actions/globalData';
+import { doDataLoading } from '../actions/globalData';
 import { doHistoricalDataLoading } from '../actions/historicalData.js';
 
 const mapStateToProps = ({ globalDataState, historicalDataState,  }) => ({
@@ -13,7 +13,7 @@ const mapStateToProps = ({ globalDataState, historicalDataState,  }) => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  loadingGlobalData: () => dispatch(doGlobalDataLoading()),
+  loadingGlobalData: () => dispatch(doDataLoading()),
   loadingHistoricalData: endPoint => dispatch(doHistoricalDataLoading(endPoint)),
 });
 

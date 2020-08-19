@@ -2,12 +2,12 @@ import React from 'react';
 import { useDispatch } from 'react-redux';
 import { Image } from 'react-bootstrap';
 
-import { doGlobalDataSuccess } from '../../actions/globalData';
+import { doDataSuccess } from '../../actions/globalData';
 
 const Country = ({ country }) => {
   const dispatch = useDispatch();
 
-  const handleClick = () => dispatch(doGlobalDataSuccess(country));
+  const handleClick = () => dispatch(doDataSuccess(country));
 
   return (
     <tr>
