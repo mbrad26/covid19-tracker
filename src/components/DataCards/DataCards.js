@@ -2,11 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { CardDeck } from 'react-bootstrap';
 
 import ConfirmedCard from './ConfirmedCard';
-import DeathsCard from './DeathsCard';
 import RecoveredCard from './RecoveredCard';
+import DeathsCard from './DeathsCard';
 import './DataCards.css';
-
-export const endPoint = 'all';
 
 const DataCards = ({
   isLoading,
@@ -16,7 +14,6 @@ const DataCards = ({
   loadingGlobalData,
   loadingHistoricalData,
 }) => {
-  const [data, setData] = useState('');
   console.log('GlobalDataCards');
   // console.log('GLOBALDATA: ', data);
 
@@ -25,7 +22,7 @@ const DataCards = ({
   }, [loadingGlobalData]);
 
   useEffect(() => {
-    loadingHistoricalData(endPoint);
+    loadingHistoricalData();
   }, [loadingHistoricalData]);
 
   return (

@@ -19,6 +19,10 @@
   vertical-align: middle;
 }
 
+.table tbody {
+  background-color: #ffffff;
+}
+
 #cases {
   margin-right: 0px;
 }

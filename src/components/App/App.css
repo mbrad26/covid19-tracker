@@ -1,3 +1,9 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #f9fafb;
+}
+
 h2 {
   position: absolute;
   z-index: 10;
