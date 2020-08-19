@@ -18,14 +18,14 @@ function* fetchResource(url, actionSuccess, actionError) {
 function* fetchGlobalData() {
   while(true) {
     yield call(fetchResource, GLOBAL_URL, doGlobalDataSuccess, doGlobalDataError);
-    yield delay(60000);
+    yield delay(600000);
   }
 };
 
 function* fetchCountriesData() {
   while(true) {
     yield call(fetchResource, COUNTRIES_URL, doCountriesDataSuccess, doCountriesDataError);
-    yield delay(60000);
+    yield delay(600000);
   }
 };
 
