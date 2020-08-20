@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useSelector } from 'react-redux';
 import ReactMapGl, { Marker } from 'react-map-gl';
 
 const Map = () => {
@@ -9,7 +10,9 @@ const Map = () => {
     longitude: 5.352222,
     zoom: 0.75,
   }
+  const data = useSelector(state => state.countriesDataState.data);
   const [viewPort, setViewPort] = useState(initialState);
+  console.log('MAP_DATA: ', data);
 
   return (
     <ReactMapGl
@@ -18,12 +21,16 @@ const Map = () => {
       mapStyle="mapbox://styles/mbrad26/ckdr7xcji0pq619oo5yj3ovuo"
       onViewportChange={newViewport => setViewPort(newViewport)}
     >
+    {data.map(country =>
       <Marker
-        latitude={48}
-        longitude={2}
+        key={country.country}
+        latitude={country.countryInfo.lat}
+        longitude={country.countryInfo.long}
       >
         <button>Marker</button>
       </Marker>
+    )}
+
     </ReactMapGl>
   );
 };
