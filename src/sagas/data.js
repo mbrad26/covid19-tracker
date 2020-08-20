@@ -35,7 +35,7 @@ function* fetchCountriesData() {
 };
 
 function* fetchHistoricalData() {
-  const endPoint = 'all'
+  const endPoint = 'all?lastdays=365'
   yield call(
     fetchResource,
     HISTORICAL_DATA_URL + endPoint,
@@ -46,12 +46,16 @@ function* fetchHistoricalData() {
 
 function* fetchHistoricalCountryData() {
   const endPoint = yield select(state => state.historicalDataState.endPoint);
-  yield call(
-    fetchResource,
-    HISTORICAL_DATA_URL + endPoint,
-    doHistoricalDataSuccess,
-    doHistoricalDataError
-  );
+  try {
+    yield call(
+      fetchResource,
+      HISTORICAL_DATA_URL + endPoint + '?lastdays=365',
+      doHistoricalDataSuccess,
+      doHistoricalDataError
+    );
+  } catch(e) {
+    console.log(e);
+  };
 };
 
 export {
