@@ -1,5 +1,5 @@
 import React from 'react';
-import { useDispatch } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import { Image } from 'react-bootstrap';
 
 import { doDataSuccess } from '../../actions/globalData';

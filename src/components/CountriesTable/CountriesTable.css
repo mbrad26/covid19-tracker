@@ -58,6 +58,7 @@ img {
 
 button,
 button:hover {
+  background-color: inherit;
   border-style: hidden;
   border: none;
 }
