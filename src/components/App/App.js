@@ -12,18 +12,22 @@ const App = () => {
 
   return (
     <div className="App">
-      <Map />
+
       <Container fluid>
         <Row>
-          <Col xs={12} sm={12} md={10} id='global'>
-            <DataCards />
+          <Col>
+            <Map />
           </Col>
-        </Row>
-        <Row>
-          <Col md={6} id='countries'>
+          <Col md={4} id='countries'>
             <CountriesTable />
           </Col>
         </Row>
+        <Row>
+          <Col xs={12} sm={12} md={12} id='global'>
+            <DataCards />
+          </Col>
+        </Row>
+
       </Container>
     </div>
   );
