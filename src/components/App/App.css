@@ -4,6 +4,14 @@ body {
   background-color: #333333;
 }
 
+#map {
+  padding-right: 5px;
+}
+
+#countries-table {
+  padding-left: 3px;
+}
+
 /* h2 {
   position: absolute;
   z-index: 10;

@@ -1,10 +1,10 @@
 #table {
   overflow: scroll;
-  height: 520px;
-  border-radius: 7px 7px 0 0;
-  border-bottom: 3px solid #009879;
+  height: 70vh;
+  /* border-radius: 7px 7px 0 0; */
+  /* border-bottom: 3px solid #009879; */
   font-size: 0.9em;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 
 .table thead tr {

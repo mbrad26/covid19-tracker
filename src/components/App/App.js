@@ -15,10 +15,10 @@ const App = () => {
 
       <Container fluid>
         <Row>
-          <Col>
+          <Col sm={12} md={8} lg={8} id='map'>
             <Map />
           </Col>
-          <Col md={4} id='countries'>
+          <Col sm={12} md={4} lg={4} id="countries-table">
             <CountriesTable />
           </Col>
         </Row>

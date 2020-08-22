@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import ReactMapGl, { PopUp } from 'react-map-gl';
 
 import './Map.css';
@@ -15,15 +15,17 @@ const Map = () => {
   const [viewPort, setViewPort] = useState(initialState);
 
   return (
-    <ReactMapGl
-      {...viewPort}
-      mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
-      mapStyle="mapbox://styles/mbrad26/cke2wx80h1c9h1an776mwm24r"
-      onViewportChange={newViewport => setViewPort(newViewport)}
-    >
-    <MarkerComponent />
+    <div className='mt-3 shadow'>
+      <ReactMapGl
+        {...viewPort}
+        mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
+        mapStyle="mapbox://styles/mbrad26/cke2wx80h1c9h1an776mwm24r"
+        onViewportChange={newViewport => setViewPort(newViewport)}
+      >
+        <MarkerComponent />
 
-    </ReactMapGl>
+      </ReactMapGl>
+    </div>
   );
 };
 
