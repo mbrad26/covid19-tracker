@@ -13,8 +13,10 @@ const DataCards = ({
   isError,
   loadingGlobalData,
   loadingHistoricalData,
-}) => {
+  }) => {
 
+  console.log('DATACARDS');
+  
   useEffect(() => {
     loadingGlobalData();
     loadingHistoricalData();

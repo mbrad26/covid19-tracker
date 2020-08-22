@@ -1,13 +1,13 @@
 export const stats = cases =>
-  cases < 1000
+  cases < 5000
     ? 1
-    : cases < 5000
-    ? 2
     : cases < 10000
-    ? 3
+    ? 2
     : cases < 50000
-    ? 4
+    ? 3
     : cases < 100000
+    ? 4
+    : cases < 300000
     ? 5
     : cases < 500000
     ? 6

@@ -8,7 +8,7 @@ import CountriesTable from '../../containers/CountriesTable';
 import './App.css';
 
 const App = () => {
-  // console.log('App');
+  console.log('App');
 
   return (
     <div className="App">

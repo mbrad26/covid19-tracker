@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Filter = ({ query, setQuery }) => {
-  console.log('Filter');
+  console.log('FILTER');
 
   const handleChange = event => {
     setQuery(event.target.value);

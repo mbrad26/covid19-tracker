@@ -14,13 +14,15 @@ const Map = () => {
   }
   const [viewPort, setViewPort] = useState(initialState);
 
+  console.log('MAP');
+
   return (
     <div className='mt-3 shadow' id='map-component'>
       <ReactMapGl
         {...viewPort}
         mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
         mapStyle="mapbox://styles/mbrad26/cke2wx80h1c9h1an776mwm24r"
-        onViewportChange={newViewport => setViewPort(newViewport)}
+        onViewportChange={viewPort => setViewPort(viewPort)}
       >
         <MarkerComponent />
 
