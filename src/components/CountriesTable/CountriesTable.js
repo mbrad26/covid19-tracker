@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Table } from 'react-bootstrap';
 
-import Country from './Country';
+import Country from '../../containers/Country.js';
 import Filter from './Filter';
 import './CountriesTable.css';
 

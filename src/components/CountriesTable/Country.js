@@ -1,17 +1,20 @@
 import React from 'react';
-import { useSelector, useDispatch } from 'react-redux';
 import { Image } from 'react-bootstrap';
 
 import { doDataSuccess } from '../../actions/globalData';
 import { doUpdateEndPoint, doHistoricalCountryDataLoading } from '../../actions/historicalData';
 
-const Country = ({ country }) => {
-  const dispatch = useDispatch();
+const Country = ({
+  country,
+  dataSuccess,
+  updateEndPoint,
+  historicalCountryDataLoading,
+  }) => {
 
   const handleClick = () => {
-    dispatch(doDataSuccess(country));
-    dispatch(doUpdateEndPoint(country.country));
-    dispatch(doHistoricalCountryDataLoading());
+    dataSuccess(country);
+    updateEndPoint(country.country);
+    historicalCountryDataLoading();
   };
 
   return (
