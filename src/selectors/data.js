@@ -4,4 +4,11 @@ const getData = state => state.data
 
 const getIsErrorStatus = state => state.isError;
 
-export { getIsLoadingStatus, getData, getIsErrorStatus };
+const getActiveCountry = state => state.active
+
+export {
+  getIsLoadingStatus,
+  getData,
+  getIsErrorStatus,
+  getActiveCountry, 
+};

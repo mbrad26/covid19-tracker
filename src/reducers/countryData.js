@@ -1,7 +1,7 @@
 import { SET_ACTIVE, SET_INACTIVE } from '../constants/actionTypes';
 
 const INITIAL_STATE = {
-  active: null
+  active: []
 }
 
 const countryDataReducer = (state = INITIAL_STATE, action) => {

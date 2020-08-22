@@ -1,11 +1,12 @@
 import { connect } from 'react-redux';
 
-import MarkerComponent from '../components/Map/Marker';
+import MarkerComponent from '../components/Map/MarkerComponent';
 import { doSetActive } from '../actions/countryData';
-import { getData } from '../selectors/data';
+import { getData, getActiveCountry } from '../selectors/data';
 
-const mapStateToProps = ({ countriesDataState }) => ({
-  data: getData(countriesDataState),
+const mapStateToProps = ({ countriesDataState, countryDataState }) => ({
+  countries: getData(countriesDataState),
+  activeCountry: getActiveCountry(countryDataState),
 });
 
 const mapDispatchToProps = dispatch => ({
