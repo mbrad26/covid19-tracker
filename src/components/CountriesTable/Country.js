@@ -1,8 +1,8 @@
 import React from 'react';
 import { Image } from 'react-bootstrap';
 
-import { doDataSuccess } from '../../actions/globalData';
-import { doUpdateEndPoint, doHistoricalCountryDataLoading } from '../../actions/historicalData';
+// import { doDataSuccess } from '../../actions/globalData';
+// import { doUpdateEndPoint, doHistoricalCountryDataLoading } from '../../actions/historicalData';
 
 const Country = ({
   country,
@@ -12,13 +12,13 @@ const Country = ({
   zoomOnCountry,
   }) => {
 
-  // console.log('COUNTRY: ', country);
+  console.log('COUNTRY: ', country);
 
   const handleClick = () => {
     dataSuccess(country);
     updateEndPoint(country.country);
     historicalCountryDataLoading();
-    // zoomOnCountry(country);
+    zoomOnCountry(country);
   };
 
   return (

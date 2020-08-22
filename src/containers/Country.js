@@ -16,7 +16,7 @@ const mapDispatchToProps = dispatch => ({
   dataSuccess: data => dispatch(doDataSuccess(data)),
   updateEndPoint: endPoint => dispatch(doUpdateEndPoint(endPoint)),
   historicalCountryDataLoading: () => dispatch(doHistoricalCountryDataLoading()),
-  // zoomOnCountry: country => dispatch(doZoomOnCountry(country)),
+  zoomOnCountry: country => dispatch(doZoomOnCountry(country)),
 });
 
 export default connect(null, mapDispatchToProps)(Country);

@@ -33,7 +33,7 @@ const mapboxDataReducer = (state = INITIAL_STATE, action ) => {
         ...state,
         latitude: action.payload.countryInfo.lat,
         longitude: action.payload.countryInfo.long,
-        zoom: 3.5,
+        zoom: 4,
       };
     default: return state;
   }
