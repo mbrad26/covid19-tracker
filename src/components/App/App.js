@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from'react-bootstrap';
 
-import Map from '../Map/Map';
+import Map from '../../containers/Map';
 import DataCards from '../../containers/DataCards';
 import CountriesTable from '../../containers/CountriesTable';
 
