@@ -9,18 +9,23 @@ const Country = ({
   dataSuccess,
   updateEndPoint,
   historicalCountryDataLoading,
+  zoomOnCountry,
   }) => {
+
+  console.log('COUNTRY: ', country);
 
   const handleClick = () => {
     dataSuccess(country);
     updateEndPoint(country.country);
     historicalCountryDataLoading();
+    // zoomOnCountry(country);
   };
 
   return (
     <tr>
       <td><Image
             src={country.countryInfo.flag}
+            loading='lazy'
             alt={`${country.country} flag`}
             id='flag'
           />

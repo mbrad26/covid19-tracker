@@ -1,4 +1,8 @@
-import { ZOOM_ON_COUNTRY } from '../constants/actionTypes';
+import {
+  ZOOM_ON_COUNTRY,
+  RESET,
+  CHANGE_VIEWPORT
+} from '../constants/actionTypes';
 
 const INITIAL_STATE = {
   width: window.innerWidth * 0.65,
@@ -10,11 +14,25 @@ const INITIAL_STATE = {
 
 const mapboxDataReducer = (state = INITIAL_STATE, action ) => {
   switch(action.type) {
+    case RESET:
+      return {
+        ...state,
+        latitude: INITIAL_STATE.latitude,
+        longitude: INITIAL_STATE.longitude,
+        zoom: INITIAL_STATE.zoom,
+      };
+    case CHANGE_VIEWPORT:
+        return {
+          ...state,
+          latitude: action.payload.latitude,
+          longitude: action.payload.longitude,
+          zoom: action.payload.zoom,
+        };
     case ZOOM_ON_COUNTRY:
       return {
         ...state,
-        latitude: action.payload,
-        longitude: action.payload,
+        latitude: action.payload.countryInfo.lat,
+        longitude: action.payload.countryInfo.long,
         zoom: 3.5,
       };
     default: return state;
