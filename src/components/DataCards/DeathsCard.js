@@ -1,5 +1,6 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
+import CountUp from 'react-countup';
 
 import ChartComponent from '../Chart/ChartComponent.js';
 
@@ -11,7 +12,14 @@ const DeathsCard = ({ deaths, deathsIncrease, historicalData }) => {
     <Card className='shadow' id='deaths'>
       <Card.Body>
         <Card.Title>Deaths: <span className='text-danger font-weight-bold'>
-            +{deathsIncrease.toLocaleString()}
+          <CountUp
+            delay={3.5}
+            prefix='+'
+            start={0}
+            end={deathsIncrease}
+            duration={2.5}
+            separator=','
+          />
           </span>
         </Card.Title>
         <ChartComponent

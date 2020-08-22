@@ -16,7 +16,6 @@ const Map = ({ viewPort, onViewChange }) => {
         onViewportChange={viewPort => onViewChange(viewPort)}
       >
         <MarkerComponent />
-
       </ReactMapGl>
     </div>
   );

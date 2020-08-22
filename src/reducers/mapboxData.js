@@ -7,9 +7,9 @@ import {
 const INITIAL_STATE = {
   width: window.innerWidth * 0.65,
   height: window.innerHeight * 0.70,
-  latitude: 25,
-  longitude: 7,
-  zoom: 1.1,
+  latitude: 30,
+  longitude: 11,
+  minZoom: 1.1,
 }
 
 const mapboxDataReducer = (state = INITIAL_STATE, action ) => {
