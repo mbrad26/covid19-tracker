@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import ReactMapGl from 'react-map-gl';
 
 import './Map.css';
-import MarkerComponent from './Marker';
+import MarkerComponent from '../../containers/MarkerComponent';
 
 const Map = () => {
   const initialState = {
