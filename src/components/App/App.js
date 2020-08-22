@@ -12,7 +12,6 @@ const App = () => {
 
   return (
     <div className="App">
-      <h2>Covid-19 Tracker</h2>
       <Map />
       <Container fluid>
         <Row>
