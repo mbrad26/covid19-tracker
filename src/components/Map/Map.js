@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import ReactMapGl, { PopUp } from 'react-map-gl';
+import ReactMapGl from 'react-map-gl';
 
 import './Map.css';
 import MarkerComponent from './Marker';
@@ -15,7 +15,7 @@ const Map = () => {
   const [viewPort, setViewPort] = useState(initialState);
 
   return (
-    <div className='mt-3 shadow'>
+    <div className='mt-3 shadow' id='map-component'>
       <ReactMapGl
         {...viewPort}
         mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}

@@ -5,11 +5,12 @@ body {
 }
 
 #map {
-  padding-right: 5px;
+  /* padding-right: 20px; */
+  /* margin-right: 1px; */
 }
 
 #countries-table {
-  padding-left: 3px;
+  padding-left: 0px;
 }
 
 /* h2 {

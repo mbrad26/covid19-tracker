@@ -24,18 +24,18 @@
 }
 
 .card-deck .shadow {
-  border-top: 1px solid #009879;
-  border-bottom: 1px solid #009879;
+  border-top: 1px solid #92a324;
+  border-bottom: 1px solid #92a324;
 }
 
 #cases:hover {
-  border-top: 5px solid #009879;
+  border-top: 5px solid #92a324;
 }
 
 #deaths:hover {
-  border-top: 5px solid #009879;
+  border-top: 5px solid #92a324;
 }
 
 #recovered:hover {
-  border-top: 5px solid #009879;
+  border-top: 5px solid #92a324;
 }
