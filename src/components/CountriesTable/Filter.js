@@ -1,7 +1,14 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 
-import { doReset, doZoomOnCountry } from '../../actions/mapboxData';
+import {
+  doReset,
+  doZoomOnCountry
+} from '../../actions/mapboxData';
+import {
+  doUpdateEndPoint,
+  doHistoricalCountryDataLoading
+} from '../../actions/historicalData';
 
 const Filter = ({ query, setQuery, filteredCountries }) => {
   const dispatch = useDispatch();
@@ -14,9 +21,13 @@ const Filter = ({ query, setQuery, filteredCountries }) => {
 
   const handleSubmit = event => {
     event.preventDefault();
-    filteredCountries.length === 1
-      ? dispatch(doZoomOnCountry(filteredCountries[0]))
-      : dispatch(doReset());
+    if (filteredCountries.length === 1) {
+      dispatch(doZoomOnCountry(filteredCountries[0]));
+      dispatch(doUpdateEndPoint(filteredCountries[0].country));
+      dispatch(doHistoricalCountryDataLoading());
+    } else {
+      dispatch(doReset());
+    }
     setQuery('');
   };
 
@@ -25,7 +36,7 @@ const Filter = ({ query, setQuery, filteredCountries }) => {
       <form onSubmit={handleSubmit}>
         <input
           type='text'
-          placeholder='Search for ...'
+          placeholder='Search ...'
           value={query}
           onChange={handleChange}
           autoFocus
