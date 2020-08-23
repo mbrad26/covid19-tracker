@@ -1,5 +1,5 @@
 import {
-  DATA_ERROR
+  DATA_ERROR,
   DATA_LOADING,
   DATA_SUCCESS,
 } from '../constants/actionTypes';
