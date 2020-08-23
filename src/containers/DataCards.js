@@ -1,19 +1,15 @@
 import { connect } from 'react-redux';
 
-import {
-  getIsLoadingStatus,
-  getData,
-  getIsErrorStatus,
-} from '../selectors/data';
-import { doHistoricalDataLoading } from '../actions/historicalData.js';
 import DataCards from '../components/DataCards/DataCards';
 import { doDataLoading } from '../actions/globalData';
+import { doHistoricalDataLoading } from '../actions/historicalData';
+import { getIsLoadingStatus, getData, getIsErrorStatus, } from '../selectors/data';
 
 const mapStateToProps = ({ globalDataState, historicalDataState }) => ({
-  isLoading: getIsLoadingStatus(globalDataState),
   globalData: getData(globalDataState),
-  historicalData: getData(historicalDataState),
   isError: getIsErrorStatus(globalDataState),
+  historicalData: getData(historicalDataState),
+  isLoading: getIsLoadingStatus(globalDataState),
 });
 
 const mapDispatchToProps = dispatch => ({

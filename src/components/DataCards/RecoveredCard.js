@@ -13,7 +13,6 @@ const RecoveredCard = ({ recovered, recoveredIncrease, historicalData }) => {
       <Card.Body>
         <Card.Title>Recovered: <span className='text-success font-weight-bold'>
           <CountUp
-            delay={3.5}
             prefix='+'
             start={0}
             end={recoveredIncrease}

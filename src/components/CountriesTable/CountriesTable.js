@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Table } from 'react-bootstrap';
 
-import Country from '../../containers/Country.js';
-import Filter from './Filter';
-import { filterData } from './utils';
 import './CountriesTable.css';
+import { filterData } from './utils';
+import Filter from '../../containers/Filter';
+import Country from '../../containers/Country.js';
 
 const CountriesTable = ({ data, loadingData, onSortData }) => {
   const [sort, setSort] = useState('asc');
@@ -21,7 +21,6 @@ const CountriesTable = ({ data, loadingData, onSortData }) => {
   }, [loadingData]);
 
   console.log('TABLE');
-  console.log('LENGTH COUNTRY LIST: ', filteredCountries);
 
   return (
     <div className='mt-3 shadow' id='table'>

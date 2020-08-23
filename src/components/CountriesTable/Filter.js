@@ -1,19 +1,18 @@
 import React from 'react';
-import { useDispatch } from 'react-redux';
 
-import {
-  doReset,
-  doZoomOnCountry
-} from '../../actions/mapboxData';
-import {
-  doUpdateEndPoint,
-  doHistoricalCountryDataLoading
-} from '../../actions/historicalData';
-
-const Filter = ({ query, setQuery, filteredCountries }) => {
-  const dispatch = useDispatch();
-
-  console.log('FILTER');
+const Filter = ({
+  query,
+  reset,
+  setQuery,
+  globalData,
+  dataLoading,
+  dataSuccess,
+  zoomOnCountry,
+  updateEndPoint,
+  filteredCountries,
+  historicalDataLoading,
+  historicalCountryDataLoading,
+  }) => {
 
   const handleChange = event => {
     setQuery(event.target.value);
@@ -22,14 +21,20 @@ const Filter = ({ query, setQuery, filteredCountries }) => {
   const handleSubmit = event => {
     event.preventDefault();
     if (filteredCountries.length === 1) {
-      dispatch(doZoomOnCountry(filteredCountries[0]));
-      dispatch(doUpdateEndPoint(filteredCountries[0].country));
-      dispatch(doHistoricalCountryDataLoading());
+      historicalCountryDataLoading();
+      dataSuccess(filteredCountries[0]);
+      zoomOnCountry(filteredCountries[0]);
+      updateEndPoint(filteredCountries[0].country);
     } else {
-      dispatch(doReset());
+      reset();
+      dataLoading();
+      dataSuccess(globalData);
+      historicalDataLoading();
     }
     setQuery('');
   };
+
+  console.log('FILTER');
 
   return (
     <div id='form'>

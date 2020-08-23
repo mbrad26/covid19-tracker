@@ -1,17 +1,17 @@
-const getIsLoadingStatus = state => state.isLoading;
+const getViewPort = state => state
 
 const getData = state => state.data
 
-const getIsErrorStatus = state => state.isError;
-
 const getActiveCountry = state => state.active
 
-const getViewPort = state => state
+const getIsErrorStatus = state => state.isError;
+
+const getIsLoadingStatus = state => state.isLoading;
 
 export {
-  getIsLoadingStatus,
   getData,
-  getIsErrorStatus,
-  getActiveCountry,
   getViewPort,
+  getActiveCountry,
+  getIsErrorStatus,
+  getIsLoadingStatus,
 };

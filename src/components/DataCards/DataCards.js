@@ -1,16 +1,16 @@
 import React, { useEffect } from 'react';
 import { CardDeck } from 'react-bootstrap';
 
+import './DataCards.css';
+import DeathsCard from './DeathsCard';
 import ConfirmedCard from './ConfirmedCard';
 import RecoveredCard from './RecoveredCard';
-import DeathsCard from './DeathsCard';
-import './DataCards.css';
 
 const DataCards = ({
+  isError,
   isLoading,
   globalData,
   historicalData,
-  isError,
   loadingGlobalData,
   loadingHistoricalData,
   }) => {

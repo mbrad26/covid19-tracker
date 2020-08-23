@@ -13,7 +13,6 @@ const ConfirmedCard = ({ cases, casesIncrease, historicalData }) => {
       <Card.Body>
         <Card.Title>Confirmed: <span className='text-warning font-weight-bold'>
           <CountUp
-            delay={3.5}
             prefix='+'
             start={0}
             end={casesIncrease}

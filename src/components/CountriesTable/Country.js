@@ -1,9 +1,6 @@
 import React from 'react';
 import { Image } from 'react-bootstrap';
 
-// import { doDataSuccess } from '../../actions/globalData';
-// import { doUpdateEndPoint, doHistoricalCountryDataLoading } from '../../actions/historicalData';
-
 const Country = ({
   country,
   dataSuccess,

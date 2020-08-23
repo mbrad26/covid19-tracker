@@ -13,7 +13,6 @@ const DeathsCard = ({ deaths, deathsIncrease, historicalData }) => {
       <Card.Body>
         <Card.Title>Deaths: <span className='text-danger font-weight-bold'>
           <CountUp
-            delay={3.5}
             prefix='+'
             start={0}
             end={deathsIncrease}

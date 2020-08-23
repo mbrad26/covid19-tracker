@@ -1,10 +1,10 @@
 import { call, put, delay, select } from 'redux-saga/effects';
 
+import { fetchData } from '../api';
+import { GLOBAL_URL, COUNTRIES_URL, HISTORICAL_DATA_URL } from '../api/api';
 import { doDataSuccess, doDataError } from '../actions/globalData';
 import { doCountriesDataSuccess, doCountriesDataError } from '../actions/countriesData';
 import { doHistoricalDataSuccess, doHistoricalDataError } from '../actions/historicalData';
-import { GLOBAL_URL, COUNTRIES_URL, HISTORICAL_DATA_URL } from '../api/api';
-import { fetchData } from '../api';
 
 function* fetchResource(url, actionSuccess, actionError) {
   try {
