@@ -1,8 +1,8 @@
-const getViewPort = state => state
+const getViewPort = state => state;
 
-const getData = state => state.data
+const getData = state => state.data;
 
-const getActiveCountry = state => state.active
+const getActiveCountry = state => state.active;
 
 const getIsErrorStatus = state => state.isError;
 

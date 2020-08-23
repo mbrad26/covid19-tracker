@@ -9,7 +9,7 @@ const INITIAL_STATE = {
   height: window.innerHeight * 0.70,
   latitude: 30,
   longitude: 11,
-  minZoom: 1.1,
+  zoom: 1.1,
 }
 
 const mapboxDataReducer = (state = INITIAL_STATE, action ) => {
@@ -33,7 +33,7 @@ const mapboxDataReducer = (state = INITIAL_STATE, action ) => {
         ...state,
         latitude: action.payload.countryInfo.lat,
         longitude: action.payload.countryInfo.long,
-        zoom: 4,
+        zoom: 3.5,
       };
     default: return state;
   }

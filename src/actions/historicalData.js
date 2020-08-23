@@ -29,9 +29,9 @@ const doUpdateEndPoint = endPoint => ({
 });
 
 export {
-  doHistoricalCountryDataLoading,
+  doUpdateEndPoint,
+  doHistoricalDataError,
   doHistoricalDataLoading,
   doHistoricalDataSuccess,
-  doHistoricalDataError,
-  doUpdateEndPoint,
+  doHistoricalCountryDataLoading,
 };

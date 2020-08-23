@@ -21,10 +21,10 @@ const Filter = ({
   const handleSubmit = event => {
     event.preventDefault();
     if (filteredCountries.length === 1) {
-      historicalCountryDataLoading();
       dataSuccess(filteredCountries[0]);
       zoomOnCountry(filteredCountries[0]);
       updateEndPoint(filteredCountries[0].country);
+      historicalCountryDataLoading();
     } else {
       reset();
       dataLoading();

@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactMapGl from 'react-map-gl';
+import ReactMapGl, { FlyToInterpolator } from 'react-map-gl';
 
 import './Map.css';
 import MarkerComponent from '../../containers/MarkerComponent';
@@ -14,6 +14,8 @@ const Map = ({ viewPort, onViewChange }) => {
         mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
         mapStyle='mapbox://styles/mbrad26/cke2wx80h1c9h1an776mwm24r'
         onViewportChange={viewPort => onViewChange(viewPort)}
+        transitionDuration={2500}
+        transitionInterpolator={new FlyToInterpolator()}
       >
         <MarkerComponent />
       </ReactMapGl>
