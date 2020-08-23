@@ -28,6 +28,11 @@
   border-bottom: 1px solid #92a324;
 }
 
+#update {
+  display: inline-flex;
+  float: right;
+}
+
 /* #cases:hover {
   border-top: 5px solid #92a324;
 }

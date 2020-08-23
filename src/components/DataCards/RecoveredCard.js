@@ -4,7 +4,13 @@ import CountUp from 'react-countup';
 
 import ChartComponent from '../Chart/ChartComponent.js';
 
-const RecoveredCard = ({ recovered, country, recoveredIncrease, historicalData }) => {
+const RecoveredCard = ({
+  country,
+  recovered,
+  lastUpdated,
+  historicalData,
+  recoveredIncrease,
+  }) => {
   const labels = historicalData && Object.keys(historicalData);
   const values = historicalData && Object.values(historicalData);
 
@@ -29,6 +35,7 @@ const RecoveredCard = ({ recovered, country, recoveredIncrease, historicalData }
         />
         <Card.Text>
           {recovered.toLocaleString()}
+          <span id='update'>{lastUpdated}</span>
         </Card.Text>
       </Card.Body>
     </Card>
