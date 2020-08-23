@@ -4,14 +4,14 @@ import CountUp from 'react-countup';
 
 import ChartComponent from '../Chart/ChartComponent.js';
 
-const ConfirmedCard = ({ cases, casesIncrease, historicalData }) => {
+const ConfirmedCard = ({ cases, country, casesIncrease, historicalData }) => {
   const labels = historicalData && Object.keys(historicalData);
   const values = historicalData && Object.values(historicalData);
 
   return (
     <Card className='shadow' id='cases'>
       <Card.Body>
-        <Card.Title>Confirmed: <span className='text-warning font-weight-bold'>
+        <Card.Title>{country}: <span className='text-warning font-weight-bold'>
           <CountUp
             prefix='+'
             start={0}

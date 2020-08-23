@@ -29,6 +29,7 @@ const DataCards = ({
         : globalData.cases ? (
           <CardDeck className='mt-3'>
             <ConfirmedCard
+              country={globalData.country ? globalData.country : 'Worldwide'}
               cases={globalData.cases}
               casesIncrease={globalData.todayCases}
               historicalData={
@@ -38,6 +39,7 @@ const DataCards = ({
               }
             />
             <DeathsCard
+              country={globalData.country ? globalData.country : 'Worldwide'}
               deaths={globalData.deaths}
               deathsIncrease={globalData.todayDeaths}
               historicalData={
@@ -47,6 +49,7 @@ const DataCards = ({
               }
             />
             <RecoveredCard
+              country={globalData.country ? globalData.country : 'Worldwide'}
               recovered={globalData.recovered}
               recoveredIncrease={globalData.todayRecovered}
               historicalData={

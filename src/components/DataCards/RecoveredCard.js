@@ -4,14 +4,14 @@ import CountUp from 'react-countup';
 
 import ChartComponent from '../Chart/ChartComponent.js';
 
-const RecoveredCard = ({ recovered, recoveredIncrease, historicalData }) => {
+const RecoveredCard = ({ recovered, country, recoveredIncrease, historicalData }) => {
   const labels = historicalData && Object.keys(historicalData);
   const values = historicalData && Object.values(historicalData);
 
   return (
     <Card className='shadow' id='recovered'>
       <Card.Body>
-        <Card.Title>Recovered: <span className='text-success font-weight-bold'>
+        <Card.Title>{country}: <span className='text-success font-weight-bold'>
           <CountUp
             prefix='+'
             start={0}
