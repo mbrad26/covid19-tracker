@@ -20,7 +20,6 @@ const MarkerComponent = ({ countries, activeCountry, onSetActive }) => (
               style={style[cases]}
               onClick={e => {
                 e.preventDefault();
-                // setActive(country);
                 onSetActive(country);
               }}
             >

@@ -1,10 +1,11 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 
-import { doReset } from '../../actions/mapboxData';
+import { doReset, doZoomOnCountry } from '../../actions/mapboxData';
 
 const Filter = ({ query, setQuery, filteredCountries }) => {
   const dispatch = useDispatch();
+
   console.log('FILTER');
 
   const handleChange = event => {
@@ -13,7 +14,9 @@ const Filter = ({ query, setQuery, filteredCountries }) => {
 
   const handleSubmit = event => {
     event.preventDefault();
-    dispatch(doReset());
+    filteredCountries.length === 1
+      ? dispatch(doZoomOnCountry(filteredCountries[0]))
+      : dispatch(doReset());
     setQuery('');
   };
 

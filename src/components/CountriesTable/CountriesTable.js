@@ -9,7 +9,6 @@ import './CountriesTable.css';
 const CountriesTable = ({ data, loadingData, onSortData }) => {
   const [sort, setSort] = useState('asc');
   const [query, setQuery] = useState('');
-
   const filteredCountries = filterData(query, data)
 
   const handleClick = event => {
@@ -17,12 +16,12 @@ const CountriesTable = ({ data, loadingData, onSortData }) => {
     onSortData(event.target.getAttribute('id'), sort);
   };
 
-  console.log('TABLE');
-  console.log('LENGTH COUNTRY LIST: ', filteredCountries.length);
-
   useEffect(() => {
     loadingData()
   }, [loadingData]);
+
+  console.log('TABLE');
+  console.log('LENGTH COUNTRY LIST: ', filteredCountries);
 
   return (
     <div className='mt-3 shadow' id='table'>
