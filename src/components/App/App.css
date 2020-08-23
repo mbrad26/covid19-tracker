@@ -13,12 +13,12 @@ body {
   padding-left: 0px;
 }
 
-/* h2 {
-  position: absolute;
-  z-index: 10;
-  color: white;
-} */
+@media only screen and (max-width: 767px) {
+  #countries-table {
+    padding-left: 15px;
+  }
 
-/* button {
-  background-color: inherit;
-} */
+  #map-component {
+    padding: 0px;
+  }
+}

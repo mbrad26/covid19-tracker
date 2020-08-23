@@ -12,7 +12,6 @@ const App = () => {
 
   return (
     <div className="App">
-
       <Container fluid>
         <Row>
           <Col sm={12} md={8} lg={8} id='map'>
