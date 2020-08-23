@@ -12,7 +12,7 @@ const Country = ({
   zoomOnCountry,
   }) => {
 
-  console.log('COUNTRY: ', country);
+  console.log('COUNTRY');
 
   const handleClick = () => {
     dataSuccess(country);

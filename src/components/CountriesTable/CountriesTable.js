@@ -3,26 +3,26 @@ import { Table } from 'react-bootstrap';
 
 import Country from '../../containers/Country.js';
 import Filter from './Filter';
+import { filterData } from './utils';
 import './CountriesTable.css';
 
 const CountriesTable = ({ data, loadingData, onSortData }) => {
   const [sort, setSort] = useState('asc');
   const [query, setQuery] = useState('');
 
-  console.log('TABLE');
-
-  useEffect(() => {
-    loadingData()
-  }, [loadingData]);
+  const filteredCountries = filterData(query, data)
 
   const handleClick = event => {
     sort === 'asc' ? setSort('desc') : setSort('asc');
     onSortData(event.target.getAttribute('id'), sort);
   };
 
-  const filterData = data =>
-          data.filter(country =>
-            country.country.toLowerCase().includes(query.toLowerCase()));
+  console.log('TABLE');
+  console.log('LENGTH COUNTRY LIST: ', filteredCountries.length);
+
+  useEffect(() => {
+    loadingData()
+  }, [loadingData]);
 
   return (
     <div className='mt-3 shadow' id='table'>
@@ -34,6 +34,7 @@ const CountriesTable = ({ data, loadingData, onSortData }) => {
               <Filter
                 query={query}
                 setQuery={setQuery}
+                filteredCountries={filteredCountries}
               />
             </th>
             <th>
@@ -54,7 +55,7 @@ const CountriesTable = ({ data, loadingData, onSortData }) => {
           </tr>
         </thead>
         <tbody>
-        {filterData(data).map(country =>
+        {filteredCountries.map(country =>
           <Country key={country.country} country={country} />
         )}
         </tbody>

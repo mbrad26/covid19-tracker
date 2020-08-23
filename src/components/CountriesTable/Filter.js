@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 
 import { doReset } from '../../actions/mapboxData';
 
-const Filter = ({ query, setQuery }) => {
+const Filter = ({ query, setQuery, filteredCountries }) => {
   const dispatch = useDispatch();
   console.log('FILTER');
 
