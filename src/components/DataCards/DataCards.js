@@ -16,7 +16,7 @@ const DataCards = ({
   }) => {
 
   console.log('DATACARDS');
-  
+
   useEffect(() => {
     loadingGlobalData();
     loadingHistoricalData();

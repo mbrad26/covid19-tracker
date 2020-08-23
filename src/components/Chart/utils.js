@@ -4,7 +4,7 @@ const chartData = (labels, values, label, color) => ({
       {
         label: label,
         data: values,
-        fill: false,
+        fill: true,
         lineTension: 0.1,
         backgroundColor: color,
         borderColor: color,

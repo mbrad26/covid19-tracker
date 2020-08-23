@@ -1,6 +1,10 @@
 import React from 'react';
+import { useDispatch } from 'react-redux';
+
+import { doReset } from '../../actions/mapboxData';
 
 const Filter = ({ query, setQuery }) => {
+  const dispatch = useDispatch();
   console.log('FILTER');
 
   const handleChange = event => {
@@ -9,6 +13,7 @@ const Filter = ({ query, setQuery }) => {
 
   const handleSubmit = event => {
     event.preventDefault();
+    dispatch(doReset());
     setQuery('');
   };
 

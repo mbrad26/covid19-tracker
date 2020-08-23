@@ -19,7 +19,7 @@ const mapboxDataReducer = (state = INITIAL_STATE, action ) => {
         ...state,
         latitude: INITIAL_STATE.latitude,
         longitude: INITIAL_STATE.longitude,
-        zoom: INITIAL_STATE.zoom,
+        zoom: INITIAL_STATE.minZoom,
       };
     case CHANGE_VIEWPORT:
         return {
