@@ -21,4 +21,9 @@ body {
   #map-component {
     padding: 0px;
   }
+
+  #card-deaths,
+  #card-recovered {
+    padding-left: 15px;
+  }
 }

@@ -11,31 +11,26 @@
   padding-left: 20px;
 }
 
-#deaths {
-  padding-right: 15px;
-  padding-left: 0px;
+.card-body {
+  padding-bottom: 10px;
 }
 
-#recovered {
+#card-cases {
+  padding-right: 0px;
+}
+
+#card-deaths {
+  padding-right: 7px;
+  padding-left: 7px;
+}
+
+#card-recovered {
   padding-left: 0px;
   padding-right: 15px !important;
 }
 
 .font-weight-bold {
   margin-bottom: 15px;
-}
-
-.card-body {
-  /* padding-bottom: 15px; */
-}
-
-.card-deck {
-  height: auto;
-}
-
-.card-deck .shadow {
-  border-top: 1px solid #92a324;
-  border-bottom: 1px solid #92a324;
 }
 
 #update {

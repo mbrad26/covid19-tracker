@@ -15,7 +15,7 @@ const ConfirmedCard = ({
   const values = historicalData && Object.values(historicalData);
 
   return (
-    <Card className='shadow' id='cases'>
+    <Card className='shadow'>
       <Card.Body>
         <Card.Title>{country}: <span className='text-warning font-weight-bold'>
           <CountUp

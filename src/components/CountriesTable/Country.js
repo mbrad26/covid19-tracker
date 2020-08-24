@@ -11,7 +11,6 @@ const Country = ({
   updateEndPoint,
   historicalCountryDataLoading,
   }) => {
-
   const dispatch = useDispatch();
 
   console.log('COUNTRY');
