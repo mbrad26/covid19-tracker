@@ -1,5 +1,8 @@
 import React from 'react';
-import ReactMapGl, { FlyToInterpolator } from 'react-map-gl';
+import ReactMapGl, {
+  NavigationControl,
+  FlyToInterpolator,
+} from 'react-map-gl';
 
 import './Map.css';
 import MarkerComponent from '../../containers/MarkerComponent';
@@ -17,6 +20,9 @@ const Map = ({ viewPort, onViewChange }) => {
         transitionDuration={2500}
         transitionInterpolator={new FlyToInterpolator()}
       >
+        <div id='controller'>
+          <NavigationControl />
+        </div>
         <MarkerComponent />
       </ReactMapGl>
     </div>

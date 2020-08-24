@@ -10,6 +10,8 @@ const INITIAL_STATE = {
   latitude: 30,
   longitude: 11,
   zoom: 1.1,
+  minZoom: 1.1,
+  maxZoom: 11,
 }
 
 const mapboxDataReducer = (state = INITIAL_STATE, action ) => {

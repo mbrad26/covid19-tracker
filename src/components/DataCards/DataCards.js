@@ -55,17 +55,17 @@ const DataCards = ({
               />
             </Col>
             <Col>
-              <RecoveredCard
-                country={globalData.country ? globalData.country : 'Worldwide'}
-                lastUpdated={new Date(globalData.updated).toDateString()}
-                recovered={globalData.recovered}
-                recoveredIncrease={globalData.todayRecovered}
-                historicalData={
-                  historicalData.timeline
-                  ? historicalData.timeline.recovered
-                  : historicalData.recovered
-                }
-              />
+            <RecoveredCard
+              country={globalData.country ? globalData.country : 'Worldwide'}
+              lastUpdated={new Date(globalData.updated).toDateString()}
+              recovered={globalData.recovered}
+              recoveredIncrease={globalData.todayRecovered}
+              historicalData={
+                historicalData.timeline
+                ? historicalData.timeline.recovered
+                : historicalData.recovered
+              }
+            />
             </Col>
           </Row>
         )
