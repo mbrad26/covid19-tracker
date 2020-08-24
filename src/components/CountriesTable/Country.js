@@ -1,13 +1,18 @@
 import React from 'react';
+import { useDispatch } from 'react-redux';
 import { Image } from 'react-bootstrap';
+
+import { doSetActive, doSetInactive } from '../../actions/countryData';
 
 const Country = ({
   country,
   dataSuccess,
+  zoomOnCountry,
   updateEndPoint,
   historicalCountryDataLoading,
-  zoomOnCountry,
   }) => {
+
+  const dispatch = useDispatch();
 
   console.log('COUNTRY');
 
@@ -16,6 +21,10 @@ const Country = ({
     updateEndPoint(country.country);
     historicalCountryDataLoading();
     zoomOnCountry(country);
+    dispatch(doSetInactive());
+    setTimeout(() => {
+      dispatch(doSetActive(country));
+    }, 2000);
   };
 
   return (
