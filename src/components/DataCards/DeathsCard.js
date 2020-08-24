@@ -31,7 +31,7 @@ const DeathsCard = ({
           labels={labels}
           values={values}
           label={'Deaths'}
-          color={'red'}
+          color={'#EB2A2A'}
         />
         <Card.Text>
           {deaths.toLocaleString()}

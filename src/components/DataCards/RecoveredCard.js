@@ -31,7 +31,7 @@ const RecoveredCard = ({
           labels={labels}
           values={values}
           label={'Recovered'}
-          color={'green'}
+          color={'#228B22'}
         />
         <Card.Text>
           {recovered.toLocaleString()}

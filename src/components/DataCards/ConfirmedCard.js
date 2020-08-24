@@ -31,7 +31,7 @@ const ConfirmedCard = ({
           labels={labels}
           values={values}
           label={'Cases'}
-          color={'orange'}
+          color={'#FF7A33'}
         />
         <Card.Text>
           {cases.toLocaleString()}

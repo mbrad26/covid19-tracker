@@ -1,7 +1,7 @@
 body {
   margin: 0px;
   padding: 0px;
-  background-color: #333333;
+  background-color: #fdfdfd;
 }
 
 #map {
@@ -25,5 +25,10 @@ body {
   #card-deaths,
   #card-recovered {
     padding-left: 15px;
+  }
+
+  #card-cases,
+  #card-deaths {
+    padding-right: 15px;
   }
 }

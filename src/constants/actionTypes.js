@@ -20,3 +20,7 @@ export const SET_INACTIVE = 'SET_INACTIVE';
 export const RESET = 'RESET';
 export const ZOOM_ON_COUNTRY = 'ZOOM_ON_COUNTRY';
 export const CHANGE_VIEWPORT = 'CHANGE_VIEWPORT';
+
+export const NEWS_DATA_LOADING = 'NEWS_DATA_LOADING';
+export const NEWS_DATA_SUCCESS = 'NEWS_DATA_SUCCESS';
+export const NEWS_DATA_ERROR = 'NEWS_DATA_ERROR';

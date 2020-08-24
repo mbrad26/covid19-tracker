@@ -4,6 +4,7 @@ import { Container, Row, Col } from'react-bootstrap';
 import Map from '../../containers/Map';
 import DataCards from '../../containers/DataCards';
 import CountriesTable from '../../containers/CountriesTable';
+import News from '../News/News';
 
 import './App.css';
 
@@ -26,7 +27,11 @@ const App = () => {
             <DataCards />
           </Col>
         </Row>
-
+        <Row>
+          <Col xs={12} sm={12} md={12} id='news'>
+            <News />
+          </Col>
+        </Row>
       </Container>
     </div>
   );
