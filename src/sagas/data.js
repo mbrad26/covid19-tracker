@@ -1,7 +1,13 @@
 import { call, put, delay, select } from 'redux-saga/effects';
 
 import { fetchData } from '../api';
-import { GLOBAL_URL, COUNTRIES_URL, HISTORICAL_DATA_URL } from '../api/api';
+import {
+  NEWS_URL,
+  GLOBAL_URL,
+  COUNTRIES_URL,
+  HISTORICAL_DATA_URL,
+} from '../api/api';
+import { doNewsSuccess, doNewsError } from '../actions/newsData';
 import { doDataSuccess, doDataError } from '../actions/globalData';
 import { doCountriesDataSuccess, doCountriesDataError } from '../actions/countriesData';
 import { doHistoricalDataSuccess, doHistoricalDataError } from '../actions/historicalData';
@@ -27,9 +33,26 @@ function* fetchGlobalData() {
   };
 };
 
+function* fetchNewsData() {
+  while(true) {
+    yield call(
+      fetchResource,
+      NEWS_URL,
+      doNewsSuccess,
+      doNewsError,
+    );
+    yield delay(1000000);
+  };
+};
+
 function* fetchCountriesData() {
   while(true) {
-    yield call(fetchResource, COUNTRIES_URL, doCountriesDataSuccess, doCountriesDataError);
+    yield call(
+      fetchResource,
+      COUNTRIES_URL,
+      doCountriesDataSuccess,
+      doCountriesDataError
+    );
     yield delay(600000);
   };
 };
@@ -45,7 +68,8 @@ function* fetchHistoricalData() {
 };
 
 function* fetchHistoricalCountryData() {
-  const endPoint = yield select(state => state.historicalDataState.endPoint);
+  const endPoint = yield select(state =>
+    state.historicalDataState.endPoint);
   try {
     yield call(
       fetchResource,
@@ -59,6 +83,7 @@ function* fetchHistoricalCountryData() {
 };
 
 export {
+  fetchNewsData,
   fetchGlobalData,
   fetchCountriesData,
   fetchHistoricalData,
