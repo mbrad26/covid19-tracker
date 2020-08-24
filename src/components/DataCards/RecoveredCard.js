@@ -15,7 +15,7 @@ const RecoveredCard = ({
   const values = historicalData && Object.values(historicalData);
 
   return (
-    <Card className='shadow' id='recovered'>
+    <Card className='shadow'>
       <Card.Body>
         <Card.Title>{country}: <span className='text-success font-weight-bold'>
           <CountUp

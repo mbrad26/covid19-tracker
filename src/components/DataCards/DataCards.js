@@ -27,8 +27,8 @@ const DataCards = ({
       {isLoading
         ? <h3>Loading ...</h3>
         : globalData.cases ? (
-          <Row className='mt-3'>
-            <Col md={4}>
+          <Row>
+            <Col md={4} className='mt-3'>
               <ConfirmedCard
                 country={globalData.country ? globalData.country : 'Worldwide'}
                 lastUpdated={new Date(globalData.updated).toDateString()}
@@ -41,7 +41,7 @@ const DataCards = ({
                 }
               />
             </Col>
-            <Col>
+            <Col md={4} className='mt-3' id='deaths'>
               <DeathsCard
                 country={globalData.country ? globalData.country : 'Worldwide'}
                 lastUpdated={new Date(globalData.updated).toDateString()}
@@ -54,19 +54,19 @@ const DataCards = ({
                 }
               />
             </Col>
-            <Col>
-            <RecoveredCard
-              country={globalData.country ? globalData.country : 'Worldwide'}
-              lastUpdated={new Date(globalData.updated).toDateString()}
-              recovered={globalData.recovered}
-              recoveredIncrease={globalData.todayRecovered}
-              historicalData={
-                historicalData.timeline
-                ? historicalData.timeline.recovered
-                : historicalData.recovered
-              }
-            />
-            </Col>
+            <Col md={4} className='mt-3' id='recovered'>
+              <RecoveredCard
+                country={globalData.country ? globalData.country : 'Worldwide'}
+                lastUpdated={new Date(globalData.updated).toDateString()}
+                recovered={globalData.recovered}
+                recoveredIncrease={globalData.todayRecovered}
+                historicalData={
+                  historicalData.timeline
+                  ? historicalData.timeline.recovered
+                  : historicalData.recovered
+                }
+              />
+              </Col>
           </Row>
         )
         : null
