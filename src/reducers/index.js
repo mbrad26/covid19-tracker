@@ -1,4 +1,6 @@
 import { combineReducers } from 'redux';
+
+import newsDataReducer from './newsData';
 import mapboxDataReducer from './mapboxData';
 import globalDataReducer from './globalData';
 import countryDataReducer from './countryData';
@@ -6,6 +8,7 @@ import countriesDataReducer from './countriesData';
 import historicalDataReducer from './historicalData';
 
 const rootReducer = combineReducers({
+  newsDataState: newsDataReducer,
   globalDataState: globalDataReducer,
   mapboxDataState: mapboxDataReducer,
   countryDataState: countryDataReducer,
