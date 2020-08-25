@@ -15,9 +15,9 @@ const DeathsCard = ({
   const values = historicalData && Object.values(historicalData);
 
   return (
-    <Card className='shadow'>
+    <Card className=''>
       <Card.Body>
-        <Card.Title>{country}: <span className='text-danger font-weight-bold'>
+        <Card.Title>{country}: <span>
           <CountUp
             prefix='+'
             start={0}
@@ -32,7 +32,7 @@ const DeathsCard = ({
           labels={labels}
           values={values}
           label={'Deaths'}
-          color={'#EB2A2A'}
+          color={'#bd0026'}
         />
         <Card.Text>
           {deaths.toLocaleString()}

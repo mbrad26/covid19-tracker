@@ -23,7 +23,7 @@ const CountriesTable = ({ data, loadingData, onSortData }) => {
   console.log('TABLE');
 
   return (
-    <div className='shadow' id='table-container'>
+    <div id='table-container'>
       <Table size='sm'>
         <thead>
           <tr>

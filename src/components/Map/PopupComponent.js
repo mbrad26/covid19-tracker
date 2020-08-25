@@ -5,9 +5,9 @@ import Info from './Info';
 
 const PopupComponent = ({ activeCountry, onSetInactive }) => {
   const handleOnClose = () => onSetInactive();
-  
+
   return (
-    <div>
+    <div id='popup'>
       {activeCountry != null && activeCountry.active &&
         <Popup
           latitude={activeCountry.countryInfo.lat}

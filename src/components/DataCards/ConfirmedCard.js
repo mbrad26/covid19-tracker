@@ -15,9 +15,9 @@ const ConfirmedCard = ({
   const values = historicalData && Object.values(historicalData);
 
   return (
-    <Card className='shadow'>
+    <Card className=''>
       <Card.Body>
-        <Card.Title>{country}: <span className='text-warning font-weight-bold'>
+        <Card.Title>{country}: <span>
           <CountUp
             prefix='+'
             start={0}
@@ -32,7 +32,7 @@ const ConfirmedCard = ({
           labels={labels}
           values={values}
           label={'Cases'}
-          color={'#FF7A33'}
+          color={'#feb24c'}
         />
         <Card.Text>
           {cases.toLocaleString()}

@@ -15,9 +15,9 @@ const RecoveredCard = ({
   const values = historicalData && Object.values(historicalData);
 
   return (
-    <Card className='shadow'>
+    <Card className=''>
       <Card.Body>
-        <Card.Title>{country}: <span className='text-success font-weight-bold'>
+        <Card.Title>{country}: <span>
           <CountUp
             prefix='+'
             start={0}
@@ -32,7 +32,7 @@ const RecoveredCard = ({
           labels={labels}
           values={values}
           label={'Recovered'}
-          color={'#228B22'}
+          color={'#92a324'}
         />
         <Card.Text>
           {recovered.toLocaleString()}

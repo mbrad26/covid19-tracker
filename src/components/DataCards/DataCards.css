@@ -1,24 +1,15 @@
-#danger {
-  margin-left: 5px;
-  margin-right: 5px;
-}
-
-#global {
-  padding-right: 15px;
-}
-
-#countries {
-  padding-left: 20px;
-}
-
 .card-body {
   padding: 10px;
   padding-bottom: 10px;
-  background-color: #f3f5f7;
+  background-color: #E9E8E6;
 }
 
 .card-text {
   margin-top: 5px;
+}
+
+.card-title.h5 {
+  font-weight: bold;
 }
 
 i {
@@ -27,18 +18,18 @@ i {
   margin-right: 5px;
 }
 
-#card-cases .card-title i {
-  margin-bottom: 0px;
+#card-cases .card-title i,
+#card-cases .card-title span {
   color: #FF7A33;
 }
 
-#card-deaths .card-title i {
-  margin-bottom: 0px;
+#card-deaths .card-title i,
+#card-deaths .card-title span {
   color: #EB2A2A;
 }
 
-#card-recovered .card-title i {
-  margin-bottom: 0px;
+#card-recovered .card-title i,
+#card-recovered .card-title span {
   color: #228B22;
 }
 
@@ -46,16 +37,13 @@ i {
 #card-deaths,
 #card-recovered {
   min-width: 275px;
-  /* max-height: 300px; */
   padding: 5px;
   margin: auto;
 }
 
-.font-weight-bold {
-  margin-bottom: 15px;
-}
-
 #update {
   display: inline-flex;
+  padding-right: 15px;
   float: right;
+  font-variant: small-caps;
 }
