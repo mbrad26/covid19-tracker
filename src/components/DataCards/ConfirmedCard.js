@@ -26,6 +26,7 @@ const ConfirmedCard = ({
             separator=','
           />
           </span>
+          <i class="fas fa-frown-open"></i>
         </Card.Title>
         <ChartComponent
           labels={labels}

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col } from'react-bootstrap';
+import { Container, Row, Col } from'react-bootstrap';
 
 import './App.css';
 import News from '../News/News';
@@ -12,20 +12,22 @@ const App = () => {
   console.log('App');
 
   return (
-    <div>
+    <div className='container'>
       <Row>
-        <Col md={3} id='data-cards-container'>
-          <DataCards />
-        </Col>
-        <Col md={6} id='map-container'>
+        <Col md={8} id='map-container'>
           <Map />
         </Col>
-        <Col md={3} id='countries-table-container'>
+        <Col md={4} id='countries-table-container'>
           <CountriesTable />
         </Col>
       </Row>
       <Row>
-        <Col xs={12} sm={12} md={12} id='news'>
+        <Col md={12} lg={12} id='data-cards-container'>
+          <DataCards />
+        </Col>
+      </Row>
+      <Row>
+        <Col md={12} lg={12} id='news'>
           <News />
         </Col>
       </Row>

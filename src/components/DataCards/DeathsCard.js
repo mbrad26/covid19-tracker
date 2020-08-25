@@ -26,6 +26,7 @@ const DeathsCard = ({
             separator=','
           />
           </span>
+          <i class="fas fa-skull-crossbones"></i>
         </Card.Title>
         <ChartComponent
           labels={labels}

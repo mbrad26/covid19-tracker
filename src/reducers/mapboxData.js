@@ -5,12 +5,12 @@ import {
 } from '../constants/actionTypes';
 
 const INITIAL_STATE = {
-  width: window.innerWidth * 0.65,
-  height: window.innerHeight * 0.70,
-  latitude: 30,
-  longitude: 11,
-  zoom: 1.1,
-  minZoom: 1.1,
+  width: window.innerWidth * 0.58,
+  height: window.innerHeight * 0.65,
+  latitude: 20,
+  longitude: 10,
+  zoom: 0.9,
+  minZoom: 0.3,
   maxZoom: 11,
 }
 

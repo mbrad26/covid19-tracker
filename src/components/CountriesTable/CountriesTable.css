@@ -1,14 +1,24 @@
 #table-container {
-  overflow: scroll;
-  height: 70vh;
-  font-size: 0.9em;
+  overflow-y: scroll;
+  height: 65vh;
+  font-size: 0.8em;
   margin-bottom: 0px;
 }
 
-.table thead tr {
-  background-color: #666;
-  color: #ffffff;
-  height: 55px;
+.table thead th {
+  background-color: #f3f5f7;
+  position: sticky;
+  top: 0;
+}
+
+.table thead th::after {
+  content: '';
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #999999;
 }
 
 .table tbody td, .table thead th {
@@ -21,16 +31,9 @@
   background-color: #f3f5f7;
 }
 
-/* .table thead {
-} */
-
-#cases {
-  margin-right: 0px;
-}
-
 #recovered {
   margin-left: 0px;
-  padding-right: 10px;
+  padding-right: 5px;
 }
 
 img {
@@ -45,17 +48,9 @@ img {
   border-radius: 8px;
 }
 
-#cases:hover,
-#deaths:hover,
-#recovered:hover {
-  cursor: pointer;
-}
-
-/* .table thead button {
-  background-color: inherit;
-  color: #ffffff;
+.table thead button {
   font-weight: bold;
-} */
+}
 
 button,
 button:hover {

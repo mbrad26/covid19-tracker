@@ -1,5 +1,6 @@
 #map-component {
   overflow: hidden;
+  margin: auto !important;
 }
 
 #marker {

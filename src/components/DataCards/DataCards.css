@@ -12,20 +12,43 @@
 }
 
 .card-body {
+  padding: 10px;
   padding-bottom: 10px;
   background-color: #f3f5f7;
 }
 
-#card-cases {
-  /* padding-right: 0px; */
+.card-text {
+  margin-top: 5px;
 }
 
-#card-deaths {
-  /* padding: 0px; */
+i {
+  float: right;
+  font-size: 2rem;
+  margin-right: 5px;
 }
 
+#card-cases .card-title i {
+  margin-bottom: 0px;
+  color: #FF7A33;
+}
+
+#card-deaths .card-title i {
+  margin-bottom: 0px;
+  color: #EB2A2A;
+}
+
+#card-recovered .card-title i {
+  margin-bottom: 0px;
+  color: #228B22;
+}
+
+#card-cases,
+#card-deaths,
 #card-recovered {
-  /* padding: 0px; */
+  min-width: 275px;
+  /* max-height: 300px; */
+  padding: 5px;
+  margin: auto;
 }
 
 .font-weight-bold {
@@ -36,15 +59,3 @@
   display: inline-flex;
   float: right;
 }
-
-/* #cases:hover {
-  border-top: 5px solid #92a324;
-}
-
-#deaths:hover {
-  border-top: 5px solid #92a324;
-}
-
-#recovered:hover {
-  border-top: 5px solid #92a324;
-} */
