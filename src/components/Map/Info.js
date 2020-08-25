@@ -3,13 +3,14 @@ import { Image } from 'react-bootstrap';
 
 const Info = ({ activeCountry }) => {
   const styleDiv = {
-    background: '#E9E8E6'
+    background: '#E9E8E6',
+    padding: '5px 0px 0px 5px',
   }
 
   const styleParagraph = {
     fontSize: '.8rem',
     margin: '7px',
-    fontWeight: 'bold'
+    fontWeight: 'bold',
   };
 
   return (
@@ -22,13 +23,13 @@ const Info = ({ activeCountry }) => {
         <span> {activeCountry.country}</span>
       </h4>
       <hr />
-      <p style={styleParagraph}>Cases: <span>{activeCountry.cases}</span></p>
-      <p style={styleParagraph}>Critical: <span>{activeCountry.critical}</span></p>
-      <p style={styleParagraph}>Deaths: <span>{activeCountry.deaths}</span></p>
-      <p style={styleParagraph}>Deaths per 1 million: <span>{activeCountry.deathsPerOneMillion}</span></p>
-      <p style={styleParagraph}>Recovered: <span>{activeCountry.recovered}</span></p>
-      <p style={styleParagraph}>Nr of tests: <span>{activeCountry.tests}</span></p>
-      <p style={styleParagraph}>Updated: <span>{new Date(activeCountry.updated).toDateString()}</span></p>
+      <p style={styleParagraph}>Cases:  <span>{activeCountry.cases}</span></p>
+      <p style={styleParagraph}>Critical:  <span>{activeCountry.critical}</span></p>
+      <p style={styleParagraph}>Deaths:  <span>{activeCountry.deaths}</span></p>
+      <p style={styleParagraph}>Deaths per 1 million:  <span>{activeCountry.deathsPerOneMillion}</span></p>
+      <p style={styleParagraph}>Recovered:  <span>{activeCountry.recovered}</span></p>
+      <p style={styleParagraph}>Nr of tests:  <span>{activeCountry.tests}</span></p>
+      <p style={styleParagraph}>Updated:  <span>{new Date(activeCountry.updated).toDateString()}</span></p>
     </div>
   );
 };

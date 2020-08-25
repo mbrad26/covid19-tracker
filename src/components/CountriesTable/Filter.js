@@ -5,6 +5,7 @@ const Filter = ({
   reset,
   setQuery,
   globalData,
+  setInactive,
   dataLoading,
   dataSuccess,
   zoomOnCountry,
@@ -27,6 +28,7 @@ const Filter = ({
       historicalCountryDataLoading();
     } else {
       reset();
+      setInactive();
       dataLoading();
       dataSuccess(globalData);
       historicalDataLoading();
