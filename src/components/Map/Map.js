@@ -11,7 +11,7 @@ const Map = ({ viewPort, onViewChange }) => {
   console.log('MAP');
 
   return (
-    <div className='mt-3 shadow' id='map-component'>
+    <div className='shadow' id='map-component'>
       <ReactMapGl
         {...viewPort}
         mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}

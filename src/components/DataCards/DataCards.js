@@ -28,7 +28,7 @@ const DataCards = ({
         ? <h3>Loading ...</h3>
         : globalData.cases ? (
           <Row>
-            <Col md={4} className='mt-3' id='card-cases'>
+            <Col md={12} className='' id='card-cases'>
               <ConfirmedCard
                 country={globalData.country ? globalData.country : 'Worldwide'}
                 lastUpdated={new Date(globalData.updated).toDateString()}
@@ -41,7 +41,7 @@ const DataCards = ({
                 }
               />
             </Col>
-            <Col md={4} className='mt-3' id='card-deaths'>
+            <Col md={12} className='' id='card-deaths'>
               <DeathsCard
                 country={globalData.country ? globalData.country : 'Worldwide'}
                 lastUpdated={new Date(globalData.updated).toDateString()}
@@ -54,7 +54,7 @@ const DataCards = ({
                 }
               />
             </Col>
-            <Col md={4} className='mt-3' id='card-recovered'>
+            <Col md={12} className='' id='card-recovered'>
               <RecoveredCard
                 country={globalData.country ? globalData.country : 'Worldwide'}
                 lastUpdated={new Date(globalData.updated).toDateString()}

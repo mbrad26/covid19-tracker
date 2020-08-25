@@ -1,38 +1,34 @@
 import React from 'react';
-import { Container, Row, Col } from'react-bootstrap';
+import { Row, Col } from'react-bootstrap';
 
+import './App.css';
+import News from '../News/News';
 import Map from '../../containers/Map';
 import DataCards from '../../containers/DataCards';
 import CountriesTable from '../../containers/CountriesTable';
-import News from '../News/News';
 
-import './App.css';
 
 const App = () => {
   console.log('App');
 
   return (
-    <div className="App">
-      <Container fluid>
-        <Row>
-          <Col sm={12} md={8} lg={8} id='map'>
-            <Map />
-          </Col>
-          <Col sm={12} md={4} lg={4} id="countries-table">
-            <CountriesTable />
-          </Col>
-        </Row>
-        <Row>
-          <Col xs={12} sm={12} md={12} id='global'>
-            <DataCards />
-          </Col>
-        </Row>
-        <Row>
-          <Col xs={12} sm={12} md={12} id='news'>
-            <News />
-          </Col>
-        </Row>
-      </Container>
+    <div>
+      <Row>
+        <Col md={3} id='data-cards-container'>
+          <DataCards />
+        </Col>
+        <Col md={6} id='map-container'>
+          <Map />
+        </Col>
+        <Col md={3} id='countries-table-container'>
+          <CountriesTable />
+        </Col>
+      </Row>
+      <Row>
+        <Col xs={12} sm={12} md={12} id='news'>
+          <News />
+        </Col>
+      </Row>
     </div>
   );
 };

@@ -17,17 +17,15 @@
 }
 
 #card-cases {
-  padding-right: 0px;
+  /* padding-right: 0px; */
 }
 
 #card-deaths {
-  padding-right: 7px;
-  padding-left: 7px;
+  /* padding: 0px; */
 }
 
 #card-recovered {
-  padding-left: 0px;
-  padding-right: 15px !important;
+  /* padding: 0px; */
 }
 
 .font-weight-bold {

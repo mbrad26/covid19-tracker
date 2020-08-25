@@ -1,8 +1,6 @@
-#table {
+#table-container {
   overflow: scroll;
   height: 70vh;
-  /* border-radius: 7px 7px 0 0; */
-  /* border-bottom: 3px solid #009879; */
   font-size: 0.9em;
   margin-bottom: 0px;
 }
@@ -22,6 +20,9 @@
 .table tbody {
   background-color: #f3f5f7;
 }
+
+/* .table thead {
+} */
 
 #cases {
   margin-right: 0px;
@@ -50,11 +51,11 @@ img {
   cursor: pointer;
 }
 
-.table thead button {
+/* .table thead button {
   background-color: inherit;
   color: #ffffff;
   font-weight: bold;
-}
+} */
 
 button,
 button:hover {
