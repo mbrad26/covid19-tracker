@@ -20,7 +20,12 @@ const Article = ({ article }) => {
         </div>
         <div className='article-body'>
           <h4>{article.title}</h4>
-          <span>{article.source.name}</span>
+          <p id='title'><span>{article.source.name}</span></p>
+          <p className='text-muted'>
+            <i class="far fa-clock" >
+              <span> {new Date(article.publishedAt).toDateString()}</span>
+            </i>
+          </p>
           <p>{article.description}</p>
           <a href={article.url} target='_blank'>Read full article ...</a>
         </div>

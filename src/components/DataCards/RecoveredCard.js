@@ -15,7 +15,7 @@ const RecoveredCard = ({
   const values = historicalData && Object.values(historicalData);
 
   return (
-    <Card className=''>
+    <Card>
       <Card.Body>
         <Card.Title>{country}: <span>
           <CountUp
@@ -36,7 +36,7 @@ const RecoveredCard = ({
         />
         <Card.Text>
           {recovered.toLocaleString()}
-          <span id='update'>{lastUpdated}</span>
+          <span className='text-muted' id='update'>{lastUpdated}</span>
         </Card.Text>
       </Card.Body>
     </Card>
