@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { CardColumns, Card } from 'react-bootstrap';
 
-import './News.module.css';
+import './News.css';
+import Article from './Article';
 import { doNewsLoading } from '../../actions/newsData';
 
 const News = () => {
@@ -13,25 +13,15 @@ const News = () => {
 
   useEffect(() => {
     dispatch(doNewsLoading());
-  }, []);
+  }, [dispatch]);
 
   return (
-    <div className='container'>
-      <CardColumns className='m-3'>
+    <div className='news-container'>
       {articles &&
         articles.map(article =>
-          <Card>
-            <Card.Img variant='top' src={article.urlToImage} loading='lazy' />
-            <Card.Body>
-              <Card.Title>{article.title}</Card.Title>
-              <Card.Text>
-                {article.description}
-              </Card.Text>
-            </Card.Body>
-          </Card>
+          <Article key={article.title} article={article} />
         )
       }
-      </CardColumns>
     </div>
   )
 };

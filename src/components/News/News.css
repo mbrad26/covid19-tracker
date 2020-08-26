@@ -1,0 +1,25 @@
+.article-container:nth-of-type(2) {
+  border: 3px solid red;
+}
+
+.article-container {
+  display: flex;
+  margin: 30px 0px 20px 0px;
+  max-width: 70vw;
+  font-size: 0.9rem;
+  background: #E9E8E6;
+}
+
+.article-img {
+  width: 350px;
+}
+
+.article-img img {
+  width: inherit;
+  height: auto;
+}
+
+.article-body {
+  padding: 10px;
+  margin-left: 15px;
+}

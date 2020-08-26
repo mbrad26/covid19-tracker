@@ -26,7 +26,7 @@ const RecoveredCard = ({
             separator=','
           />
           </span>
-          <i class="fas fa-smile"></i>
+          <i className="fas fa-smile"></i>
         </Card.Title>
         <ChartComponent
           labels={labels}

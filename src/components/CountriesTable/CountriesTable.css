@@ -38,7 +38,7 @@
 
 img {
   width: 50px;
-  height: 35px;
+  height: auto;
 }
 
 .table thead #form {
