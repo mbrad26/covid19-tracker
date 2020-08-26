@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Row, Col } from 'react-bootstrap';
 import { useSelector, useDispatch } from 'react-redux';
 
 import './News.css';
@@ -18,8 +19,12 @@ const News = () => {
   return (
     <div className='news-container'>
       {articles &&
-        articles.map(article =>
-          <Article key={article.title} article={article} />
+        articles.slice(0, 6).map(article =>
+          <Row key={article.title}>
+            <Col md={12}>
+              <Article article={article} />
+            </Col>
+          </Row>
         )
       }
     </div>

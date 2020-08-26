@@ -1,7 +1,7 @@
 import {
-  ZOOM_ON_COUNTRY,
   RESET,
-  CHANGE_VIEWPORT
+  ZOOM_ON_COUNTRY,
+  CHANGE_VIEWPORT,
 } from '../constants/actionTypes';
 
 const INITIAL_STATE = {
