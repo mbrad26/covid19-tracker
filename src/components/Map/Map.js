@@ -15,7 +15,7 @@ const Map = ({ viewPort, onViewChange }) => {
       <ReactMapGl
         {...viewPort}
         mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
-        mapStyle='mapbox://styles/mbrad26/cke2wx80h1c9h1an776mwm24r'
+        mapStyle='mapbox://styles/mbrad26/ckeb3nkm40vwf19uh54nllsrd'
         onViewportChange={viewPort => onViewChange(viewPort)}
         transitionDuration={2500}
         transitionInterpolator={new FlyToInterpolator()}
