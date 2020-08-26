@@ -5,8 +5,8 @@ const createReducer = constants => (state = INITIAL_STATE, action) => {
     case constants.loading:
       return {
         ...state,
-        isLoading: true,
         isError: false,
+        isLoading: true,
       };
     case constants.success:
       return {
@@ -17,8 +17,8 @@ const createReducer = constants => (state = INITIAL_STATE, action) => {
     case constants.error:
       return {
         ...state,
-        isLoading: false,
         isError: true,
+        isLoading: false,
       }
     default: return state;
   }

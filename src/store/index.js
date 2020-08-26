@@ -1,8 +1,9 @@
-import { createStore, applyMiddleware, compose } from 'redux';
-import createSagaMiddleware from 'redux-saga';
 import { createLogger } from 'redux-logger';
-import rootReducer from '../reducers';
+import createSagaMiddleware from 'redux-saga';
+import { createStore, applyMiddleware, compose } from 'redux';
+
 import rootSaga from '../sagas';
+import rootReducer from '../reducers';
 
 const logger = createLogger();
 const saga = createSagaMiddleware();

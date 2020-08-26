@@ -1,7 +1,7 @@
 import {
+  HISTORICAL_DATA_ERROR,
   HISTORICAL_DATA_LOADING,
   HISTORICAL_DATA_SUCCESS,
-  HISTORICAL_DATA_ERROR,
   HISTORICAL_URL_ENDPOINT_UPDATE,
   HISTORICAL_COUNTRY_DATA_LOADING,
 } from '../constants/actionTypes';
@@ -12,20 +12,20 @@ const historicalDataReducer = (state = INITIAL_STATE, action) => {
     case HISTORICAL_DATA_LOADING:
       return {
         ...state,
-        isLoading: true,
         isError: false,
+        isLoading: true,
       };
     case HISTORICAL_DATA_SUCCESS:
       return {
         ...state,
-        data: action.payload,
         isLoading: false,
+        data: action.payload,
       };
     case HISTORICAL_DATA_ERROR:
       return {
         ...state,
-        isLoading: false,
         isError: true,
+        isLoading: false,
       };
     case HISTORICAL_URL_ENDPOINT_UPDATE:
       return {
@@ -35,8 +35,8 @@ const historicalDataReducer = (state = INITIAL_STATE, action) => {
     case HISTORICAL_COUNTRY_DATA_LOADING:
       return {
         ...state,
-        isLoading: true,
         isError: false,
+        isLoading: true,
       };
     default: return state;
     };

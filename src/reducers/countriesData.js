@@ -1,8 +1,8 @@
 import {
+  COUNTRIES_DATA_SORT,
+  COUNTRIES_DATA_ERROR,
   COUNTRIES_DATA_LOADING,
   COUNTRIES_DATA_SUCCESS,
-  COUNTRIES_DATA_ERROR,
-  COUNTRIES_DATA_SORT,
 } from '../constants/actionTypes';
 import { INITIAL_STATE } from './initialState';
 
@@ -11,20 +11,20 @@ const countriesDataReducer = (state = INITIAL_STATE, action) => {
     case COUNTRIES_DATA_LOADING:
       return {
         ...state,
+        isError: false,
         isLoading: true,
-        isError: false
       };
     case COUNTRIES_DATA_SUCCESS:
       return {
         ...state,
-        data: action.payload,
         isLoading: false,
+        data: action.payload,
       };
     case COUNTRIES_DATA_ERROR:
       return {
         ...state,
-        isLoading: false,
         isError: true,
+        isLoading: false,
       };
     case COUNTRIES_DATA_SORT:
       return {

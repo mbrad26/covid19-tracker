@@ -2,11 +2,13 @@ import { call, put, delay, select } from 'redux-saga/effects';
 
 import { fetchData } from '../api';
 import {
+  NHS_URL,
   NEWS_URL,
   GLOBAL_URL,
   COUNTRIES_URL,
   HISTORICAL_DATA_URL,
 } from '../api/api';
+import { doNHSSuccess, doNHSError } from '../actions/nhsData';
 import { doNewsSuccess, doNewsError } from '../actions/newsData';
 import { doDataSuccess, doDataError } from '../actions/globalData';
 import { doCountriesDataSuccess, doCountriesDataError } from '../actions/countriesData';
@@ -42,6 +44,18 @@ function* fetchNewsData() {
       doNewsError,
     );
     yield delay(1000000);
+  };
+};
+
+function* fetchNHSData() {
+  while(true) {
+    yield call(
+      fetchResource,
+      NHS_URL,
+      doNHSSuccess,
+      doNHSError
+    );
+    yield delay(10000000);
   };
 };
 
@@ -83,6 +97,7 @@ function* fetchHistoricalCountryData() {
 };
 
 export {
+  fetchNHSData,
   fetchNewsData,
   fetchGlobalData,
   fetchCountriesData,

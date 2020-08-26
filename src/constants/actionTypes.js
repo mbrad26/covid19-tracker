@@ -1,7 +1,3 @@
-export const NHS_ERROR = 'NHS_ERROR';
-export const NHS_LOADING = 'NHS_LOADING';
-export const NHS_SUCCESS = 'NHS_SUCCESS';
-
 export const DATA_ERROR = 'DATA_ERROR';
 export const DATA_LOADING = 'DATA_LOADING';
 export const DATA_SUCCESS = 'DATA_SUCCESS';
@@ -12,6 +8,10 @@ export const SET_INACTIVE = 'SET_INACTIVE';
 export const RESET = 'RESET';
 export const ZOOM_ON_COUNTRY = 'ZOOM_ON_COUNTRY';
 export const CHANGE_VIEWPORT = 'CHANGE_VIEWPORT';
+
+export const NHS_DATA_ERROR = 'NHS_DATA_ERROR';
+export const NHS_DATA_LOADING = 'NHS_DATA_LOADING';
+export const NHS_DATA_SUCCESS = 'NHS_DATA_SUCCESS';
 
 export const NEWS_DATA_ERROR = 'NEWS_DATA_ERROR';
 export const NEWS_DATA_LOADING = 'NEWS_DATA_LOADING';
