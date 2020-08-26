@@ -1,6 +1,6 @@
 #map-component {
+  display: flex;
   overflow: hidden;
-  margin: auto !important;
 }
 
 #marker {
@@ -11,5 +11,5 @@
 
 #controller {
   position: absolute;
-  right: 0;
+  left: 0;
 }

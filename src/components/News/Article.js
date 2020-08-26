@@ -19,7 +19,7 @@ const Article = ({ article }) => {
           <img src={article.urlToImage} alt='Article' />
         </div>
         <div className='article-body'>
-          <h3>{article.title}</h3>
+          <h4>{article.title}</h4>
           <span>{article.source.name}</span>
           <p>{article.description}</p>
           <a href={article.url} target='_blank'>Read full article ...</a>

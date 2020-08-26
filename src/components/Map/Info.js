@@ -3,7 +3,6 @@ import { Image } from 'react-bootstrap';
 
 const Info = ({ activeCountry }) => {
   const styleDiv = {
-    background: '#E9E8E6',
     padding: '5px 0px 0px 5px',
   }
 

@@ -14,11 +14,8 @@ const App = () => {
   return (
     <div className='container'>
       <Row>
-        <Col md={8} id='map-container'>
+        <Col md={12} lg={12} id='map-container'>
           <Map />
-        </Col>
-        <Col md={4} id='countries-table-container'>
-          <CountriesTable />
         </Col>
       </Row>
       <Row>

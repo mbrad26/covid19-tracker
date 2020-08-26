@@ -9,7 +9,7 @@ const INITIAL_STATE = {
   height: window.innerHeight * 0.65,
   latitude: 20,
   longitude: 10,
-  zoom: 0.9,
+  zoom: 0.93,
   minZoom: 0.3,
   maxZoom: 11,
 }

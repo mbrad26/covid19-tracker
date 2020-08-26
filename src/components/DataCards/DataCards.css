@@ -20,17 +20,17 @@ i {
 
 #card-cases .card-title i,
 #card-cases .card-title span {
-  color: #FF7A33;
+  color: #ff7a33;
 }
 
 #card-deaths .card-title i,
 #card-deaths .card-title span {
-  color: #EB2A2A;
+  color: #bd0026;
 }
 
 #card-recovered .card-title i,
 #card-recovered .card-title span {
-  color: #228B22;
+  color: #92a324;
 }
 
 #card-cases,
