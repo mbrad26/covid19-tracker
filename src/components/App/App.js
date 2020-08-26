@@ -2,6 +2,7 @@ import React from 'react';
 import { Row, Col } from'react-bootstrap';
 
 import './App.css';
+import Nhs from '../Nhs/Nhs';
 import News from '../News/News';
 import Map from '../../containers/Map';
 import DataCards from '../../containers/DataCards';
@@ -26,6 +27,11 @@ const App = () => {
       <Row>
         <Col md={12} lg={12} id='news'>
           <News />
+        </Col>
+      </Row>
+      <Row>
+        <Col md={12} lg={12} id='nhs'>
+          <Nhs />
         </Col>
       </Row>
     </div>

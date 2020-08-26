@@ -5,7 +5,7 @@ import {
 } from '../constants/actionTypes';
 
 const doNHSLoading = () => ({
-  type: NHS_DATA_ERROR,
+  type: NHS_DATA_LOADING,
 });
 
 const doNHSSuccess = data => ({
