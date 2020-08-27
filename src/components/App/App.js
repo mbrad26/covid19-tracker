@@ -18,15 +18,14 @@ const App = () => {
         </Col>
       </Row>
       <Row>
-        <Col md={12} lg={12} id='data-cards-container'>
+        <Col md={8} lg={9} id='data-cards-container'>
           <DataCards />
         </Col>
-      </Row>
-      <Row>
-        <Col md={12} lg={12} id='news-container'>
+        <Col md={3} lg={3} id='news-container'>
           <News />
         </Col>
       </Row>
+      
       <Row>
         <Col md={12} lg={12} id='nhs-container'>
           <Nhs />

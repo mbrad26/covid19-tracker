@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Row, Col } from 'react-bootstrap';
+import { Row, Col, Card } from 'react-bootstrap';
 import { useSelector, useDispatch } from 'react-redux';
 
 import './News.css';
@@ -20,11 +20,7 @@ const News = () => {
     <div className='news'>
       {articles &&
         articles.slice(0, 6).map(article =>
-          <Row key={article.title}>
-            <Col md={12}>
-              <Article article={article} />
-            </Col>
-          </Row>
+          <Article article={article} />
         )
       }
     </div>
