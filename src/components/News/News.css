@@ -1,5 +1,6 @@
 .news {
-  padding: 5px;
+  overflow-y: scroll;
+  height: 75vh;
 }
 
 #spinner-news {

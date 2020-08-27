@@ -5,10 +5,10 @@ import {
 } from '../constants/actionTypes';
 
 const INITIAL_STATE = {
-  zoom: 0.93,
+  zoom: 0.85,
   maxZoom: 11,
   minZoom: 0.7,
-  latitude: 30,
+  latitude: 43,
   longitude: 10,
   width: window.innerWidth * 0.58,
   height: window.innerHeight * 0.65,

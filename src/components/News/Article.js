@@ -5,7 +5,7 @@ const Article = ({ article }) => {
 
   return (
     <Card id='article'>
-      <Card.Img variant="top" src={article.urlToImage} />
+      <Card.Img variant="top" src={article.urlToImage} loading='lazing' />
       <Card.Body>
         <Card.Title>{article.title}</Card.Title>
         <Card.Text id='source'><span>{article.source.name}</span></Card.Text>
