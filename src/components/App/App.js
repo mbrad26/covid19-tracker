@@ -3,8 +3,8 @@ import { Row, Col } from'react-bootstrap';
 
 import './App.css';
 import Nhs from '../Nhs/Nhs';
-import News from '../News/News';
 import Map from '../../containers/Map';
+import News from '../../containers/News.js';
 import DataCards from '../../containers/DataCards';
 
 const App = () => {
@@ -25,7 +25,7 @@ const App = () => {
           <News />
         </Col>
       </Row>
-      
+
       <Row>
         <Col md={12} lg={12} id='nhs-container'>
           <Nhs />

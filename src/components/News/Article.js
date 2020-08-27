@@ -4,7 +4,7 @@ import { Card } from 'react-bootstrap';
 const Article = ({ article }) => {
 
   return (
-      <Card>
+      <Card id='article'>
         <Card.Img variant="top" src={article.urlToImage} />
         <Card.Body>
           <Card.Title>{article.title}</Card.Title>

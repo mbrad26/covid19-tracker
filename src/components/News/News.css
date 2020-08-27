@@ -2,6 +2,10 @@
   padding: 5px;
 }
 
+#article {
+  margin-bottom: 10px;
+}
+
 #article-description {
   padding: 5px 5px 0px 0px;
   overflow: hidden;
