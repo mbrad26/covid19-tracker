@@ -24,52 +24,49 @@ const DataCards = ({
 
   return (
     <div>
-      {isLoading
-        ? <Spinner id='spinner-cards' animation="border" variant="light" role="status"/>
-        : globalData.cases ? (
-          <Row>
-            <Col md={4} className='' id='card-cases'>
-              <ConfirmedCard
-                country={globalData.country ? globalData.country : 'Worldwide'}
-                lastUpdated={new Date(globalData.updated).toDateString()}
-                cases={globalData.cases}
-                casesIncrease={globalData.todayCases}
-                historicalData={
-                  historicalData.timeline
-                  ? historicalData.timeline.cases
-                  : historicalData.cases
-                }
-              />
+      {isLoading && <Spinner id='spinner-cards' animation="border" variant="light" role="status" />}
+      {globalData.cases &&
+        <Row>
+          <Col md={4} className='' id='card-cases'>
+            <ConfirmedCard
+              country={globalData.country ? globalData.country : 'Worldwide'}
+              lastUpdated={new Date(globalData.updated).toDateString()}
+              cases={globalData.cases}
+              casesIncrease={globalData.todayCases}
+              historicalData={
+                historicalData.timeline
+                ? historicalData.timeline.cases
+                : historicalData.cases
+              }
+            />
+          </Col>
+          <Col md={4} className='' id='card-deaths'>
+            <DeathsCard
+              country={globalData.country ? globalData.country : 'Worldwide'}
+              lastUpdated={new Date(globalData.updated).toDateString()}
+              deaths={globalData.deaths}
+              deathsIncrease={globalData.todayDeaths}
+              historicalData={
+                historicalData.timeline
+                ? historicalData.timeline.deaths
+                : historicalData.deaths
+              }
+            />
+          </Col>
+          <Col md={4} className='' id='card-recovered'>
+            <RecoveredCard
+              country={globalData.country ? globalData.country : 'Worldwide'}
+              lastUpdated={new Date(globalData.updated).toDateString()}
+              recovered={globalData.recovered}
+              recoveredIncrease={globalData.todayRecovered}
+              historicalData={
+                historicalData.timeline
+                ? historicalData.timeline.recovered
+                : historicalData.recovered
+              }
+            />
             </Col>
-            <Col md={4} className='' id='card-deaths'>
-              <DeathsCard
-                country={globalData.country ? globalData.country : 'Worldwide'}
-                lastUpdated={new Date(globalData.updated).toDateString()}
-                deaths={globalData.deaths}
-                deathsIncrease={globalData.todayDeaths}
-                historicalData={
-                  historicalData.timeline
-                  ? historicalData.timeline.deaths
-                  : historicalData.deaths
-                }
-              />
-            </Col>
-            <Col md={4} className='' id='card-recovered'>
-              <RecoveredCard
-                country={globalData.country ? globalData.country : 'Worldwide'}
-                lastUpdated={new Date(globalData.updated).toDateString()}
-                recovered={globalData.recovered}
-                recoveredIncrease={globalData.todayRecovered}
-                historicalData={
-                  historicalData.timeline
-                  ? historicalData.timeline.recovered
-                  : historicalData.recovered
-                }
-              />
-              </Col>
-          </Row>
-        )
-        : null
+        </Row>
       }
       {isError && <h3>Something went wrong ...</h3>}
     </div>

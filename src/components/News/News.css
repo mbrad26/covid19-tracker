@@ -2,6 +2,10 @@
   padding: 5px;
 }
 
+#spinner-news {
+  margin: 100px;
+}
+
 #article {
   margin-bottom: 10px;
 }
