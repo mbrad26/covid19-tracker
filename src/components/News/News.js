@@ -17,7 +17,7 @@ const News = () => {
   }, [dispatch]);
 
   return (
-    <div className='news-container'>
+    <div className='news'>
       {articles &&
         articles.slice(0, 6).map(article =>
           <Row key={article.title}>

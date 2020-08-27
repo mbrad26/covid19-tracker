@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
+import './Nhs.css';
 import { doNHSLoading } from '../../actions/nhsData';
 
 const Nhs = () => {
@@ -10,10 +11,14 @@ const Nhs = () => {
   useEffect(() => {
     dispatch(doNHSLoading());
   }, [dispatch]);
-  
+
   return(
-    <div>
-      NHS
+    <div id='nhs'>
+      {nhsData.author &&
+        nhsData.hasPart.map(part =>
+          <p>{part.description}</p>
+        )
+      }
     </div>
   );
 };

@@ -21,6 +21,7 @@ body {
 
 #data-cards-container {
   overflow: hidden;
+  display: inline-flex;
 }
 
 @media only screen and (max-width: 767px) {

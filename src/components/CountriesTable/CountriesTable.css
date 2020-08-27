@@ -4,6 +4,15 @@
   font-size: 0.8em;
 }
 
+#spinner {
+  position: absolute;
+  margin: auto;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
 .table {
   width: inherit;
   margin-bottom: 0px;
@@ -27,7 +36,6 @@
 
 #recovered {
   margin-left: 0px;
-  padding-right: 5px;
 }
 
 img {

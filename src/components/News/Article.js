@@ -16,7 +16,7 @@ const Article = ({ article }) => {
             </i>
           </p>
           <p>{article.description}</p>
-          <a href={article.url} target='_blank'>Read full article ...</a>
+          <a href={article.url} target='_blank' rel='noopener noreferrer'>Read full article ...</a>
         </div>
       </div>
   );

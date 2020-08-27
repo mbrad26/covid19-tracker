@@ -6,8 +6,6 @@ import Nhs from '../Nhs/Nhs';
 import News from '../News/News';
 import Map from '../../containers/Map';
 import DataCards from '../../containers/DataCards';
-import CountriesTable from '../../containers/CountriesTable';
-
 
 const App = () => {
   console.log('App');
@@ -25,12 +23,12 @@ const App = () => {
         </Col>
       </Row>
       <Row>
-        <Col md={12} lg={12} id='news'>
+        <Col md={12} lg={12} id='news-container'>
           <News />
         </Col>
       </Row>
       <Row>
-        <Col md={12} lg={12} id='nhs'>
+        <Col md={12} lg={12} id='nhs-container'>
           <Nhs />
         </Col>
       </Row>

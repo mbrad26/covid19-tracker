@@ -12,6 +12,10 @@
   font-weight: bold;
 }
 
+#spinner-cards {
+  margin: 100px;
+}
+
 i {
   float: right;
   font-size: 2rem;

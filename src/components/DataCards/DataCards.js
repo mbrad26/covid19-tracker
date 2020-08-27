@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Row, Col } from 'react-bootstrap';
+import { Spinner, Row, Col } from 'react-bootstrap';
 
 import './DataCards.css';
 import DeathsCard from './DeathsCard';
@@ -25,7 +25,7 @@ const DataCards = ({
   return (
     <div>
       {isLoading
-        ? <h3>Loading ...</h3>
+        ? <Spinner id='spinner-cards' animation="border" variant="light" role="status"/>
         : globalData.cases ? (
           <Row>
             <Col md={4} className='' id='card-cases'>

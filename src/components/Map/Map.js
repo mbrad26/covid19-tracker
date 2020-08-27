@@ -13,6 +13,7 @@ const Map = ({ viewPort, onViewChange }) => {
 
   return (
     <div className='' id='map-component'>
+      <CountriesTable />
       <ReactMapGl
         {...viewPort}
         mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
@@ -26,7 +27,6 @@ const Map = ({ viewPort, onViewChange }) => {
         </div>
         <MarkerComponent />
       </ReactMapGl>
-      <CountriesTable />
     </div>
   );
 };

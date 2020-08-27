@@ -8,7 +8,7 @@ const INITIAL_STATE = {
   zoom: 0.93,
   maxZoom: 11,
   minZoom: 0.7,
-  latitude: 20,
+  latitude: 30,
   longitude: 10,
   width: window.innerWidth * 0.58,
   height: window.innerHeight * 0.65,
