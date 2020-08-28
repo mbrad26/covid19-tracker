@@ -1,6 +1,6 @@
 #nhs {
   margin-top: 0px;
-  padding: 10px 10px 10px 0px;
+  padding: 0px 10px 10px 0px;
 }
 
 .nav-tabs > a {
@@ -26,6 +26,17 @@
   padding: 35px;
   background-color: #ffffff;
   overflow-y: scroll;
-  height: 500px;
-  max-height: 500px;
+  height: 625px;
+}
+
+@media only screen and (max-width: 1199px) {
+  .tab-pane {
+    height: inherit;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .tab-pane {
+    height: 500px;
+  }
 }

@@ -1,15 +1,11 @@
-.news {
-  overflow-y: scroll;
-  max-height: 820px;
-}
-
 #spinner-news {
-  margin: 100px;
+  margin: 130px;
 }
 
 #article {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   background-color: #E9E8E6;
+  height: 450px;
 }
 
 #article-description {
@@ -27,4 +23,16 @@
 .far.fa-clock {
   font-size: 0.8rem;
   margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 1199px) {
+  #article {
+    height: 440px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #article {
+    height: 560px;
+  }
 }

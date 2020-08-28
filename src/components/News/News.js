@@ -18,15 +18,17 @@ const News = ({
   console.log('NEWS: ', isLoading);
 
   return (
-    <div className='news'>
+    <Row className='news'>
       {isLoading && <Spinner id='spinner-news' animation="border" variant="light" role="status"/>}
       {articles &&
-        articles.slice(0, 8).map(article =>
-          <Article key={article.url} article={article} />
+        articles.map(article =>
+          <Col md={12} lg={4} xl={12}>
+            <Article key={article.url} article={article} />
+          </Col>
         )
       }
       {isError && <h3>Something went wrong ...</h3>}
-    </div>
+    </Row>
   );
 };
 

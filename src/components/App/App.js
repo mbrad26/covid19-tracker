@@ -17,8 +17,8 @@ const App = () => {
           <Map />
         </Col>
       </Row>
-      <Row>
-        <Col lg={10} id='data-cards-container'>
+      <Row id='data-nhs-news'>
+        <Col md={7} lg={12} xl={9} id='data-cards-container'>
           <DataCards />
           <Row>
             <Col lg={12} id='nhs-container'>
@@ -26,7 +26,7 @@ const App = () => {
             </Col>
           </Row>
         </Col>
-        <Col lg={2} id='news-container'>
+        <Col md={5} lg={12} xl={3} id='news-container'>
           <News />
         </Col>
       </Row>

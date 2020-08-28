@@ -26,8 +26,8 @@ const DataCards = ({
     <div>
       {isLoading && <Spinner id='spinner-cards' animation="border" variant="light" role="status" />}
       {globalData.cases &&
-        <Row>
-          <Col md={4} className='' id='card-cases'>
+        <Row id='holder'>
+          <Col md={12} lg={4} className='' id='card-cases'>
             <ConfirmedCard
               country={globalData.country ? globalData.country : 'Worldwide'}
               lastUpdated={new Date(globalData.updated).toDateString()}
@@ -40,7 +40,7 @@ const DataCards = ({
               }
             />
           </Col>
-          <Col md={4} className='' id='card-deaths'>
+          <Col md={12} lg={4} className='' id='card-deaths'>
             <DeathsCard
               country={globalData.country ? globalData.country : 'Worldwide'}
               lastUpdated={new Date(globalData.updated).toDateString()}
@@ -53,7 +53,7 @@ const DataCards = ({
               }
             />
           </Col>
-          <Col md={4} className='' id='card-recovered'>
+          <Col md={12} lg={4} className='' id='card-recovered'>
             <RecoveredCard
               country={globalData.country ? globalData.country : 'Worldwide'}
               lastUpdated={new Date(globalData.updated).toDateString()}

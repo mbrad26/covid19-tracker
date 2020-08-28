@@ -20,6 +20,13 @@ body {
 
 #data-cards-container {
   overflow: hidden;
+  padding-right: 5px;
+}
+
+#data-nhs-news {
+  height: 920px;
+  overflow-y: hidden;
+  margin-bottom: 25px;
 }
 
 #nhs-container {
@@ -27,9 +34,39 @@ body {
 }
 
 #news-container {
-  padding: 5px 5px;
+  margin-top: 5px;
+  padding: 0px 5px 5px;
+  overflow: scroll;
+  height: inherit;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 2339px) {
+  #table-container {
+    font-size: 1rem;
+    width: 28vw;
+  }
 
+  #map-component {
+    max-height: 50vh;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  #table-container {
+    width: 29vw;
+  }
+
+  #map-component {
+    max-height: 55vh;
+  }
+
+  #data-nhs-news {
+    height: 1500px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #data-nhs-news {
+    height: 2500px;
+  }
 }

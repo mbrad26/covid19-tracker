@@ -12,6 +12,10 @@
   font-weight: bold;
 }
 
+#holder {
+  padding-right: 10px;
+}
+
 #spinner-cards {
   margin: 100px;
 }
@@ -40,9 +44,13 @@ i {
 #card-cases,
 #card-deaths,
 #card-recovered {
-  min-width: 275px;
+  min-width: 270px;
   padding: 5px;
   margin: auto;
+}
+
+#card-recovered {
+  /* padding-right: 15px; */
 }
 
 #update {
