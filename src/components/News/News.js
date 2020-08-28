@@ -22,8 +22,8 @@ const News = ({
       {isLoading && <Spinner id='spinner-news' animation="border" variant="light" role="status"/>}
       {articles &&
         articles.map(article =>
-          <Col md={12} lg={4} xl={12}>
-            <Article key={article.url} article={article} />
+          <Col md={12} lg={4} xl={12} key={article.url}>
+            <Article article={article} />
           </Col>
         )
       }

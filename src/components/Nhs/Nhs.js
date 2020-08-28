@@ -1,38 +1,34 @@
 import React, { useEffect } from 'react';
 import { Tabs, Tab } from 'react-bootstrap';
 import ReactHtmlParser from 'react-html-parser';
-import { useDispatch, useSelector } from 'react-redux';
 
 import './Nhs.css';
-import { doNHSLoading } from '../../actions/nhsData';
+import { formatter } from './utils';
 
-const Nhs = () => {
-  const nhsData = useSelector(state => state.nhsDataState.data);
-  const dispatch = useDispatch();
-
-  const formatter = string => {
-    let str = string.includes('_')
-                ? string.split('_').join(' ')
-                : string
-
-  return str.split('_').join(' ')[0].toUpperCase() + str.slice(1);
-}
-
-
+const Nhs = ({
+  nhsData,
+  isError,
+  isLoading,
+  loadingNhsData,
+  }) => {
   useEffect(() => {
-    dispatch(doNHSLoading());
-  }, [dispatch]);
+    loadingNhsData();
+  }, [loadingNhsData]);
 
   return (
     <div id='nhs'>
       {nhsData.author &&
         <Tabs defaultActiveKey="overview">
           {nhsData.hasPart.map(part =>
-            <Tab eventKey={part.name} title={formatter(part.name)}>
-              <img src={nhsData.author.logo} />
+            <Tab key={part.name} eventKey={part.name} title={formatter(part.name)}>
+              <img src={nhsData.author.logo} alt='NHS logo'/>
               <hr />
               {ReactHtmlParser(part.text)}
-              <p><a href={part.url} target='_blank'>More details on NHS webpage</a></p>
+              <p>
+                <a href={part.url} target='_blank' rel='noopener noreferrer'>
+                  More details on NHS webpage
+                </a>
+              </p>
             </Tab>
           )}
         </Tabs>
