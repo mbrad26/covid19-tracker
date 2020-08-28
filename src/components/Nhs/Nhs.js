@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Tabs, Tab } from 'react-bootstrap';
+import { Tabs, Tab, Spinner } from 'react-bootstrap';
 import ReactHtmlParser from 'react-html-parser';
 
 import './Nhs.css';
@@ -17,6 +17,7 @@ const Nhs = ({
 
   return (
     <div id='nhs'>
+      {isLoading && <Spinner id='spinner-nhs' animation="border" variant="light" role="status"/>}
       {nhsData.author &&
         <Tabs defaultActiveKey="overview">
           {nhsData.hasPart.map(part =>
@@ -33,6 +34,7 @@ const Nhs = ({
           )}
         </Tabs>
       }
+      {isError && <h3>Something went wrong ...</h3>}
   </div>
   );
 };

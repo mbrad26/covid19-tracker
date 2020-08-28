@@ -3,6 +3,10 @@
   padding: 0px 10px 10px 0px;
 }
 
+#spinner-nhs {
+  margin: 100px;
+}
+
 .nav-tabs > a {
   color: #E9E8E6;
   font-weight: bold;
