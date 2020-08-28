@@ -65,3 +65,12 @@ button:focus {
   outline: none;
   font-weight: bold;
 }
+
+@media only screen and (min-width: 2339px) {
+  #table-container {
+    overflow-y: scroll;
+    font-size: 1rem;
+    max-height: 65vh;
+    width: 28vw;
+  }
+}

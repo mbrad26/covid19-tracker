@@ -1,6 +1,6 @@
 .news {
   overflow-y: scroll;
-  height: 81vh;
+  max-height: 820px;
 }
 
 #spinner-news {
