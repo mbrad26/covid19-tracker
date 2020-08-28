@@ -9,7 +9,16 @@ import { doNHSLoading } from '../../actions/nhsData';
 const Nhs = () => {
   const nhsData = useSelector(state => state.nhsDataState.data);
   const dispatch = useDispatch();
-  
+
+  const formatter = string => {
+    let str = string.includes('_')
+                ? string.split('_').join(' ')
+                : string
+
+  return str.split('_').join(' ')[0].toUpperCase() + str.slice(1);
+}
+
+
   useEffect(() => {
     dispatch(doNHSLoading());
   }, [dispatch]);
@@ -19,7 +28,7 @@ const Nhs = () => {
       {nhsData.author &&
         <Tabs defaultActiveKey="overview">
           {nhsData.hasPart.map(part =>
-            <Tab eventKey={part.name} title={part.name}>
+            <Tab eventKey={part.name} title={formatter(part.name)}>
               {ReactHtmlParser(part.text)}
             </Tab>
           )}
