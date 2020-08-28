@@ -29,7 +29,10 @@ const Nhs = () => {
         <Tabs defaultActiveKey="overview">
           {nhsData.hasPart.map(part =>
             <Tab eventKey={part.name} title={formatter(part.name)}>
+              <img src={nhsData.author.logo} />
+              <hr />
               {ReactHtmlParser(part.text)}
+              <p><a href={part.url} target='_blank'>More details on NHS webpage</a></p>
             </Tab>
           )}
         </Tabs>

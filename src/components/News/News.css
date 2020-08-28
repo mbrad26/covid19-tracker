@@ -1,6 +1,6 @@
 .news {
   overflow-y: scroll;
-  height: 75vh;
+  height: 81vh;
 }
 
 #spinner-news {
@@ -16,7 +16,7 @@
   padding: 5px 5px 0px 0px;
   overflow: hidden;
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
 }
 

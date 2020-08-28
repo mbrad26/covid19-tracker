@@ -1,9 +1,32 @@
 #nhs {
-  color: white;
   margin-top: 0px;
+  padding: 10px;
 }
 
-a {
-  color: white;
+.nav-tabs > a {
+  color: #E9E8E6;
   font-weight: bold;
+}
+
+.tab-pane.active img {
+  margin-bottom: 15px;
+  width: 250px;
+  height: auto;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: #E9E8E6;
+}
+
+.nav-tabs .nav-link {
+  border-bottom: 1px solid #E9E8E6;
+}
+
+.tab-pane {
+  padding: 35px;
+  background-color: #ffffff;
+  overflow-y: scroll;
+  height: 43.5vh;
+  min-height: 43.5vh;
+
 }
