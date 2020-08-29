@@ -2,6 +2,12 @@
 
 Work in progress ...
 
+![](./images/Screenshot.png)
+
+![](./images/Screenshot2.png)
+
+![](./images/Screenshot4.png)
+
 ### Getting started
 
 Clone this repository to your local machine.
@@ -31,9 +37,9 @@ For graphical data visualisation I chose Chart.js.
 
 #### Main components:
 
-* Map component: - geospatial data visualisation;
+* Map component: - provides geospatial data visualisation;
 * CountriesTable component: - sortable countries list by the number of confirmed, deaths and recovered cases;
-* DataCards component: - graphical representation of time-series data for each particular country and also for the world;
+* DataCards component: - graphical representation of time-series data for each particular country and also for the world as a whole;
 * News component: - news about covid-19 virus from around the world;
 * NHS component: - displays up to date information about the covid-19 virus from NHS UK regarding symptoms, treatments, prevention etc.
 
@@ -41,7 +47,8 @@ For graphical data visualisation I chose Chart.js.
 
 * React
 * Redux
+* Redux-saga
 * Axios
-* MapBox GL JS
+* MapBox-GL JS
 * Chart.js
 * Bootstrap
