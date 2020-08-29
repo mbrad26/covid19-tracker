@@ -27,4 +27,14 @@ export const style = {
   7: {height: 30 + 'px', width: 30 + 'px', backgroundColor: '#e31a1c'},
   8: {height: 36 + 'px', width: 36 + 'px', backgroundColor: '#bd0026'},
   9: {height: 50 + 'px', width: 50 + 'px', backgroundColor: '#800026'},
+};
+
+export const styleDiv = {
+  padding: '0px 0px 0px 5px',
 }
+
+export const styleParagraph = {
+  fontSize: '.8rem',
+  margin: '7px',
+  fontWeight: 'bold',
+};

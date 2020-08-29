@@ -42,9 +42,9 @@ const Country = ({
           {country.country}
         </button>
       </td>
-      <td>{country.cases}</td>
-      <td>{country.deaths}</td>
-      <td>{country.recovered}</td>
+      <td>{country.cases.toLocaleString()}</td>
+      <td>{country.deaths.toLocaleString()}</td>
+      <td>{country.recovered.toLocaleString()}</td>
     </tr>
   );
 };
