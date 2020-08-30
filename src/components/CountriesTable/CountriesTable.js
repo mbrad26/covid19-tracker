@@ -26,8 +26,6 @@ const CountriesTable = ({
     loadingData()
   }, [loadingData]);
 
-  console.log('TABLE');
-
   return (
      <div id='table-container'>
       {isLoading

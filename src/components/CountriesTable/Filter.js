@@ -36,8 +36,6 @@ const Filter = ({
     setQuery('');
   };
 
-  console.log('FILTER');
-
   return (
     <div id='form'>
       <form onSubmit={handleSubmit}>

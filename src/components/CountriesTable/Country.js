@@ -13,8 +13,6 @@ const Country = ({
   }) => {
   const dispatch = useDispatch();
 
-  console.log('COUNTRY');
-
   const handleClick = () => {
     dataSuccess(country);
     updateEndPoint(country.country);
