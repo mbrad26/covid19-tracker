@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CountriesTable renders snapshot 1`] = `
+<div
+  id="table-container"
+>
+  <div
+    class="spinner-border text-primary"
+    id="spinner"
+    role="status"
+  />
+</div>
+`;
