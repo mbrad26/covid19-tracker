@@ -3,15 +3,15 @@ import { Provider } from 'react-redux';
 import { render } from '@testing-library/react';
 
 import store from '../../../store';
-import App from '../../../components/App/App';
+import Map from '../../../containers/Map';
 
-describe('App', () => {
+describe('Map', () => {
   it('renders snapshot', () => {
     const { container } = render(
       <Provider store={store} >
-        <App />
+        <Map />
       </Provider>
-      );
+    );
 
     expect(container.firstChild).toMatchSnapshot();
   });
