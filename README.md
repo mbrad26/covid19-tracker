@@ -7,11 +7,9 @@ Work in progress ...
 [<img src="./images/Screenshot.png" width="50%">](https://www.youtube.com/embed/88msuinkYQE)
 
 
-[<img src="./images/Screenshot.png" width="50%">]()
-
-[<img src="./images/Screenshot2.png" width="50%">]()
-
-[<img src="./images/Screenshot4.png" width="50%">]()
+[<img src="./images/Screenshot.png" width="33%">]()
+[<img src="./images/Screenshot2.png" width="33%">]()
+[<img src="./images/Screenshot4.png" width="33%">]()
 
 ### Getting started
 
