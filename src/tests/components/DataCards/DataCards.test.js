@@ -7,12 +7,12 @@ import DataCards from '../../../containers/DataCards';
 
 describe('DataCards', () => {
   it('renders snapshot', () => {
-    const { asFragment } = render(
+    const { container } = render(
       <Provider store={store} >
         <DataCards />
       </Provider>
     );
 
-    expect(asFragment).toMatchSnapshot();
+    expect(container.firstChild).toMatchSnapshot();
   });
 });

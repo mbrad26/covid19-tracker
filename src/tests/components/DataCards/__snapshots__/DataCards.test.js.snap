@@ -1,3 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`DataCards renders snapshot 1`] = `[Function]`;
+exports[`DataCards renders snapshot 1`] = `
+<div>
+  <div
+    class="spinner-border text-light"
+    id="spinner-cards"
+    role="status"
+  />
+</div>
+`;

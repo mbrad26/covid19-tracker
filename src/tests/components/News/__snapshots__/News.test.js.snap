@@ -1,3 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`News renders snapshot 1`] = `[Function]`;
+exports[`News renders snapshot 1`] = `
+<div
+  class="news row"
+>
+  <div
+    class="spinner-border text-light"
+    id="spinner-news"
+    role="status"
+  />
+</div>
+`;

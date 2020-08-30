@@ -7,12 +7,12 @@ import Nhs from '../../../containers/Nhs';
 
 describe('Nhs', () => {
   it('renders snapshot', () => {
-    const { asFragment } = render(
+    const { container } = render(
       <Provider store={store} >
         <Nhs />
       </Provider>
     );
 
-    expect(asFragment).toMatchSnapshot();
+    expect(container.firstChild).toMatchSnapshot();
   });
 });

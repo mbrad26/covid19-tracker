@@ -7,12 +7,12 @@ import News from '../../../containers/News';
 
 describe('News', () => {
   it('renders snapshot', () => {
-    const { asFragment } = render(
+    const { container } = render(
       <Provider store={store} >
         <News />
       </Provider>
     );
 
-    expect(asFragment).toMatchSnapshot();
+    expect(container.firstChild).toMatchSnapshot();
   });
 });

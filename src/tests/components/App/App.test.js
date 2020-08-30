@@ -7,12 +7,12 @@ import App from '../../../components/App/App.js';
 
 describe('App', () => {
   it('renders snapshot', () => {
-    const { asFragment } = render(
+    const { container } = render(
       <Provider store={store} >
         <App />
       </Provider>
       );
 
-    expect(asFragment).toMatchSnapshot();
+    expect(container.firstChild).toMatchSnapshot();
   });
 });
