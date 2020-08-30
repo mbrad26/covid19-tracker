@@ -1,26 +1,26 @@
 import {
-  doDataError,
-  doDataLoading,
-  doDataSuccess,
-} from '../../actions/globalData';
+  doReset,
+  doZoomOnCountry,
+  doChangeViewPort
+} from '../../actions/mapboxData';
 
-describe('doDataLoading', () => {
+describe('doReset', () => {
   it('returns the correct object', () => {
-    const action = doDataLoading();
+    const action = doReset();
     const expectedAction = {
-      type: 'DATA_LOADING',
+      type: 'RESET',
     };
 
     expect(action).toEqual(expectedAction);
   });
 });
 
-describe('doDataSuccess', () => {
+describe('doZoomOnCountry', () => {
   it('returns the correct object', () => {
     const data = {};
-    const action = doDataSuccess(data);
+    const action = doZoomOnCountry(data);
     const expectedAction = {
-      type: 'DATA_SUCCESS',
+      type: 'ZOOM_ON_COUNTRY',
       payload: data,
     };
 
@@ -28,11 +28,13 @@ describe('doDataSuccess', () => {
   });
 });
 
-describe('doDataError', () => {
+describe('doChangeViewPort', () => {
   it('returns the correct object', () => {
-    const action = doDataError();
+    const viewPort = {};
+    const action = doChangeViewPort(viewPort);
     const expectedAction = {
-      type: 'DATA_ERROR',
+      type: 'CHANGE_VIEWPORT',
+      payload: viewPort,
     };
 
     expect(action).toEqual(expectedAction);

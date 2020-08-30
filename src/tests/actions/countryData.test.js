@@ -7,7 +7,7 @@ describe('doSetActive', () => {
     const expectedAction = {
       type: 'SET_ACTIVE',
       payload: data,
-    }
+    };
 
     expect(action).toEqual(expectedAction);
   });
@@ -19,7 +19,7 @@ describe('doSetInactive', () => {
     const action = doSetInactive();
     const expectedAction = {
       type: 'SET_INACTIVE',
-    }
+    };
 
     expect(action).toEqual(expectedAction);
   });

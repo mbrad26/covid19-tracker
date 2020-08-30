@@ -10,7 +10,7 @@ describe('doCountriesDataLoading', () => {
     const action = doCountriesDataLoading();
     const expectedAction = {
       type: 'COUNTRIES_DATA_LOADING',
-    }
+    };
 
     expect(action).toEqual(expectedAction);
   });
@@ -23,7 +23,7 @@ describe('doCountriesDataSuccess', () => {
     const expectedAction = {
       type: 'COUNTRIES_DATA_SUCCESS',
       payload: data,
-    }
+    };
 
     expect(action).toEqual(expectedAction);
   });
@@ -34,7 +34,7 @@ describe('doCountriesDataError', () => {
     const action = doCountriesDataError();
     const expectedAction = {
       type: 'COUNTRIES_DATA_ERROR',
-    }
+    };
 
     expect(action).toEqual(expectedAction);
   });
@@ -49,7 +49,7 @@ describe('doCountriesDataSort', () => {
       type: 'COUNTRIES_DATA_SORT',
       key,
       sort,
-    }
+    };
 
     expect(action).toEqual(expectedAction);
   });

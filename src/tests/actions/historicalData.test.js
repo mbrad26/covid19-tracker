@@ -13,7 +13,7 @@ describe('doUpdateEndPoint', () => {
     const expectedAction = {
       type: 'HISTORICAL_URL_ENDPOINT_UPDATE',
       payload: endPoint,
-    }
+    };
 
     expect(action).toEqual(expectedAction);
   });
@@ -24,7 +24,7 @@ describe('doHistoricalDataError', () => {
     const action = doHistoricalDataError();
     const expectedAction = {
       type: 'HISTORICAL_DATA_ERROR',
-    }
+    };
 
     expect(action).toEqual(expectedAction);
   });
@@ -35,7 +35,7 @@ describe('doHistoricalDataLoading', () => {
     const action = doHistoricalDataLoading();
     const expectedAction = {
       type: 'HISTORICAL_DATA_LOADING',
-    }
+    };
 
     expect(action).toEqual(expectedAction);
   });
@@ -48,7 +48,7 @@ describe('doHistoricalDataSuccess', () => {
     const expectedAction = {
       type: 'HISTORICAL_DATA_SUCCESS',
       payload: data,
-    }
+    };
 
     expect(action).toEqual(expectedAction);
   });
@@ -59,7 +59,7 @@ describe('doHistoricalCountryDataLoading', () => {
     const action = doHistoricalCountryDataLoading();
     const expectedAction = {
       type: 'HISTORICAL_COUNTRY_DATA_LOADING',
-    }
+    };
 
     expect(action).toEqual(expectedAction);
   });
