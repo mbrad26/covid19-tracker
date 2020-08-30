@@ -20,8 +20,8 @@ const doCountriesDataError = () => ({
 
 const doCountriesDataSort = (key, sort) => ({
   type: COUNTRIES_DATA_SORT,
-  key: key,
-  sort: sort,
+  key,
+  sort,
 })
 
 export {
