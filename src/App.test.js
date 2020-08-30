@@ -1,6 +1,14 @@
 import React from 'react';
-import { render } from '@testing-library/react';
-import App from './components/App/App';
+import ReactDOM from 'react-dom';
 
-test('renders learn react link', () => {
-});
+jest.mock("react-dom", () => ({ render: jest.fn() }))
+
+it("renders with App and root div", () => {
+  const root = document.createElement("div")
+  root.id = "root"
+  document.body.appendChild(root)
+
+  require("./index.js")
+
+  expect(ReactDOM.render).toHaveBeenCalled();
+})
