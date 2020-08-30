@@ -25,8 +25,8 @@ const doCountriesDataSort = (key, sort) => ({
 })
 
 export {
+  doCountriesDataSort,
+  doCountriesDataError,
   doCountriesDataLoading,
   doCountriesDataSuccess,
-  doCountriesDataError,
-  doCountriesDataSort,
 };
