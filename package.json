@@ -44,6 +44,7 @@
     ]
   },
   "devDependencies": {
-    "@babel/register": "^7.10.5"
+    "@babel/register": "^7.10.5",
+    "jest-canvas-mock": "^2.2.0"
   }
 }

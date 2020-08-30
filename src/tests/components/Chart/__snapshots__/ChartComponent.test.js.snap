@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ChartComponent renders snapshot 1`] = `
+<canvas
+  class="chartjs-render-monitor"
+  height="0"
+  style="display: block;"
+  width="0"
+/>
+`;
