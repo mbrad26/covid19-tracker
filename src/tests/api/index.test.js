@@ -1,7 +1,6 @@
 import { fetchData } from '../../api/';
 import axios from 'axios';
 
-
 jest.mock('axios');
 
 describe('fetchData', () => {
