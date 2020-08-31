@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Country renders snapshot 1`] = `
+<tr>
+  <td>
+    <img
+      alt="Albania flag"
+      class=""
+      id="flag"
+      loading="lazy"
+      src="https://disease.sh/assets/img/flags/al.png"
+    />
+  </td>
+  <td>
+    <button>
+      Albania
+    </button>
+  </td>
+  <td>
+    9,513
+  </td>
+  <td>
+    284
+  </td>
+  <td>
+    5,214
+  </td>
+</tr>
+`;

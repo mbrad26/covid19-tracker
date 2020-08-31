@@ -4,10 +4,51 @@ exports[`CountriesTable renders snapshot 1`] = `
 <div
   id="table-container"
 >
-  <div
-    class="spinner-border text-primary"
-    id="spinner"
-    role="status"
-  />
+  <table
+    class="table table-sm"
+  >
+    <thead>
+      <tr>
+        <th>
+          Flag
+        </th>
+        <th>
+          <div
+            id="form"
+          >
+            <form>
+              <input
+                placeholder="Search ..."
+                type="text"
+                value=""
+              />
+            </form>
+          </div>
+        </th>
+        <th>
+          <button
+            id="cases"
+          >
+            Cases
+          </button>
+        </th>
+        <th>
+          <button
+            id="deaths"
+          >
+            Deaths
+          </button>
+        </th>
+        <th>
+          <button
+            id="recovered"
+          >
+            Recovered
+          </button>
+        </th>
+      </tr>
+    </thead>
+    <tbody />
+  </table>
 </div>
 `;
