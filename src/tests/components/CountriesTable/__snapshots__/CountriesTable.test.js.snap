@@ -48,7 +48,6 @@ exports[`CountriesTable renders snapshot 1`] = `
         </th>
       </tr>
     </thead>
-    <tbody />
   </table>
 </div>
 `;

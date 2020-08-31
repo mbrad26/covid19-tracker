@@ -58,11 +58,9 @@ const CountriesTable = ({
                 </th>
               </tr>
             </thead>
-            <tbody>
             {filteredCountries.map(country =>
               <Country key={country.country} country={country} />
             )}
-            </tbody>
           </Table>
         }
         {isError && <h3>Something went wrong ...</h3>}
