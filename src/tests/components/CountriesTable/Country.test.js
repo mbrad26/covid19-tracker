@@ -69,7 +69,7 @@ describe('Country', () => {
     expect(countryProps.setInactive).toHaveBeenCalledTimes(1);
   });
 
-  it('clicking the button calls the callback handler', () => {
+  it('clicking the button setActive after 2 seconds', () => {
     fireEvent.click(screen.getByRole('button', { name: 'Albania' }));
 
     expect(countryProps.setActive).toHaveBeenCalledTimes(1);
