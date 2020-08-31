@@ -22,4 +22,15 @@ describe('countryDataReducer', () => {
 
     expect(newState).toStrictEqual(expectedState);
   });
+
+  it('returns state when action type is wrong', () => {
+    const data = {};
+    const action = { type: 'WRONG_ACTION' };
+    const state = { active: data };
+    const expectedState = { active: data };
+
+    const newState = countryDataReducer(state, action);
+
+    expect(newState).toStrictEqual(expectedState);
+  });
 });
