@@ -19,6 +19,8 @@ const Filter = ({
     setQuery(event.target.value);
   };
 
+  console.log('FILTERED_COUNTRIES: ', filteredCountries);
+
   const handleSubmit = event => {
     event.preventDefault();
     if (filteredCountries.length === 1) {
@@ -38,7 +40,7 @@ const Filter = ({
 
   return (
     <div id='form'>
-      <form onSubmit={handleSubmit}>
+      <form data-testid='form' onSubmit={handleSubmit}>
         <input
           type='text'
           placeholder='Search ...'

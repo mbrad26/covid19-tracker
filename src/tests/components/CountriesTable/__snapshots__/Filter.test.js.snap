@@ -4,7 +4,9 @@ exports[`Filter renders snapshot 1`] = `
 <div
   id="form"
 >
-  <form>
+  <form
+    data-testid="form"
+  >
     <input
       placeholder="Search ..."
       type="text"
