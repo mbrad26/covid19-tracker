@@ -93,8 +93,6 @@ describe('Filter', () => {
 
     fireEvent.submit(screen.getByTestId('form'), { preventDefault: { value: 'Albania' }});
 
-    screen.debug();
-
     expect(filterProps.dataSuccess).toHaveBeenCalledTimes(1);
     expect(filterProps.dataSuccess).toHaveBeenCalledWith(filterProps.filteredCountries[0]);
     // expect(filterProps.zoomOnCountry).toHaveBeenCalledTimes(1);

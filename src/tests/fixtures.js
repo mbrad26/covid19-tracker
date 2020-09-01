@@ -2,6 +2,14 @@ export const unsortedData = [
   {
     "cases": 38162,
     "country": "Afghanistan",
+    "countryInfo": {
+      "flag": "https://disease.sh/assets/img/flags/af.png",
+      "iso2": "AF",
+      "iso3": "AFG",
+      "lat": 33,
+      "long": 65,
+      "_id": 4,
+    },
     "deaths": 1402,
     "recovered": 29089,
     "todayCases": 19,
@@ -13,6 +21,14 @@ export const unsortedData = [
   {
     "cases": 9380,
     "country": "Albania",
+    "countryInfo": {
+      "flag": "https://disease.sh/assets/img/flags/al.png",
+      "iso2": "AL",
+      "iso3": "ALB",
+      "lat": 41,
+      "long": 20,
+      "_id": 8,
+    },
     "deaths": 280,
     "recovered": 5139,
     "todayCases": 101,
@@ -23,6 +39,14 @@ export const unsortedData = [
   {
     "cases": 272530,
     "country": "France",
+    "countryInfo": {
+      "flag": "https://disease.sh/assets/img/flags/fr.png",
+      "iso2": "FR",
+      "iso3": "FRA",
+      "lat": 46,
+      "long": 2,
+      "_id": 250,
+    },
     "deaths": 30602,
     "recovered": 86177,
     "todayCases": 0,
@@ -36,6 +60,14 @@ export const sortedAscData = [
   {
     "cases": 9380,
     "country": "Albania",
+    "countryInfo": {
+      "flag": "https://disease.sh/assets/img/flags/al.png",
+      "iso2": "AL",
+      "iso3": "ALB",
+      "lat": 41,
+      "long": 20,
+      "_id": 8,
+    },
     "deaths": 280,
     "recovered": 5139,
     "todayCases": 101,
@@ -46,6 +78,14 @@ export const sortedAscData = [
   {
     "cases": 38162,
     "country": "Afghanistan",
+    "countryInfo": {
+      "flag": "https://disease.sh/assets/img/flags/af.png",
+      "iso2": "AF",
+      "iso3": "AFG",
+      "lat": 33,
+      "long": 65,
+      "_id": 4,
+    },
     "deaths": 1402,
     "recovered": 29089,
     "todayCases": 19,
@@ -57,6 +97,14 @@ export const sortedAscData = [
   {
     "cases": 272530,
     "country": "France",
+    "countryInfo": {
+      "flag": "https://disease.sh/assets/img/flags/fr.png",
+      "iso2": "FR",
+      "iso3": "FRA",
+      "lat": 46,
+      "long": 2,
+      "_id": 250,
+    },
     "deaths": 30602,
     "recovered": 86177,
     "todayCases": 0,
