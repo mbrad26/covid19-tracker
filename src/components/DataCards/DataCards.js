@@ -17,8 +17,11 @@ const DataCards = ({
 
   useEffect(() => {
     loadingGlobalData();
+  }, [loadingGlobalData]);
+
+  useEffect(() => {
     loadingHistoricalData();
-  }, [loadingGlobalData, loadingHistoricalData]);
+  }, [loadingHistoricalData]);
 
   return (
     <div>

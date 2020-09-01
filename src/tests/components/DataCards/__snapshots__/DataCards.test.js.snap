@@ -3,9 +3,141 @@
 exports[`DataCards renders snapshot 1`] = `
 <div>
   <div
-    class="spinner-border text-light"
-    id="spinner-cards"
-    role="status"
-  />
+    class="row"
+    id="holder"
+  >
+    <div
+      class="col-lg-4 col-md-12"
+      id="card-cases"
+    >
+      <div
+        class="card"
+      >
+        <div
+          class="card-body"
+        >
+          <div
+            class="card-title h5"
+          >
+            Worldwide
+            : 
+            <span>
+              <span>
+                +0
+              </span>
+            </span>
+            <i
+              class="fas fa-frown-open"
+            />
+          </div>
+          <canvas
+            class="chartjs-render-monitor"
+            height="0"
+            style="display: block;"
+            width="0"
+          />
+          <p
+            class="card-text"
+          >
+            25,694,157
+            <span
+              class="text-muted"
+              id="update"
+            >
+              Tue Sep 01 2020
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="col-lg-4 col-md-12"
+      id="card-deaths"
+    >
+      <div
+        class="card"
+      >
+        <div
+          class="card-body"
+        >
+          <div
+            class="card-title h5"
+          >
+            Worldwide
+            : 
+            <span>
+              <span>
+                +0
+              </span>
+            </span>
+            <i
+              class="fas fa-skull-crossbones"
+            />
+          </div>
+          <canvas
+            class="chartjs-render-monitor"
+            height="0"
+            style="display: block;"
+            width="0"
+          />
+          <p
+            class="card-text"
+          >
+            855,941
+            <span
+              class="text-muted"
+              id="update"
+            >
+              Tue Sep 01 2020
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="col-lg-4 col-md-12"
+      id="card-recovered"
+    >
+      <div
+        class="card"
+      >
+        <div
+          class="card-body"
+        >
+          <div
+            class="card-title h5"
+          >
+            Worldwide
+            : 
+            <span>
+              <span>
+                +0
+              </span>
+            </span>
+            <i
+              class="fas fa-smile"
+            />
+          </div>
+          <canvas
+            class="chartjs-render-monitor"
+            height="0"
+            style="display: block;"
+            width="0"
+          />
+          <p
+            class="card-text"
+          >
+            17,994,215
+            <span
+              class="text-muted"
+              id="update"
+            >
+              Tue Sep 01 2020
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 `;
