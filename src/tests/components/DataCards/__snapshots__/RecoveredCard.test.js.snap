@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RecoveredCard renderes snapshot 1`] = `
+<div
+  class="card"
+>
+  <div
+    class="card-body"
+  >
+    <div
+      class="card-title h5"
+    >
+      Worldwide
+      : 
+      <span>
+        <span>
+          +0
+        </span>
+      </span>
+      <i
+        class="fas fa-smile"
+      />
+    </div>
+    <canvas
+      class="chartjs-render-monitor"
+      height="0"
+      style="display: block;"
+      width="0"
+    />
+    <p
+      class="card-text"
+    >
+      17,994,215
+      <span
+        class="text-muted"
+        id="update"
+      >
+        Tue Sep 01 2020
+      </span>
+    </p>
+  </div>
+</div>
+`;

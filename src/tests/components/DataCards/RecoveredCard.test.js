@@ -7,16 +7,16 @@ import RecoveredCard from '../../../components/DataCards/RecoveredCard';
 
 describe('RecoveredCard', () => {
   it('renderes snapshot', () => {
-    // const { container } = render(
-    //   <RecoveredCard
-    //     recovered={globalData.recovered}
-    //     country={globalData.country ? globalData.country : 'Worldwide'}
-    //     lastUpdated={new Date(globalData.updated).toDateString()}
-    //     recoveredIncrease={globalData.todayRecovered}
-    //     historicalData={historicalData}
-    //   />
-    // );
-    //
-    // expect(container.firstChild).toMatchSnapshot();
+    const { container } = render(
+      <RecoveredCard
+        recovered={globalData.recovered}
+        country={globalData.country ? globalData.country : 'Worldwide'}
+        lastUpdated={new Date(globalData.updated).toDateString()}
+        recoveredIncrease={globalData.todayRecovered}
+        historicalData={historicalData}
+      />
+    );
+
+    expect(container.firstChild).toMatchSnapshot();
   });
 });
