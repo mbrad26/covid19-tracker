@@ -66,8 +66,6 @@ describe('CountriesTable', () => {
       </Provider>
     );
 
-    screen.debug();
-
     expect(screen.getByText(/Something went wrong/)).toBeInTheDocument();
   });
 });

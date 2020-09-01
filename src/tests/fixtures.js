@@ -145,4 +145,28 @@ export const country = {
   "todayDeaths": 4,
   "todayRecovered": 75,
   "updated": 1598897286542,
+};
+
+export const globalData = {
+  "cases": 25694157,
+  "deaths": 855941,
+  "recovered": 17994215,
+  "todayCases": 65863,
+  "todayDeaths": 1517,
+  "todayRecovered": 61575,
+  "updated": 1598968635363,
+};
+
+export const historicalData = {
+  "cases": { "1/22/20": 555, "1/23/20": 654, "1/24/20": 941 },
+  "deaths": { "1/22/20": 5, "1/23/20": 54, "1/24/20": 41 },
+  "recovered": { "1/22/20": 55, "1/23/20": 454, "1/24/20": 341 },
+}
+
+export const historicalCountryData = {
+  "timeline": {
+    "cases": { "1/22/20": 5, "1/23/20": 4, "1/24/20": 9 },
+    "deaths": { "1/22/20": 0, "1/23/20": 0, "1/24/20": 1 },
+    "recovered": { "1/22/20": 0, "1/23/20": 1, "1/24/20": 3 },
+  }
 }
