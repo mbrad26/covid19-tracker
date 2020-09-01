@@ -1,13 +1,15 @@
 import React from 'react';
 import { Provider } from 'react-redux';
 import { render, screen, act, waitForElement } from '@testing-library/react';
-import axios from 'axios';
 
+import {
+  country,
+  globalData,
+  historicalData,
+  historicalCountryData,
+} from '../../fixtures';
 import store from '../../../store';
-import { globalData, historicalData } from '../../fixtures';
 import DataCards from '../../../components/DataCards/DataCards';
-
-jest.mock('axios');
 
 describe('DataCards', () => {
   it('renders snapshot', () => {
@@ -64,8 +66,6 @@ describe('DataCards', () => {
       </Provider>
     );
 
-    screen.debug();
-
     await waitForElement(() => screen.queryByText('+65,863'));
     await waitForElement(() => screen.queryByText('+1,517'));
     await waitForElement(() => screen.queryByText('+61,575'));
@@ -79,5 +79,38 @@ describe('DataCards', () => {
     expect(screen.getAllByText(/Worldwide/)[0]).toBeInTheDocument();
     expect(screen.getAllByText(/Worldwide/)[1]).toBeInTheDocument();
     expect(screen.getAllByText(/Worldwide/)[2]).toBeInTheDocument();
+  });
+
+  it('renders the correct props when globalData.country', async () => {
+    const dataCardsProps = {
+      isError: false,
+      isLoading: false,
+      globalData: country,
+      historicalData: historicalCountryData,
+      loadingGlobalData: jest.fn(),
+      loadingHistoricalData: jest.fn(),
+    };
+
+    render(
+      <Provider store={store} >
+        <DataCards {...dataCardsProps}/>
+      </Provider>
+    );
+
+    screen.debug();
+
+    await waitForElement(() => screen.queryByText('+133'));
+    await waitForElement(() => screen.queryByText('+4'));
+    await waitForElement(() => screen.queryByText('+75'));
+    
+    expect(screen.queryByText('+133')).toBeInTheDocument();
+    expect(screen.queryByText('+4')).toBeInTheDocument();
+    expect(screen.queryByText('+75')).toBeInTheDocument();
+    expect(screen.getByText('9,513')).toBeInTheDocument();
+    expect(screen.getByText('284')).toBeInTheDocument();
+    expect(screen.getByText('5,214')).toBeInTheDocument();
+    expect(screen.getAllByText(/Albania/)[0]).toBeInTheDocument();
+    expect(screen.getAllByText(/Albania/)[1]).toBeInTheDocument();
+    expect(screen.getAllByText(/Albania/)[2]).toBeInTheDocument();
   });
 });
