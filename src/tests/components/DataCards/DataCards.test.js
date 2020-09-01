@@ -97,12 +97,10 @@ describe('DataCards', () => {
       </Provider>
     );
 
-    screen.debug();
-
     await waitForElement(() => screen.queryByText('+133'));
     await waitForElement(() => screen.queryByText('+4'));
     await waitForElement(() => screen.queryByText('+75'));
-    
+
     expect(screen.queryByText('+133')).toBeInTheDocument();
     expect(screen.queryByText('+4')).toBeInTheDocument();
     expect(screen.queryByText('+75')).toBeInTheDocument();

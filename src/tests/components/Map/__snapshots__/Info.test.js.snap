@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Info renders a snapshot 1`] = `
+<div
+  style="padding: 0px 0px 0px 5px;"
+>
+  <h4>
+    <img
+      alt="flag"
+      class=""
+      src="https://disease.sh/assets/img/flags/al.png"
+    />
+    <span>
+       
+      Albania
+    </span>
+  </h4>
+  <hr />
+  <p
+    style="font-size: .8rem; margin: 7px; font-weight: bold;"
+  >
+    Cases:          
+    <span>
+      9,513
+    </span>
+  </p>
+  <p
+    style="font-size: .8rem; margin: 7px; font-weight: bold;"
+  >
+    Critical:       
+    <span>
+      19
+    </span>
+  </p>
+  <p
+    style="font-size: .8rem; margin: 7px; font-weight: bold;"
+  >
+    Deaths:         
+    <span>
+      284
+    </span>
+  </p>
+  <p
+    style="font-size: .8rem; margin: 7px; font-weight: bold;"
+  >
+    Deaths/million: 
+    <span>
+      99
+    </span>
+  </p>
+  <p
+    style="font-size: .8rem; margin: 7px; font-weight: bold;"
+  >
+    Recovered:      
+    <span>
+      5,214
+    </span>
+  </p>
+  <p
+    style="font-size: .8rem; margin: 7px; font-weight: bold;"
+  >
+    Nr of tests:    
+    <span>
+      58,438
+    </span>
+  </p>
+  <p
+    style="font-size: .8rem; margin: 7px; font-weight: bold;"
+  >
+    Updated:        
+    <span>
+      Mon Aug 31 2020
+    </span>
+  </p>
+</div>
+`;
