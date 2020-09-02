@@ -68,4 +68,26 @@ describe('CountriesTable', () => {
 
     expect(screen.getByText(/Something went wrong/)).toBeInTheDocument();
   });
+
+  it('displays a spinner when loading data', () => {
+    const countriesProps = {
+      data: [],
+      isError: false,
+      isLoading: true,
+      onSortData: jest.fn(),
+      loadingData: jest.fn(),
+    }
+
+    render(
+      <Provider store={store} >
+        <CountriesTable {...countriesProps} />
+      </Provider>
+    );
+
+    expect(screen.getByRole('status')).toBeInTheDocument();
+    expect(screen.getByRole('status')).toHaveAttribute(
+      'class',
+      'spinner-border text-primary'
+    );
+  });
 });
