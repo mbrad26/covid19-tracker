@@ -14,8 +14,6 @@ describe('Article', () => {
   it('renders the correct props', () => {
     render(<Article article={article} />);
 
-    screen.debug();
-
     expect(screen.getByTestId('image')).toBeInTheDocument();
     expect(screen.getByTestId('image')).toHaveAttribute(
       'src',

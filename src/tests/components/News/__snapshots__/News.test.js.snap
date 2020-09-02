@@ -5,9 +5,163 @@ exports[`News renders snapshot 1`] = `
   class="news row"
 >
   <div
-    class="spinner-border text-light"
-    id="spinner-news"
-    role="status"
-  />
+    class="col-xl-12 col-lg-4 col-md-12"
+  >
+    <div
+      class="card"
+      id="article"
+    >
+      <img
+        class="card-img-top"
+        data-testid="image"
+        loading="lazy"
+        src="https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/uz8vke37g6kk5fxpvldr.png"
+      />
+      <div
+        class="card-body"
+      >
+        <div
+          class="card-title h5"
+        >
+          How to Enable 'Express' COVID-19 Exposure Notifications in iOS 13.7
+        </div>
+        <p
+          class="card-text"
+          id="source"
+        >
+          <span>
+            Lifehacker.com
+          </span>
+        </p>
+        <p
+          class="text-muted far fa-clock card-text"
+        >
+          <span>
+             
+            Tue Sep 01 2020
+          </span>
+        </p>
+        <p
+          class="card-text"
+          id="article-description"
+        >
+          Apple rolled out iOS 13.7 today. Update your device, and you’ll now be able to see if your state supports the COVID-19 Exposure Notifications Express system. More importantly, you’ll be able to opt-in to receiving these alerts without having to find and set u…
+        </p>
+        <a
+          href="https://lifehacker.com/how-to-enable-express-covid-19-exposure-notifications-i-1844919365"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          Read full article ...
+        </a>
+      </div>
+    </div>
+  </div>
+  <div
+    class="col-xl-12 col-lg-4 col-md-12"
+  >
+    <div
+      class="card"
+      id="article"
+    >
+      <img
+        class="card-img-top"
+        data-testid="image"
+        loading="lazy"
+        src="https://o.aolcdn.com/images/dims?resize=1200%2C630&crop=1200%2C630%2C0%2C0&quality=95&image_uri=https%3A%2F%2Fs.yimg.com%2Fos%2Fcreatr-uploaded-images%2F2020-09%2F5f305b00-ec1e-11ea-b7b8-4752fa6eec43&client=amp-blogside-v2&signature=ba7d0f07b8b77f1fe95e90cfe209704b574f2d87"
+      />
+      <div
+        class="card-body"
+      >
+        <div
+          class="card-title h5"
+        >
+          Apple's fall event could feature four iPhones, two Watches and an iPad Air
+        </div>
+        <p
+          class="card-text"
+          id="source"
+        >
+          <span>
+            Engadget
+          </span>
+        </p>
+        <p
+          class="text-muted far fa-clock card-text"
+        >
+          <span>
+             
+            Tue Sep 01 2020
+          </span>
+        </p>
+        <p
+          class="card-text"
+          id="article-description"
+        >
+          Apple’s next virtual event should be just around the corner and it looks like a big one, according to a report from Bloomberg. To start with, Apple plans to release four new 5G iPhones with OLED screens including basic 5.4-inch and 6.1-inch models, along with…
+        </p>
+        <a
+          href="https://www.engadget.com/apple-reportedly-set-to-release-four-i-phones-two-watches-and-an-i-pad-074424277.html"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          Read full article ...
+        </a>
+      </div>
+    </div>
+  </div>
+  <div
+    class="col-xl-12 col-lg-4 col-md-12"
+  >
+    <div
+      class="card"
+      id="article"
+    >
+      <img
+        class="card-img-top"
+        data-testid="image"
+        loading="lazy"
+        src="https://o.aolcdn.com/images/dims?resize=1200%2C630&crop=1200%2C630%2C0%2C0&quality=95&image_uri=https%3A%2F%2Fs.yimg.com%2Fos%2Fcreatr-uploaded-images%2F2020-09%2Fbc79a8b0-ec06-11ea-9fa9-750c95cdf217&client=amp-blogside-v2&signature=a8a22f909f5a04c29a3df47cead68b39b27c2ec7"
+      />
+      <div
+        class="card-body"
+      >
+        <div
+          class="card-title h5"
+        >
+          'Pokémon Go' will stop working on old Android and iOS devices in October
+        </div>
+        <p
+          class="card-text"
+          id="source"
+        >
+          <span>
+            Engadget
+          </span>
+        </p>
+        <p
+          class="text-muted far fa-clock card-text"
+        >
+          <span>
+             
+            Tue Sep 01 2020
+          </span>
+        </p>
+        <p
+          class="card-text"
+          id="article-description"
+        >
+          An upcoming Pokémon Go update for October could mean you won’t be able to access the game anymore if you’re using an older iPhone or Android device. Niantic has announced that the game will stop supporting devices running Android 5, iOS 10 and iOS 11. For App…
+        </p>
+        <a
+          href="https://www.engadget.com/pokemon-go-stop-working-old-android-ios-devices-043355158.html"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          Read full article ...
+        </a>
+      </div>
+    </div>
+  </div>
 </div>
 `;
