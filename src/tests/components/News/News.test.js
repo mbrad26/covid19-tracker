@@ -76,8 +76,6 @@ describe('News', () => {
       </Provider>
     );
 
-    screen.debug();
-
     expect(screen.getAllByTestId('image').length).toEqual(3);
     expect(screen.getAllByTestId('image')[0]).toHaveAttribute(
       'src',

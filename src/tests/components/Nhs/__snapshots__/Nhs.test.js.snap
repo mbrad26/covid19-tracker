@@ -4,10 +4,429 @@ exports[`Nhs renders snapshot 1`] = `
 <div
   id="nhs"
 >
+  <nav
+    class="nav nav-tabs"
+    role="tablist"
+  >
+    <a
+      aria-selected="true"
+      class="nav-item nav-link active"
+      data-rb-event-key="overview"
+      href="#"
+      role="tab"
+    >
+      Overview
+    </a>
+    <a
+      aria-selected="false"
+      class="nav-item nav-link"
+      data-rb-event-key="symptoms"
+      href="#"
+      role="tab"
+      tabindex="-1"
+    >
+      Symptoms
+    </a>
+    <a
+      aria-selected="false"
+      class="nav-item nav-link"
+      data-rb-event-key="self_isolation"
+      href="#"
+      role="tab"
+      tabindex="-1"
+    >
+      Self isolation
+    </a>
+    <a
+      aria-selected="false"
+      class="nav-item nav-link"
+      data-rb-event-key="treatments_overview"
+      href="#"
+      role="tab"
+      tabindex="-1"
+    >
+      Treatments overview
+    </a>
+    <a
+      aria-selected="false"
+      class="nav-item nav-link"
+      data-rb-event-key="self_care"
+      href="#"
+      role="tab"
+      tabindex="-1"
+    >
+      Self care
+    </a>
+    <a
+      aria-selected="false"
+      class="nav-item nav-link"
+      data-rb-event-key="other_treatments"
+      href="#"
+      role="tab"
+      tabindex="-1"
+    >
+      Other treatments
+    </a>
+    <a
+      aria-selected="false"
+      class="nav-item nav-link"
+      data-rb-event-key="diagnosis"
+      href="#"
+      role="tab"
+      tabindex="-1"
+    >
+      Diagnosis
+    </a>
+    <a
+      aria-selected="false"
+      class="nav-item nav-link"
+      data-rb-event-key="prevention"
+      href="#"
+      role="tab"
+      tabindex="-1"
+    >
+      Prevention
+    </a>
+  </nav>
   <div
-    class="spinner-border text-light"
-    id="spinner-nhs"
-    role="status"
-  />
+    class="tab-content"
+  >
+    <div
+      aria-hidden="false"
+      class="fade tab-pane active show"
+      role="tabpanel"
+    >
+      <img
+        alt="NHS logo"
+        src="https://www.nhs.uk/nhscwebservices/documents/logo1.jpg"
+      />
+      <hr />
+      <p>
+        The main symptoms of coronavirus (COVID-19) are a high temperature, a new, continuous cough and a loss or change to your sense of smell or taste.
+      </p>
+      <p>
+        To help stop the spread of coronavirus (COVID-19), avoid close contact with anyone you do not live with and wash your hands regularly.
+      </p>
+      <p>
+        You can usually treat mild coronavirus (COVID-19) symptoms at home. If your symptoms are severe, you may need medical care until you recover.
+      </p>
+      <p>
+        <a
+          href="https://www.nhs.uk/conditions/coronavirus-covid-19/#overview"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          More details on NHS webpage
+        </a>
+      </p>
+    </div>
+    <div
+      aria-hidden="true"
+      class="fade tab-pane"
+      role="tabpanel"
+    >
+      <img
+        alt="NHS logo"
+        src="https://www.nhs.uk/nhscwebservices/documents/logo1.jpg"
+      />
+      <hr />
+      <p>
+        The main symptoms of coronavirus (COVID-19) are:
+      </p>
+      <ul>
+        <li>
+          a high temperature – this means you feel hot to touch on your chest or back (you do not need to measure your temperature)
+        </li>
+        <li>
+          a new, continuous cough – this means coughing a lot for more than an hour, or 3 or more coughing episodes in 24 hours (if you usually have a cough, it may be worse than usual)
+        </li>
+        <li>
+          a loss or change to your sense of smell or taste – this means you've noticed you cannot smell or taste anything, or things smell or taste different to normal
+        </li>
+      </ul>
+      <p>
+        To protect others, do not go to places like a GP surgery, pharmacy or hospital if you have any of these symptoms. Get a test to check if you have coronavirus and stay at home until you get your result.
+      </p>
+      <p>
+        <a
+          href="https://www.nhs.uk/conditions/coronavirus-covid-19/symptoms/#symptoms"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          More details on NHS webpage
+        </a>
+      </p>
+    </div>
+    <div
+      aria-hidden="true"
+      class="fade tab-pane"
+      role="tabpanel"
+    >
+      <img
+        alt="NHS logo"
+        src="https://www.nhs.uk/nhscwebservices/documents/logo1.jpg"
+      />
+      <hr />
+      <p>
+        You must stay at home (self-isolate) and get a test if you have any of the main symptoms of coronavirus (COVID-19).
+      </p>
+      <p>
+        The main symptoms are a high temperature, a new, continuous cough or a loss or change to your sense of smell or taste.
+      </p>
+      <p>
+        While you're self-isolating, you and anyone you live with must not leave your home.
+      </p>
+      <ul>
+        <li>
+          Do not go to work, school or public places.
+        </li>
+        <li>
+          Do not go on public transport or use taxis.
+        </li>
+        <li>
+          Do not go out to get food and medicine. Order it online or by phone, or ask someone to bring it to your home.
+        </li>
+        <li>
+          Do not have visitors in your home, including friends and family (except for people providing essential care).
+        </li>
+        <li>
+          Do not go out to exercise. Exercise at home or in your garden, if you have one.
+        </li>
+      </ul>
+      <p>
+        If you have symptoms or you test positive (you have coronavirus), you'll usually need to self-isolate for at least 10 days.
+      </p>
+      <p>
+        If you live with someone who has symptoms or has tested positive, you'll usually need to self-isolate for 14 days. This is because it can take up to 14 days for symptoms to appear.
+      </p>
+      <p>
+        <a
+          href="https://www.nhs.uk/conditions/coronavirus-covid-19/self-isolation-and-treatment/when-to-self-isolate-and-what-to-do/#self-isolation"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          More details on NHS webpage
+        </a>
+      </p>
+    </div>
+    <div
+      aria-hidden="true"
+      class="fade tab-pane"
+      role="tabpanel"
+    >
+      <img
+        alt="NHS logo"
+        src="https://www.nhs.uk/nhscwebservices/documents/logo1.jpg"
+      />
+      <hr />
+      <p>
+        <a
+          href="https://www.nhs.uk/conditions/coronavirus-covid-19/self-isolation-and-treatment/how-to-treat-symptoms-at-home/#treatments-summary"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          More details on NHS webpage
+        </a>
+      </p>
+    </div>
+    <div
+      aria-hidden="true"
+      class="fade tab-pane"
+      role="tabpanel"
+    >
+      <img
+        alt="NHS logo"
+        src="https://www.nhs.uk/nhscwebservices/documents/logo1.jpg"
+      />
+      <hr />
+      <p>
+        There are things you can do to treat mild symptoms of coronavirus (COVID-19) while you’re staying at home (self-isolating).
+      </p>
+      <p>
+        If you have a high temperature:
+      </p>
+      <ul>
+        <li>
+          get lots of rest
+        </li>
+        <li>
+          drink plenty of fluids (water is best) to avoid dehydration – drink enough so your pee is light yellow and clear
+        </li>
+        <li>
+          take paracetamol or ibuprofen if you feel uncomfortable
+        </li>
+      </ul>
+      <p>
+        If you have a cough:
+      </p>
+      <ul>
+        <li>
+          avoid lying on your back – lie on your side or sit upright instead
+        </li>
+        <li>
+          try having a teaspoon of honey – but do not give honey to babies under 12 months
+        </li>
+      </ul>
+      <p>
+        If you feel breathless:
+      </p>
+      <ul>
+        <li>
+          keep your room cool by turning the heating down or opening a window – do not use a fan as it may spread the virus
+        </li>
+        <li>
+          sit upright in a chair and relax your shoulders
+        </li>
+        <li>
+          try breathing slowly in through your nose and out through your mouth, with your lips together like you're gently blowing out a candle
+        </li>
+      </ul>
+      <p>
+        <a
+          href="https://www.nhs.uk/conditions/coronavirus-covid-19/self-isolation-and-treatment/how-to-treat-symptoms-at-home/#self-care"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          More details on NHS webpage
+        </a>
+      </p>
+    </div>
+    <div
+      aria-hidden="true"
+      class="fade tab-pane"
+      role="tabpanel"
+    >
+      <img
+        alt="NHS logo"
+        src="https://www.nhs.uk/nhscwebservices/documents/logo1.jpg"
+      />
+      <hr />
+      <p>
+        There is currently no specific treatment for coronavirus.
+      </p>
+      <p>
+        Antibiotics do not help, as they do not work against viruses.
+      </p>
+      <p>
+        Treatment aims to relieve the symptoms while your body fights the illness.
+      </p>
+      <p>
+        You'll need to stay in isolation away from other people until you've recovered.
+      </p>
+      <p>
+        <a
+          href="https://www.nhs.uk/conditions/coronavirus-covid-19/self-isolation-and-treatment/how-to-treat-symptoms-at-home/#treatments-other"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          More details on NHS webpage
+        </a>
+      </p>
+    </div>
+    <div
+      aria-hidden="true"
+      class="fade tab-pane"
+      role="tabpanel"
+    >
+      <img
+        alt="NHS logo"
+        src="https://www.nhs.uk/nhscwebservices/documents/logo1.jpg"
+      />
+      <hr />
+      <p>
+        Get a test to check for coronavirus (COVID-19) if you have any of the main symptoms.
+      </p>
+      <p>
+        The main symptoms are a high temperature, a new, continuous cough, or a loss or change to your sense of smell or taste.
+      </p>
+      <p>
+        You can ask for a test:
+      </p>
+      <ul>
+        <li>
+          for yourself, if you have symptoms
+        </li>
+        <li>
+          for someone you live with, if they have symptoms
+        </li>
+      </ul>
+      <p>
+        Ask for a test as soon as you get symptoms. The test needs to be done in the first 5 days of symptoms starting.
+      </p>
+      <p>
+        You can also sometimes get a test if you do not have symptoms. For example, if your local council asks you to get a test.
+      </p>
+      <p>
+        The test involves wiping a long cotton bud (swab) inside your nose and at the back of your throat.
+      </p>
+      <p>
+        You can get a test on the NHS website. Go to www.nhs.uk/coronavirus. Call 119 to get a test if you have problems using the internet.
+      </p>
+      <p>
+        You can choose a test site near you today and get your result tomorrow, or get a home test kit.
+      </p>
+      <p>
+        <a
+          href="https://www.nhs.uk/conditions/coronavirus-covid-19/testing-and-tracing/get-a-test-to-check-if-you-have-coronavirus/#diagnosis"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          More details on NHS webpage
+        </a>
+      </p>
+    </div>
+    <div
+      aria-hidden="true"
+      class="fade tab-pane"
+      role="tabpanel"
+    >
+      <img
+        alt="NHS logo"
+        src="https://www.nhs.uk/nhscwebservices/documents/logo1.jpg"
+      />
+      <hr />
+      <p>
+        To stop coronavirus (COVID-19) spreading:
+      </p>
+      <ul>
+        <li>
+          try to stay at least 2 metres (3 steps) away from anyone you do not live with or anyone not in your support bubble
+        </li>
+        <li>
+          wash your hands with soap and water often – do this for at least 20 seconds
+        </li>
+        <li>
+          use hand sanitiser gel if soap and water are not available
+        </li>
+        <li>
+          wash your hands as soon as you get home
+        </li>
+        <li>
+          cover your mouth and nose with a tissue or your sleeve (not your hands) when you cough or sneeze
+        </li>
+        <li>
+          put used tissues in the bin immediately and wash your hands afterwards
+        </li>
+        <li>
+          wear something that covers your nose and mouth when it’s hard to stay away from people, such as in shops or on public transport
+        </li>
+        <li>
+          do not touch your eyes, nose or mouth if your hands are not clean
+        </li>
+      </ul>
+      <p>
+        Follow the government's social distancing guidance about what you can and cannot do outside your home.
+      </p>
+      <p>
+        <a
+          href="https://www.nhs.uk/conditions/coronavirus-covid-19/social-distancing/what-you-need-to-do/#prevention"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          More details on NHS webpage
+        </a>
+      </p>
+    </div>
+  </div>
 </div>
 `;
