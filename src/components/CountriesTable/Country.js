@@ -23,29 +23,27 @@ const Country = ({
   };
 
   return (
-    <>
-      <tbody>
-        <tr>
-          <td><Image
-                src={country.countryInfo.flag}
-                loading='lazy'
-                alt={`${country.country} flag`}
-                id='flag'
-              />
-          </td>
-          <td>
-            <button
-              onClick={handleClick}
-            >
-              {country.country}
-            </button>
-          </td>
-          <td>{country.cases.toLocaleString()}</td>
-          <td>{country.deaths.toLocaleString()}</td>
-          <td>{country.recovered.toLocaleString()}</td>
-        </tr>
-      </tbody>
-    </>
+    <tbody>
+      <tr>
+        <td><Image
+              src={country.countryInfo.flag}
+              loading='lazy'
+              alt={`${country.country} flag`}
+              id='flag'
+            />
+        </td>
+        <td>
+          <button
+            onClick={handleClick}
+          >
+            {country.country}
+          </button>
+        </td>
+        <td>{country.cases.toLocaleString()}</td>
+        <td>{country.deaths.toLocaleString()}</td>
+        <td>{country.recovered.toLocaleString()}</td>
+      </tr>
+    </tbody>
   );
 };
 

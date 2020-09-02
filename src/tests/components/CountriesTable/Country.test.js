@@ -17,12 +17,16 @@ describe('Country', () => {
     historicalCountryDataLoading: jest.fn(),
   }
 
+  const table = document.createElement('table');
+
   beforeEach(() => {
     jest.useFakeTimers();
     render(
       <Provider store={store}>
         <Country {...countryProps}/>
-      </Provider>
+      </Provider>, {
+        container: document.body.appendChild(table),
+      }
     );
   });
 
@@ -36,7 +40,9 @@ describe('Country', () => {
     const { container } = render(
       <Provider store={store}>
         <Country {...countryProps} />
-      </Provider>
+      </Provider>, {
+        container: document.body.appendChild(table),
+      }
     );
 
     expect(container.firstChild).toMatchSnapshot();

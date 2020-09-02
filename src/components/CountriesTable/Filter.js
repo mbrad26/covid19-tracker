@@ -19,8 +19,6 @@ const Filter = ({
     setQuery(event.target.value);
   };
 
-  console.log('FILTERED_COUNTRIES: ', filteredCountries);
-
   const handleSubmit = event => {
     event.preventDefault();
     if (filteredCountries.length === 1) {

@@ -3,7 +3,7 @@ import { Card } from 'react-bootstrap';
 
 const Article = ({ article }) => (
   <Card id='article'>
-    <Card.Img variant="top" src={article.urlToImage} loading='lazing' />
+    <Card.Img variant="top" src={article.urlToImage} loading='lazy' />
     <Card.Body>
       <Card.Title>{article.title}</Card.Title>
       <Card.Text id='source'><span>{article.source.name}</span></Card.Text>

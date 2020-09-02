@@ -16,6 +16,6 @@ describe('Article', () => {
 
     screen.debug();
 
-    // expect(container.firstChild).toMatchSnapshot();
+    // expect($('img')).toBeInTheDocument();
   });
 });
