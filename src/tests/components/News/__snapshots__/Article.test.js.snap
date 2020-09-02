@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Article renders a snapshot 1`] = `
+<div
+  class="card"
+  id="article"
+>
+  <img
+    class="card-img-top"
+    loading="lazing"
+    src="https://techcrunch.com/wp-content/uploads/2019/06/GettyImages-1050523528.jpg?w=600"
+  />
+  <div
+    class="card-body"
+  >
+    <div
+      class="card-title h5"
+    >
+      Casa pivots to provide self-custody services to secure bitcoin
+    </div>
+    <p
+      class="card-text"
+      id="source"
+    >
+      <span>
+        TechCrunch
+      </span>
+    </p>
+    <p
+      class="text-muted far fa-clock card-text"
+    >
+      <span>
+         
+        Thu Aug 06 2020
+      </span>
+    </p>
+    <p
+      class="card-text"
+      id="article-description"
+    >
+      Casa, a Colorado-based provider of bitcoin security services, is launching a managed service allowing customers to buy and hold their own bitcoin, rather than using an external custodian like Coinbase. “With self-custody using Casa it’s impossible to be hacke…
+    </p>
+    <a
+      href="http://techcrunch.com/2020/08/06/casa-pivots-to-provide-self-custody-services-to-secure-bitcoin/"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      Read full article ...
+    </a>
+  </div>
+</div>
+`;
