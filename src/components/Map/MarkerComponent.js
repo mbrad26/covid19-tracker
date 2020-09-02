@@ -1,10 +1,11 @@
+/* istanbul ignore file */
 import React from 'react';
 import { Marker} from 'react-map-gl';
 
 import { stats, style } from './utils';
 import PopupComponent from '../../containers/PopupComponent.js';
 
-const MarkerComponent = ({ countries, activeCountry, onSetActive }) => (
+const MarkerComponent = ({ countries, onSetActive }) => (
   <>
     {countries.map(country => {
       const cases = stats(country.cases)
