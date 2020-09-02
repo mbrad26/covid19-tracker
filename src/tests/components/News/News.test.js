@@ -23,4 +23,73 @@ describe('News', () => {
 
     expect(container.firstChild).toMatchSnapshot();
   });
+
+  it('renders the correct props when isLoading', () => {
+    const newsProps = {
+      isError: false,
+      isLoading: true,
+      articles: [],
+      loadingNewsData: jest.fn()
+    };
+
+    render(
+      <Provider store={store} >
+        <News {...newsProps} />
+      </Provider>
+    );
+
+    expect(screen.getByRole('status')).toBeInTheDocument();
+    expect(screen.getByRole('status')).toHaveAttribute(
+      'class',
+      'spinner-border text-light'
+    );
+  });
+
+  it('renders the correct props when isError', () => {
+    const newsProps = {
+      isError: true,
+      isLoading: false,
+      articles: [],
+      loadingNewsData: jest.fn()
+    };
+
+    render(
+      <Provider store={store} >
+        <News {...newsProps} />
+      </Provider>
+    );
+
+    expect(screen.getByText(/Something went wrong/)).toBeInTheDocument();
+  });
+
+  it('renders the correct props when isLoading', () => {
+    const newsProps = {
+      isError: false,
+      isLoading: false,
+      articles: articles,
+      loadingNewsData: jest.fn()
+    };
+
+    render(
+      <Provider store={store} >
+        <News {...newsProps} />
+      </Provider>
+    );
+
+    screen.debug();
+
+    expect(screen.getAllByTestId('image').length).toEqual(3);
+    expect(screen.getAllByTestId('image')[0]).toHaveAttribute(
+      'src',
+      `${articles[0].urlToImage}`
+    );
+    expect(screen.getAllByTestId('image')[1]).toHaveAttribute(
+      'src',
+      `${articles[1].urlToImage}`
+    );
+    expect(screen.getAllByTestId('image')[2]).toHaveAttribute(
+      'src',
+      `${articles[2].urlToImage}`
+    );
+  });
 });

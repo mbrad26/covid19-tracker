@@ -15,8 +15,6 @@ const News = ({
     loadingNewsData();
   }, [loadingNewsData]);
 
-  console.log('ARTICLE: ', articles);
-
   return (
     <Row className='news'>
       {isLoading && <Spinner id='spinner-news' animation="border" variant="light" role="status"/>}
