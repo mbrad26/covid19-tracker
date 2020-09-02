@@ -23,4 +23,42 @@ describe('Nhs', () => {
 
     expect(container.firstChild).toMatchSnapshot();
   });
+
+  it('renders the correct props when isError', () => {
+    const nhsProps = {
+      nhsData: [],
+      isError: true,
+      isLoading: false,
+      loadingNhsData: jest.fn(),
+    };
+
+    render(
+      <Provider store={store} >
+        <Nhs {...nhsProps} />
+      </Provider>
+    );
+
+    expect(screen.getByText(/Something went wrong/)).toBeInTheDocument();
+  });
+
+  it('renders the correct props when isLoading', () => {
+    const nhsProps = {
+      nhsData: [],
+      isError: false,
+      isLoading: true,
+      loadingNhsData: jest.fn(),
+    };
+
+    render(
+      <Provider store={store} >
+        <Nhs {...nhsProps} />
+      </Provider>
+    );
+
+    expect(screen.getByRole('status')).toBeInTheDocument();
+    expect(screen.getByRole('status')).toHaveAttribute(
+      'class',
+      'spinner-border text-light'
+    );
+  });
 });
