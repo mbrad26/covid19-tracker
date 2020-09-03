@@ -1,6 +1,6 @@
 import React from 'react';
 import { Provider } from 'react-redux';
-import { render, screen, fireEvent, waitForElement } from '@testing-library/react';
+import { render, screen, fireEvent } from '@testing-library/react';
 
 import store from '../../../store';
 import { unsortedData } from '../../fixtures';
@@ -11,7 +11,7 @@ describe('CountriesTable', () => {
     const { container } = render(
       <Provider store={store} >
         <CountriesTable
-          data={[]}
+          data={unsortedData}
           isError={false}
           isLoading={false}
           onSortData={jest.fn()}

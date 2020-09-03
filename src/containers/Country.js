@@ -1,3 +1,4 @@
+/* istanbul ignore file */
 import { connect } from 'react-redux';
 
 import Country from '../components/CountriesTable/Country';

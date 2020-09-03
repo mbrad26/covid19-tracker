@@ -50,6 +50,87 @@ exports[`CountriesTable renders snapshot 1`] = `
         </th>
       </tr>
     </thead>
+    <tbody>
+      <tr>
+        <td>
+          <img
+            alt="Afghanistan flag"
+            class=""
+            id="flag"
+            loading="lazy"
+            src="https://disease.sh/assets/img/flags/af.png"
+          />
+        </td>
+        <td>
+          <button>
+            Afghanistan
+          </button>
+        </td>
+        <td>
+          38,162
+        </td>
+        <td>
+          1,402
+        </td>
+        <td>
+          29,089
+        </td>
+      </tr>
+    </tbody>
+    <tbody>
+      <tr>
+        <td>
+          <img
+            alt="Albania flag"
+            class=""
+            id="flag"
+            loading="lazy"
+            src="https://disease.sh/assets/img/flags/al.png"
+          />
+        </td>
+        <td>
+          <button>
+            Albania
+          </button>
+        </td>
+        <td>
+          9,380
+        </td>
+        <td>
+          280
+        </td>
+        <td>
+          5,139
+        </td>
+      </tr>
+    </tbody>
+    <tbody>
+      <tr>
+        <td>
+          <img
+            alt="France flag"
+            class=""
+            id="flag"
+            loading="lazy"
+            src="https://disease.sh/assets/img/flags/fr.png"
+          />
+        </td>
+        <td>
+          <button>
+            France
+          </button>
+        </td>
+        <td>
+          272,530
+        </td>
+        <td>
+          30,602
+        </td>
+        <td>
+          86,177
+        </td>
+      </tr>
+    </tbody>
   </table>
 </div>
 `;
