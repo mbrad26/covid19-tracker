@@ -2,12 +2,14 @@ import { call, select, delay } from 'redux-saga/effects';
 
 import {
   NHS_URL,
+  NEWS_URL,
   COUNTRIES_URL,
   HISTORICAL_DATA_URL,
 } from '../../api/api';
 import { fetchData } from '../../api/';
 import {
   fetchNHSData,
+  fetchNewsData,
   fetchResource,
   fetchCountriesData,
   fetchHistoricalCountryData,
@@ -24,6 +26,26 @@ import {
   doNHSError,
   doNHSSuccess,
 } from '../../actions/nhsData';
+import {
+  doNewsError,
+  doNewsSuccess,
+} from '../../actions/newsData';
+
+describe('fetchNewsData', () => {
+  it('delays re-run', () => {
+    const gen = fetchNewsData();
+
+    expect(gen.next().value).toEqual(
+      call(
+        fetchResource,
+        NEWS_URL,
+        doNewsSuccess,
+        doNewsError
+      ));
+    expect(gen.next().value).toEqual(delay(1000000));
+    expect(gen.next().done).toEqual(false);
+  });
+});
 
 describe('fetchNHSData', () => {
   it('delays re-run', () => {
