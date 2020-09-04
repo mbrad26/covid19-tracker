@@ -1,4 +1,4 @@
-import { call, select, delay } from 'redux-saga/effects';
+import { call, select, delay, put } from 'redux-saga/effects';
 
 import {
   NHS_URL,
@@ -37,6 +37,18 @@ import {
   doHistoricalDataSuccess,
 } from '../../actions/historicalData';
 
+describe('fetchGlobalData', () => {
+  it('fetches data on success', () => {
+    const response = { data: {} };
+    const url = 'some_url';
+    const success = data => ({ type: 'SUCCESS', payload: data });
+    const error = () => ({ type: 'ERROR' });
+    const gen = fetchResource(url, success, error);
+
+    expect(gen.next().value).toEqual(call(fetchData, url));
+    expect(gen.next(response).value).toEqual(put(success(response.data)));
+  });
+});
 
 describe('fetchGlobalData', () => {
   it('delays re-run', () => {
