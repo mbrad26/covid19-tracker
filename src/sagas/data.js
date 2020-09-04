@@ -1,4 +1,3 @@
-/* istanbul ignore file */
 import { call, put, delay, select } from 'redux-saga/effects';
 
 import { fetchData } from '../api';
@@ -100,6 +99,7 @@ function* fetchHistoricalCountryData() {
 export {
   fetchNHSData,
   fetchNewsData,
+  fetchResource,
   fetchGlobalData,
   fetchCountriesData,
   fetchHistoricalData,
