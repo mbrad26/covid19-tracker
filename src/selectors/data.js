@@ -12,14 +12,11 @@ const getNewsData = state => state.data.articles;
 
 const getIsLoadingStatus = state => state.isLoading;
 
-const getEndPoint = state => state.endPoint;
-
 export {
   getData,
   getNhsData,
   getNewsData,
   getViewPort,
-  getEndPoint,
   getActiveCountry,
   getIsErrorStatus,
   getIsLoadingStatus,

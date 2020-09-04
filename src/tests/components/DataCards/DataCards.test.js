@@ -66,13 +66,9 @@ describe('DataCards', () => {
       </Provider>
     );
 
-    await waitForElement(() => screen.queryByText('+65,863'));
-    await waitForElement(() => screen.queryByText('+1,517'));
-    await waitForElement(() => screen.queryByText('+61,575'));
-
-    expect(screen.queryByText('+65,863')).toBeInTheDocument();
-    expect(screen.queryByText('+1,517')).toBeInTheDocument();
-    expect(screen.queryByText('+61,575')).toBeInTheDocument();
+    expect(await screen.findByText('+65,863')).toBeInTheDocument();
+    expect(await screen.findByText('+1,517')).toBeInTheDocument();
+    expect(await screen.findByText('+61,575')).toBeInTheDocument();
     expect(screen.getByText('855,941')).toBeInTheDocument();
     expect(screen.getByText('17,994,215')).toBeInTheDocument();
     expect(screen.getByText('25,694,157')).toBeInTheDocument();
@@ -97,13 +93,9 @@ describe('DataCards', () => {
       </Provider>
     );
 
-    await waitForElement(() => screen.queryByText('+133'));
-    await waitForElement(() => screen.queryByText('+4'));
-    await waitForElement(() => screen.queryByText('+75'));
-
-    expect(screen.queryByText('+133')).toBeInTheDocument();
-    expect(screen.queryByText('+4')).toBeInTheDocument();
-    expect(screen.queryByText('+75')).toBeInTheDocument();
+    expect(await screen.findByText('+133')).toBeInTheDocument();
+    expect(await screen.findByText('+4')).toBeInTheDocument();
+    expect(await screen.findByText('+75')).toBeInTheDocument();
     expect(screen.getByText('9,513')).toBeInTheDocument();
     expect(screen.getByText('284')).toBeInTheDocument();
     expect(screen.getByText('5,214')).toBeInTheDocument();
