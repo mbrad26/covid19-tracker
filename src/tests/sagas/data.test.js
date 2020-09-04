@@ -123,9 +123,8 @@ describe('fetchCountriesData', () => {
 });
 
 describe('fetchHistoricalCountryData', () => {
-  it('retrieves endPoint', async () => {
-    const endPoint = 'Albania';
-    const url = HISTORICAL_DATA_URL + endPoint + '?lastdays=365';
+  it('retrieves endPoint', () => {
+    const endPoint = 'France';
 
     const gen = fetchHistoricalCountryData();
 
@@ -135,7 +134,7 @@ describe('fetchHistoricalCountryData', () => {
     expect(gen.next(endPoint).value).toEqual(
       call(
         fetchResource,
-        url,
+        HISTORICAL_DATA_URL + endPoint + '?lastdays=365',
         doHistoricalDataSuccess,
         doHistoricalDataError
       ));
