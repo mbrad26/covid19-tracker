@@ -3,6 +3,7 @@ import { call, select, delay } from 'redux-saga/effects';
 import {
   NHS_URL,
   NEWS_URL,
+  GLOBAL_URL,
   COUNTRIES_URL,
   HISTORICAL_DATA_URL,
 } from '../../api/api';
@@ -11,17 +12,10 @@ import {
   fetchNHSData,
   fetchNewsData,
   fetchResource,
+  fetchGlobalData,
   fetchCountriesData,
   fetchHistoricalCountryData,
 } from '../../sagas/data';
-import {
-  doHistoricalDataError,
-  doHistoricalDataSuccess,
-} from '../../actions/historicalData';
-import {
-  doCountriesDataError,
-  doCountriesDataSuccess,
-} from '../../actions/countriesData';
 import {
   doNHSError,
   doNHSSuccess,
@@ -30,6 +24,35 @@ import {
   doNewsError,
   doNewsSuccess,
 } from '../../actions/newsData';
+import {
+  doDataError,
+  doDataSuccess,
+} from '../../actions/globalData';
+import {
+  doCountriesDataError,
+  doCountriesDataSuccess,
+} from '../../actions/countriesData';
+import {
+  doHistoricalDataError,
+  doHistoricalDataSuccess,
+} from '../../actions/historicalData';
+
+
+describe('fetchGlobalData', () => {
+  it('delays re-run', () => {
+    const gen = fetchGlobalData();
+
+    expect(gen.next().value).toEqual(
+      call(
+        fetchResource,
+        GLOBAL_URL,
+        doDataSuccess,
+        doDataError
+      ));
+    expect(gen.next().value).toEqual(delay(600000));
+    expect(gen.next().done).toEqual(false);
+  });
+});
 
 describe('fetchNewsData', () => {
   it('delays re-run', () => {
