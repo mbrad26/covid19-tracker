@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/mbrad26/covid19-tracker.svg?branch=master)](https://travis-ci.org/mbrad26/covid19-tracker)
+
 ## Covid-19 Tracker
 
 Work in progress ...
