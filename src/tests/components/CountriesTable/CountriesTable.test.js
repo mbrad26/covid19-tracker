@@ -87,7 +87,7 @@ describe('CountriesTable', () => {
     expect(screen.getByRole('status')).toBeInTheDocument();
     expect(screen.getByRole('status')).toHaveAttribute(
       'class',
-      'spinner-border text-primary'
+      'spinner-border text-dark'
     );
   });
 });

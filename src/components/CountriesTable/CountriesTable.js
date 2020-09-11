@@ -29,7 +29,7 @@ const CountriesTable = ({
   return (
      <div id='table-container'>
       {isLoading
-        ? <Spinner id='spinner' animation="border" variant="primary" role="status"/>
+        ? <Spinner id='spinner' animation="border" variant="dark" role="status"/>
         : <Table size='sm'>
             <thead>
               <tr>

@@ -19,7 +19,7 @@ exports[`App renders snapshot 1`] = `
           id="table-container"
         >
           <div
-            class="spinner-border text-primary"
+            class="spinner-border text-dark"
             id="spinner"
             role="status"
           />
@@ -67,7 +67,7 @@ exports[`App renders snapshot 1`] = `
     >
       <div>
         <div
-          class="spinner-border text-light"
+          class="spinner-border text-dark"
           id="spinner-cards"
           role="status"
         />
@@ -83,7 +83,7 @@ exports[`App renders snapshot 1`] = `
             id="nhs"
           >
             <div
-              class="spinner-border text-light"
+              class="spinner-border text-dark"
               id="spinner-nhs"
               role="status"
             />
@@ -99,7 +99,7 @@ exports[`App renders snapshot 1`] = `
         class="news row"
       >
         <div
-          class="spinner-border text-light"
+          class="spinner-border text-dark"
           id="spinner-news"
           role="status"
         />

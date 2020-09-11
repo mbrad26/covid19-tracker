@@ -17,7 +17,7 @@ const Nhs = ({
 
   return (
     <div id='nhs'>
-      {isLoading && <Spinner id='spinner-nhs' animation="border" variant="light" role="status"/>}
+      {isLoading && <Spinner id='spinner-nhs' animation="border" variant="dark" role="status"/>}
       {nhsData.author &&
         <Tabs defaultActiveKey="overview">
           {nhsData.hasPart.map(part =>

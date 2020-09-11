@@ -25,7 +25,7 @@ const DataCards = ({
 
   return (
     <div>
-      {isLoading && <Spinner id='spinner-cards' animation="border" variant="light" role="status" />}
+      {isLoading && <Spinner id='spinner-cards' animation="border" variant="dark" role="status" />}
       {globalData.cases &&
         <Row id='holder'>
           <Col md={12} lg={4} className='' id='card-cases'>

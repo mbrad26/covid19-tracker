@@ -58,7 +58,7 @@ describe('Nhs', () => {
     expect(screen.getByRole('status')).toBeInTheDocument();
     expect(screen.getByRole('status')).toHaveAttribute(
       'class',
-      'spinner-border text-light'
+      'spinner-border text-dark'
     );
   });
 });

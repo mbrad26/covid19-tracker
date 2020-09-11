@@ -17,7 +17,7 @@ const News = ({
 
   return (
     <Row className='news'>
-      {isLoading && <Spinner id='spinner-news' animation="border" variant="light" role="status"/>}
+      {isLoading && <Spinner id='spinner-news' animation="border" variant="dark" role="status"/>}
       {articles &&
         articles.map(article =>
           <Col md={12} lg={4} xl={12} key={article.url}>
