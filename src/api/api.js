@@ -1,11 +1,3 @@
-const year = new Date().getFullYear();
-const month = new Date().getMonth();
-const day = new Date().getDay();
-
-const date = `${year}-${month}-${day}`;
-
-// &from=${date}&to=${date}
-
 export const BASE_URL = 'https://corona.lmao.ninja/v2/';
 export const GLOBAL_URL = `${BASE_URL}all`;
 export const COUNTRIES_URL = `${BASE_URL}countries`;
