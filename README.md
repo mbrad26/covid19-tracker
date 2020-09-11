@@ -1,3 +1,4 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/1bc157d1-46de-4212-a023-f03716751043/deploy-status)](https://app.netlify.com/sites/covid19-tracker-mbrad26/deploys)
 [![Build Status](https://travis-ci.org/mbrad26/covid19-tracker.svg?branch=master)](https://travis-ci.org/mbrad26/covid19-tracker)
 
 ## Covid-19 Tracker
