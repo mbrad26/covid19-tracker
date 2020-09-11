@@ -23,6 +23,8 @@ const MarkerComponent = ({ countries, onSetActive }) => (
                 e.preventDefault();
                 onSetActive(country);
               }}
+              onMouseOver={() => {onSetActive(country)}}
+
             >
             </button>
           </Marker>
