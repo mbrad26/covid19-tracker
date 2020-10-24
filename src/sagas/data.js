@@ -35,17 +35,17 @@ function* fetchGlobalData() {
   };
 };
 
-function* fetchNewsData() {
-  while(true) {
-    yield call(
-      fetchResource,
-      NEWS_URL,
-      doNewsSuccess,
-      doNewsError,
-    );
-    yield delay(1000000);
-  };
-};
+// function* fetchNewsData() {
+//   while(true) {
+//     yield call(
+//       fetchResource,
+//       NEWS_URL,
+//       doNewsSuccess,
+//       doNewsError,
+//     );
+//     yield delay(1000000);
+//   };
+// };
 
 function* fetchNHSData() {
   while(true) {
@@ -98,7 +98,7 @@ function* fetchHistoricalCountryData() {
 
 export {
   fetchNHSData,
-  fetchNewsData,
+  // fetchNewsData,
   fetchResource,
   fetchGlobalData,
   fetchCountriesData,

@@ -21,7 +21,7 @@ function* watchAll() {
   yield all([
     takeEvery(DATA_LOADING, fetchGlobalData),
     takeEvery(NHS_DATA_LOADING, fetchNHSData),
-    takeEvery(NEWS_DATA_LOADING, fetchNewsData),
+    // takeEvery(NEWS_DATA_LOADING, fetchNewsData),
     takeEvery(COUNTRIES_DATA_LOADING, fetchCountriesData),
     takeEvery(HISTORICAL_DATA_LOADING, fetchHistoricalData),
     takeEvery(HISTORICAL_COUNTRY_DATA_LOADING, fetchHistoricalCountryData),

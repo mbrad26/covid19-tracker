@@ -62,7 +62,7 @@ exports[`App renders snapshot 1`] = `
     id="data-nhs-news"
   >
     <div
-      class="col-xl-9 col-lg-12 col-md-7"
+      class="col-xl-12 col-lg-12 col-md-7"
       id="data-cards-container"
     >
       <div>
@@ -89,20 +89,6 @@ exports[`App renders snapshot 1`] = `
             />
           </div>
         </div>
-      </div>
-    </div>
-    <div
-      class="col-xl-3 col-lg-12 col-md-5"
-      id="news-container"
-    >
-      <div
-        class="news row"
-      >
-        <div
-          class="spinner-border text-dark"
-          id="spinner-news"
-          role="status"
-        />
       </div>
     </div>
   </div>

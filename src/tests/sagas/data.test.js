@@ -10,7 +10,7 @@ import {
 import { fetchData } from '../../api/';
 import {
   fetchNHSData,
-  fetchNewsData,
+  // fetchNewsData,
   fetchResource,
   fetchGlobalData,
   fetchCountriesData,
@@ -74,21 +74,21 @@ describe('fetchGlobalData', () => {
   });
 });
 
-describe('fetchNewsData', () => {
-  it('delays re-run', () => {
-    const gen = fetchNewsData();
-
-    expect(gen.next().value).toEqual(
-      call(
-        fetchResource,
-        NEWS_URL,
-        doNewsSuccess,
-        doNewsError
-      ));
-    expect(gen.next().value).toEqual(delay(1000000));
-    expect(gen.next().done).toEqual(false);
-  });
-});
+// describe('fetchNewsData', () => {
+//   it('delays re-run', () => {
+//     const gen = fetchNewsData();
+//
+//     expect(gen.next().value).toEqual(
+//       call(
+//         fetchResource,
+//         NEWS_URL,
+//         doNewsSuccess,
+//         doNewsError
+//       ));
+//     expect(gen.next().value).toEqual(delay(1000000));
+//     expect(gen.next().done).toEqual(false);
+//   });
+// });
 
 describe('fetchNHSData', () => {
   it('delays re-run', () => {
