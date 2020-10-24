@@ -3,14 +3,14 @@ import { takeEvery, all } from 'redux-saga/effects';
 import {
   DATA_LOADING,
   NHS_DATA_LOADING,
-  NEWS_DATA_LOADING,
+  // NEWS_DATA_LOADING,
   COUNTRIES_DATA_LOADING,
   HISTORICAL_DATA_LOADING,
   HISTORICAL_COUNTRY_DATA_LOADING,
 } from '../constants/actionTypes';
 import {
   fetchNHSData,
-  fetchNewsData,
+  // fetchNewsData,
   fetchGlobalData,
   fetchCountriesData,
   fetchHistoricalData,
