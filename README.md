@@ -3,7 +3,7 @@
 
 ## Covid-19 Tracker
 
-Work in progress ...
+[LIVE](https://covid19-tracker-mbrad26.netlify.app)
 
 #### Demo
 
