@@ -87,7 +87,7 @@ function* fetchHistoricalCountryData() {
   try {
     yield call(
       fetchResource,
-      HISTORICAL_DATA_URL + endPoint + '?lastdays=365',
+      HISTORICAL_DATA_URL + endPoint + '?lastdays=730',
       doHistoricalDataSuccess,
       doHistoricalDataError
     );
